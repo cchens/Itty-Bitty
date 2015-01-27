@@ -4,9 +4,9 @@ CSC301 Phase 1
 ### Team Introduction
 
 ##### Group photo
-Photo
+![Group photo](group1.jpg)
 
-From left to right:
+*Left to right: Christina Chen, Sharon Hogan, Cindy Wu, Ben Shaft, Eric Snyder, Eugene Cheung, Inks Lin, Catherine Wang*
 
 ##### Ben Shaft
 A
