@@ -53,9 +53,24 @@ Itty Bitty is an interactive web-based tutorial that allows users to learn about
 
 ### User Stories
 
-As Jim, I want to learn more through interactive online tutorials via a truly hands-on approach with the actual material so I can learn more about the things I’m interested in.
+Priority scale:
+- 1: vital feature, must be in MVP
+- 2: important feature, but can be included in a later release
+- 3: nice feature that can be put off until even later
 
-As Sarah, I want to be able keep up with school material in an approachable and engaging manner so I can continue to participate in competitive sports without sacrificing my GPA.
+As Jim, I want to learn more through *interactive online tutorials* via a truly hands-on approach with the actual material so I can learn more about the things I’m interested in. (1)
+
+As Sarah, I want to be able keep up with *school material in an approachable and engaging manner* so I can continue to participate in competitive sports without sacrificing my GPA. (1)
+
+As Jim, I would like to be able to *register and login quickly* by connecting to my *existing social network accounts*, such as Facebook or Twitter. (2)
+
+As Sarah, I want to learn how to quickly *convert between numerical bases* (decimal, binary, and hexadecimal) so that I can naturally do so and be able to more efficiently do my schoolwork. (1)
+
+As Jim, I want to *learn about and practice using bitwise operators* so that I don’t have to keep using trial and error to achieve what I want to do. (1)
+
+As Jim, I enjoy playing video games and like the “gamified” aspect of Itty Bitty with its *achievements, levels, and points system*, which encourages me to play/learn more. (2)
+
+As Sarah, I like being able to *pick up from where I left off* by being able to login to Itty Bitty and immediately being able to see which levels I have completed and which I have yet to do. (3)
 
 
 
@@ -64,6 +79,10 @@ As Sarah, I want to be able keep up with school material in an approachable and 
 
 
 ### Release and Iteration Planning
+
+Features that we will be excluding from the first release include user accounts and associated features such as achievements, points, saved level state, and registration/login via social networks such as Facebook, Twitter, or Google+. Due to the timeframe of the first release (3 weeks), we will be primarily focusing on the more vital core features necessary for creating Itty Bitty, such as the actual tutorial system.
+
+For the first release, we will be working on a tutorial system that can display information to users and accept and validate user input as the base for a game-like level system. In the first iteration, tutorial content will be drafted and work on the system for displaying content and accepting/validating user input will be started. For the rest of the time allotted for working on the first release, these features will be improved and some preliminary work will be done for non-vital features such as users, achievements, and points, but will only be done as “scaffolding” for future work.
 
 
 
