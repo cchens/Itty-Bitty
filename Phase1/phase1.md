@@ -47,7 +47,7 @@ Itty Bitty is an interactive web-based tutorial that allows users to learn about
 
 **Jamming Jim** is a fairly laidback 18 year old senior high school student in Toronto interested in studying computer science in university, which stems from having taken an introductory course in the previous year and enjoys being able to solve problems through code. He enjoys playing guitar and is part of an indie band with his friends, occasionally playing small gigs at local bars. Since he considers himself to be a fairly average student, Jim is preparing himself for university by using various online tools to learn more related content alongside his high school courses. Alongside more school-like resources such as Coursera or Udemy, Jim enjoys learning about new things through interactive websites such as Itty Bitty, which allows him to learn about bitwise operations and conversion between numerical bases (such as binary, decimal, and hexadecimal), despite having no prior knowledge in these specific topics. While he generally doesn’t enjoy classes, Jim thinks online learning tools work fairly well and he can firmly grasp the material by being more hands-on with the tutorials. As such, he thinks he can improve his grades in high school and do well in post-secondary school, with high hopes for the future.
 
-**Studious Sarah** is a third year university student attending University of Texas at Austin. Sarah commutes to and from school every day. Asides from studying computer science for school, Sarah also plays baseball on the varsity team. On the way to school, Sarah uses her iPad to catch up on schoolwork and
+**Studious Sarah** is a third year university student attending University of Texas at Austin. Sarah commutes to and from school every day. Asides from studying computer science for school, Sarah also plays baseball on the varsity team. On the commute to school, Sarah uses her iPad to catch up on schoolwork and study. Sarah is currently taking a course on C programming and operating systems, and is given an assignment about file systems that requires the use of bitwise operations and conversion between binary, decimal, and hexadecimal bases. Having missed a few days of school due to baseball practice and games, Sarah was absent when the class covered bitwise operations and is responsible for learning the material on her own time. She discovers the website Itty Bitty, which allows her to learn as well as practice these concepts on her commute to and from school, so she has the knowledge required to complete the assignment at home. She thinks an interactive tutorial is more engaging and allows her to absorb the material more easily than reading a textbook. Being able to catch up during the commute saves time for Sarah, who can then use the time to work on other assignments as well as spend it practicing more baseball.
 
 
 
@@ -55,7 +55,7 @@ Itty Bitty is an interactive web-based tutorial that allows users to learn about
 
 As Jim, I want to learn more through interactive online tutorials via a truly hands-on approach with the actual material so I can learn more about the things I’m interested in.
 
-Sarah
+As Sarah, I want to be able keep up with school material in an approachable and engaging manner so I can continue to participate in competitive sports without sacrificing my GPA.
 
 
 
