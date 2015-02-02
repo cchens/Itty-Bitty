@@ -72,10 +72,13 @@ As Jim, I enjoy playing video games and like the “gamified” aspect of Itty B
 
 As Sarah, I like being able to *pick up from where I left off* by being able to login to Itty Bitty and immediately being able to see which levels I have completed and which I have yet to do. (3)
 
+As Sarah, I want to have a *quick overview of the bitwise operators* for a quick review as I work on an assignment. (2)
+
 
 
 ### MVP
 
+Our product, Itty Bitty, is an online tutorial designed primarily for computer science and engineering students that are interested in learning and/or practicing bitwise operations and conversion between numerical bases, including binary (base 2), decimal (the “standard” base 10), and hexadecimal (base 16). We chose to put our application online so that it is easier for our users to access from any device, anywhere they happen to be with Internet access. Our product features a game-like atmosphere to reduce the traditionally dull tutorial/lesson feeling. For example, Itty Bitty will feature levels, achievements, leaderboards and the ability to connect via and share to social network accounts. To expand on learning bitwise operations and conversion between numerical bases, the topics will be combined so that users can learn how to perform simple arithmetic with numbers of differing bases. These topics are fundamental and provide a solid foundation to many computer science courses in post-secondary education.
 
 
 ### Release and Iteration Planning
@@ -83,7 +86,6 @@ As Sarah, I like being able to *pick up from where I left off* by being able to 
 Features that we will be excluding from the first release include user accounts and associated features such as achievements, points, saved level state, and registration/login via social networks such as Facebook, Twitter, or Google+. Due to the timeframe of the first release (3 weeks), we will be primarily focusing on the more vital core features necessary for creating Itty Bitty, such as the actual tutorial system.
 
 For the first release, we will be working on a tutorial system that can display information to users and accept and validate user input as the base for a game-like level system. In the first iteration, tutorial content will be drafted and work on the system for displaying content and accepting/validating user input will be started. For the rest of the time allotted for working on the first release, these features will be improved and some preliminary work will be done for non-vital features such as users, achievements, and points, but will only be done as “scaffolding” for future work.
-
 
 
 ### CRC Cards
