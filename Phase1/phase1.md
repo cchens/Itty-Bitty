@@ -90,6 +90,7 @@ For the first release, we will be working on a tutorial system that can display 
 
 ### CRC Cards
 
+![CRC cards](crc.png)
 
 
 ### Appendix
