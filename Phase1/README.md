@@ -5,7 +5,7 @@ CSC301 Phase 1
 ### Team Introduction
 
 ##### Group photo
-![Group photo](group1.jpg)
+![Group photo](resources/group1.jpg)
 
 *Left to right: Christina Chen, Sharon Hogan, Cindy Wu, Ben Shaft, Eric Snyder, Eugene Cheung, Inks Lin, Catherine Wang*
 
@@ -49,6 +49,8 @@ Itty Bitty is an interactive web-based tutorial that allows users to learn about
 
 **Studious Sarah** is a third year university student attending University of Texas at Austin. Sarah commutes to and from school every day. Asides from studying computer science for school, Sarah also plays baseball on the varsity team. On the commute to school, Sarah uses her iPad to catch up on schoolwork and study. Sarah is currently taking a course on C programming and operating systems, and is given an assignment about file systems that requires the use of bitwise operations and conversion between binary, decimal, and hexadecimal bases. Having missed a few days of school due to baseball practice and games, Sarah was absent when the class covered bitwise operations and is responsible for learning the material on her own time. She discovers the website Itty Bitty, which allows her to learn as well as practice these concepts on her commute to and from school, so she has the knowledge required to complete the assignment at home. She thinks an interactive tutorial is more engaging and allows her to absorb the material more easily than reading a textbook. Being able to catch up during the commute saves time for Sarah, who can then use the time to work on other assignments as well as spend it practicing more baseball.
 
+**Professor Oak** is an instructor for a introductory hardware course at Smogon University. Part of the curriculum includes low-level machine languages, which makes heavy use of bitwise operations as well as conversion between binary and other bases. Many students in the class struggle with the concept in lectures, and Oak has noticed that the textbook does not cover it in great detail. In order to help his students get a better understanding of bitwise operators and bases, Oak searches online for a source to help explain the concepts differently. He finds Itty Bitty, a website that not only teaches bitwise operators and base conversion in a way that is engaging and easy for beginners to understand, it allows people to get hands-on practice and feedback from the exercises instantly. Oak hopes to use Itty Bitty as supplementary material in his class, as a way for students to visualize bitwise operations and binary arithmetic more easily than just reading a textbook or lecture slides as well as get additional practice for the concepts.
+
 
 
 ### User Stories
@@ -58,21 +60,21 @@ Priority scale:
 - 2: important feature, but can be included in a later release
 - 3: nice feature that can be put off until even later
 
-As Jim, I want to learn more through *interactive online tutorials* via a truly hands-on approach with the actual material so I can learn more about the things I’m interested in. (1)
+As Jim, I want to learn more through **interactive online tutorials** via a truly hands-on approach with the actual material so I can learn more about the things I’m interested in. (1)
 
-As Sarah, I want to be able keep up with *school material in an approachable and engaging manner* so I can continue to participate in competitive sports without sacrificing my GPA. (1)
+As Sarah, I want to be able keep up with **school material in an approachable and engaging manner** so I can continue to participate in competitive sports without sacrificing my GPA. (1)
 
-As Jim, I would like to be able to *register and login quickly* by connecting to my *existing social network accounts*, such as Facebook or Twitter. (2)
+As Jim, I would like to be able to **register and login quickly** by connecting to my **existing social network accounts**, such as Facebook or Twitter. (2)
 
-As Sarah, I want to learn how to quickly *convert between numerical bases* (decimal, binary, and hexadecimal) so that I can naturally do so and be able to more efficiently do my schoolwork. (1)
+As Sarah, I want to learn how to quickly **convert between numerical bases** (decimal, binary, and hexadecimal) so that I can naturally do so and be able to more efficiently do my schoolwork. (1)
 
-As Jim, I want to *learn about and practice using bitwise operators* so that I don’t have to keep using trial and error to achieve what I want to do. (1)
+As Jim, I want to **learn about and practice using bitwise operators** so that I don’t have to keep using trial and error to achieve what I want to do. (1)
 
-As Jim, I enjoy playing video games and like the “gamified” aspect of Itty Bitty with its *achievements, levels, and points system*, which encourages me to play/learn more. (2)
+As Jim, I enjoy playing video games and like the “gamified” aspect of Itty Bitty with its **achievements, levels, and points system**, which encourages me to play/learn more. (2)
 
-As Sarah, I like being able to *pick up from where I left off* by being able to login to Itty Bitty and immediately being able to see which levels I have completed and which I have yet to do. (3)
+As Sarah, I like being able to **pick up from where I left off** by being able to login to Itty Bitty and immediately being able to see which levels I have completed and which I have yet to do. (3)
 
-As Sarah, I want to have a *quick overview of the bitwise operators* for a quick review as I work on an assignment. (2)
+As Sarah, I want to have a **quick overview of the bitwise operators** for a quick review as I work on an assignment. (2)
 
 
 
@@ -90,7 +92,22 @@ For the first release, we will be working on a tutorial system that can display 
 
 ### CRC Cards
 
-![CRC cards](crc.png)
+![CRC cards](resources/crc.png)
 
 
 ### Appendix
+
+#### Google Docs
+
+[Original Google Docs document](https://docs.google.com/document/d/18lOGGR3R4PVwNT7WyQkcD0-scaZqgcGaGy09wHoSBSo/edit), where this was collaboratively edited by the group.
+
+
+#### Low-fidelity UI mockups:
+
+![Landing/home page](resources/home.png)
+
+![Login modal window](resources/login.png)
+
+![Example tutorial page](resources/tutorial.png)
+
+![Example tutorial page](resources/tutorial2.png)
