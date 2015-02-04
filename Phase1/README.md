@@ -48,15 +48,19 @@ Itty Bitty is an interactive web-based tutorial that allows users to learn about
 ![Jim photo](resources/jim.jpg)
 
 **Jamming Jim**
+
 18 years old
+
 From Toronto
 
-**Jamming Jim** is a fairly laidback 18 year old senior high school student in Toronto interested in studying computer science in university, which stems from having taken an introductory course in the previous year and enjoys being able to solve problems through code. He enjoys playing guitar and is part of an indie band with his friends, occasionally playing small gigs at local bars. Since he considers himself to be a fairly average student, Jim is preparing himself for university by using various online tools to learn more related content alongside his high school courses. Alongside more school-like resources such as Coursera or Udemy, Jim enjoys learning about new things through interactive websites such as Itty Bitty, which allows him to learn about bitwise operations and conversion between numerical bases (such as binary, decimal, and hexadecimal), despite having no prior knowledge in these specific topics. While he generally doesn’t enjoy classes, Jim thinks online learning tools work fairly well and he can firmly grasp the material by being more hands-on with the tutorials. As such, he thinks he can improve his grades in high school and do well in post-secondary school, with high hopes for the future.
+Jamming Jim is a fairly laidback 18 year old senior high school student in Toronto interested in studying computer science in university, which stems from having taken an introductory course in the previous year and enjoys being able to solve problems through code. He enjoys playing guitar and is part of an indie band with his friends, occasionally playing small gigs at local bars. Since he considers himself to be a fairly average student, Jim is preparing himself for university by using various online tools to learn more related content alongside his high school courses. Alongside more school-like resources such as Coursera or Udemy, Jim enjoys learning about new things through interactive websites such as Itty Bitty, which allows him to learn about bitwise operations and conversion between numerical bases (such as binary, decimal, and hexadecimal), despite having no prior knowledge in these specific topics. While he generally doesn’t enjoy classes, Jim thinks online learning tools work fairly well and he can firmly grasp the material by being more hands-on with the tutorials. As such, he thinks he can improve his grades in high school and do well in post-secondary school, with high hopes for the future.
 
 ![Sarah photo](resources/sarah.jpg)
 
 **Studious Sarah**
+
 21 years old
+
 From Dallas
 
 Studious Sarah is a third year university student attending University of Texas at Austin. Sarah commutes to and from school every day. Asides from studying computer science for school, Sarah also plays baseball on the varsity team. On the commute to school, Sarah uses her iPad to catch up on schoolwork and study. Sarah is currently taking a course on C programming and operating systems, and is given an assignment about file systems that requires the use of bitwise operations and conversion between binary, decimal, and hexadecimal bases. Having missed a few days of school due to baseball practice and games, Sarah was absent when the class covered bitwise operations and is responsible for learning the material on her own time. She discovers the website Itty Bitty, which allows her to learn as well as practice these concepts on her commute to and from school, so she has the knowledge required to complete the assignment at home. She thinks an interactive tutorial is more engaging and allows her to absorb the material more easily than reading a textbook. Being able to catch up during the commute saves time for Sarah, who can then use the time to work on other assignments as well as spend it practicing more baseball.
@@ -64,7 +68,9 @@ Studious Sarah is a third year university student attending University of Texas 
 ![Oak photo](resources/oak.png)
 
 **Professor Oak**
+
 50 years old
+
 From Pallet Town
 
 Professor Oak is an instructor for a introductory hardware course at Smogon University. Part of the curriculum includes low-level machine languages, which makes heavy use of bitwise operations as well as conversion between binary and other bases. Many students in the class struggle with the concept in lectures, and Oak has noticed that the textbook does not cover it in great detail. In order to help his students get a better understanding of bitwise operators and bases, Oak searches online for a source to help explain the concepts differently. He finds Itty Bitty, a website that not only teaches bitwise operators and base conversion in a way that is engaging and easy for beginners to understand, it allows people to get hands-on practice and feedback from the exercises instantly. Oak hopes to use Itty Bitty as supplementary material in his class, as a way for students to visualize bitwise operations and binary arithmetic more easily than just reading a textbook or lecture slides as well as get additional practice for the concepts.
