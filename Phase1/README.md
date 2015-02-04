@@ -66,9 +66,9 @@ As Sarah, I want to be able keep up with **school material in an approachable an
 
 As Jim, I would like to be able to **register and login quickly** by connecting to my **existing social network accounts**, such as Facebook or Twitter. (2)
 
-As Sarah, I want to learn how to quickly **convert between numerical bases** (decimal, binary, and hexadecimal) so that I can naturally do so and be able to more efficiently do my schoolwork. (1)
+As Oak, I want my students to learn how to quickly **convert between numerical bases** (decimal, binary, and hexadecimal) so that they can naturally do so and be able to more efficiently do their schoolwork. (1)
 
-As Jim, I want to **learn about and practice using bitwise operators** so that I don’t have to keep using trial and error to achieve what I want to do. (1)
+As Oak, I want my students to **learn about and practice using bitwise operators** so that they don’t have to keep using trial and error to achieve what they want to do. (1)
 
 As Jim, I enjoy playing video games and like the “gamified” aspect of Itty Bitty with its **achievements, levels, and points system**, which encourages me to play/learn more. (2)
 
