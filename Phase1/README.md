@@ -87,7 +87,7 @@ Our product, Itty Bitty, is an online tutorial designed primarily for computer s
 
 Features that we will be excluding from the first release include user accounts and associated features such as achievements, points, saved level state, and registration/login via social networks such as Facebook, Twitter, or Google+. Due to the timeframe of the first release (3 weeks), we will be primarily focusing on the more vital core features necessary for creating Itty Bitty, such as the actual tutorial system.
 
-For the first release, we will be working on a tutorial system that can display information to users and accept and validate user input as the base for a game-like level system. In the first iteration, tutorial content will be drafted and work on the system for displaying content and accepting/validating user input will be started. For the rest of the time allotted for working on the first release, these features will be improved and some preliminary work will be done for non-vital features such as users, achievements, and points, but will only be done as “scaffolding” for future work.
+For the first release, we will be setting up a basic web app using the MEEN stack (MongoDB, Ember.js, Express, and Node.js) and planning out a proper database schema. A tutorial system that can display information to users and accept and validate user input as the base for a game-like level system will then be worked on. In the first iteration, tutorial content will be drafted and work on the system for displaying content and accepting/validating user input will be started. For the rest of the time allotted for working on the first release, these features will be improved and some preliminary work will be done for non-vital features such as users, achievements, and points, but will only be done as “scaffolding” for future work.
 
 
 ### CRC Cards
@@ -110,4 +110,6 @@ For the first release, we will be working on a tutorial system that can display 
 
 ![Example tutorial page](resources/tutorial.png)
 
-![Example tutorial page](resources/tutorial2.png)
+![Example exercise/level page](resources/exercise.png)
+
+![Example profile page](resources/profile.png)
