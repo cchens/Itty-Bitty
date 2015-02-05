@@ -53,7 +53,7 @@ Itty Bitty is an interactive web-based tutorial that allows users to learn about
 
 From Toronto
 
-Jamming Jim is a fairly laidback 18 year old senior high school student in Toronto interested in studying computer science in university, which stems from having taken an introductory course in the previous year and enjoys being able to solve problems through code. He enjoys playing guitar and is part of an indie band with his friends, occasionally playing small gigs at local bars. Since he considers himself to be a fairly average student, Jim is preparing himself for university by using various online tools to learn more related content alongside his high school courses. Alongside more school-like resources such as Coursera or Udemy, Jim enjoys learning about new things through interactive websites such as Itty Bitty, which allows him to learn about bitwise operations and conversion between numerical bases (such as binary, decimal, and hexadecimal), despite having no prior knowledge in these specific topics. While he generally doesn’t enjoy classes, Jim thinks online learning tools work fairly well and he can firmly grasp the material by being more hands-on with the tutorials. As such, he thinks he can improve his grades in high school and do well in post-secondary school, with high hopes for the future.
+Jamming Jim is a fairly laidback 18 year old senior high school student in Toronto interested in studying computer science in university, which stems from having taken an introductory course in the previous year and enjoys being able to solve problems through code. He enjoys playing guitar and is part of an indie band with his friends, occasionally playing small gigs at local bars. Since he considers himself to be a fairly average student, Jim is preparing himself for university by using various online tools to learn more related content alongside his high school courses. Alongside more school-like resources such as Coursera or Udemy, Jim enjoys learning through interactive websites such as Itty Bitty, which allow him to learn about bitwise operations and conversion between numerical bases (such as binary, decimal, and hexadecimal), despite having no prior knowledge in these specific topics. While he generally doesn’t enjoy classes, Jim thinks online learning tools work fairly well and he can firmly grasp the material by being more hands-on with the tutorials. As such, he thinks he can improve his grades in high school and do well in post-secondary school, with high hopes for the future.
 
 ![Sarah photo](resources/sarah.jpg)
 
@@ -88,13 +88,13 @@ As Jim, I want to learn more through **interactive online tutorials** via a trul
 
 As Sarah, I want to be able keep up with **school material in an approachable and engaging manner** so I can continue to participate in competitive sports without sacrificing my GPA. (1)
 
-As Jim, I would like to be able to **register and login quickly** by connecting to my **existing social network accounts**, such as Facebook or Twitter. (2)
+As Jim, I would like to be able to **register and login quickly** by connecting to my **existing social media accounts**, such as Facebook or Twitter. (2)
 
 As Oak, I want my students to learn how to quickly **convert between numerical bases** (decimal, binary, and hexadecimal) so that they can naturally do so and be able to more efficiently do their schoolwork. (1)
 
 As Oak, I want my students to **learn about and practice using bitwise operators** so that they don’t have to keep using trial and error to achieve what they want to do. (1)
 
-As Jim, I enjoy playing video games and like the “gamified” aspect of Itty Bitty with its **achievements, levels, and points system**, which encourages me to play/learn more. (2)
+As Jim, I enjoy playing video games and the use of “gamification” in Itty Bitty with its **achievements, levels, and points system**, which encourages me to play/learn more. (2)
 
 As Sarah, I like being able to **pick up from where I left off** by being able to login to Itty Bitty and immediately being able to see which levels I have completed and which I have yet to do. (3)
 
@@ -104,7 +104,9 @@ As Sarah, I want to have a **quick overview of the bitwise operators** for a qui
 
 ### MVP
 
-Our product, **Itty Bitty**, is an online tutorial designed primarily for computer science and engineering students that are interested in learning and/or practicing bitwise operations and conversion between numerical bases, including binary (base 2), decimal (the “standard” base 10), and hexadecimal (base 16). For the more experienced users, we allow users to skip unnecessary tutorials via a practice option. We choose to put our application online so that it is easier for our users to access from any device, anywhere they happen to be with reinforcing ternet access. Our product features a game-like atmosphere with an interactive way of reinforcing users’ knowledge of the concepts to reduce the traditionally dull tutorial/lesson feeling. For example, Itty Bitty will feature levels, achievements, leaderboards and the ability to connect via and share to social network accounts. We will also make sure our application contains a multitude of images or animations to make this product visually appealing and easy for users to learn. To expand on learning bitwise operations and conversion between numerical bases, the topics will be combined so that users can learn how to perform simple arithmetic with numbers of differing bases. These topics are fundamental and provide a solid foundation to many computer science courses in post-secondary education.
+Our product, **Itty Bitty**, is an online teaching tool designed primarily for computer science and engineering students that are interested in learning or<sup>*</sup> practicing bitwise operations and conversion between numerical bases. The focus would be on binary (base 2), decimal (the “standard” base 10), and hexadecimal (base 16) numbers. For the more experienced users, we allow users to skip introductory tutorials via a practice option. We chose to put our application online so that it is easier for our users to access from any device with a stable internet connection. Our product features a game-like atmosphere with an interactive way of reinforcing users’ knowledge of the core concepts without the dull feeling students feel during traditional lectures or tutorials. For example, Itty Bitty will feature engaging mechanics such as levels, achievements, leaderboards as well as the ability to connect and share via social media. We will also make sure our application contains a multitude of images and animations to make this product visually appealing and easy for users to learn. To expand on learning bitwise operations and conversion between numerical bases, the topics will be combined so that users can learn how to perform simple arithmetic with numbers of differing bases. These topics are fundamental and provide a solid foundation to many computer science courses in post-secondary education.
+
+<sub>* This is used as an “inclusive or”, one of the many concepts we explain in Itty Bitty</sub>.
 
 
 ### Release and Iteration Planning
