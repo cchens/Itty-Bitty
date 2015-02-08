@@ -4,7 +4,7 @@
  * ---------------------------------------------------------------
  *
  * # dev task config
- * Copies all directories and files, exept coffescript and less fiels, from the sails
+ * Copies all directories and files, execpt coffesecript and sass fukes, from the sails
  * assets folder into the .tmp/public directory.
  *
  * # build task config
@@ -20,7 +20,7 @@ module.exports = function(grunt) {
 			files: [{
 				expand: true,
 				cwd: './assets',
-				src: ['**/*.!(coffee|less)'],
+				src: ['**/*.!(coffee|scss|sass)'],
 				dest: '.tmp/public'
 			}]
 		},
