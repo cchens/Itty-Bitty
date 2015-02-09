@@ -29,3 +29,4 @@ Then, you can push to the production server:
 git push -u production master
 ```
 
+*Note*: you must have your SSH keys set up on the server first.
