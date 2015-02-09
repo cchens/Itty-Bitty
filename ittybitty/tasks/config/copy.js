@@ -4,7 +4,7 @@
  * ---------------------------------------------------------------
  *
  * # dev task config
- * Copies all directories and files, execpt coffesecript and sass fukes, from the sails
+ * Copies all directories and files, execpt coffeescript and sass files, from the sails
  * assets folder into the .tmp/public directory.
  *
  * # build task config
