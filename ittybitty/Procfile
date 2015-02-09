@@ -1,1 +1,1 @@
-sails lift
+web: sails lift
