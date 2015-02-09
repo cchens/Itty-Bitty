@@ -17,5 +17,15 @@ Run `sails test` from within the project folder. You can then view the web app i
 
 
 ## Deploying
+First, set up a git remote:
 
-*Coming soon.*
+```bash
+git remote add production dokku@104.236.254.212:ittybitty
+```
+
+Then, you can push to the production server:
+
+```bash
+git push -u production master
+```
+
