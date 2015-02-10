@@ -1,4 +1,4 @@
-# Itty Bitty
+# Team 1: Itty Bitty
 
 A [Sails](http://sailsjs.org) web application for learning about bitwise operations and conversion between numerical bases.
 
@@ -17,6 +17,8 @@ Run `sails test` from within the project folder. You can then view the web app i
 
 
 ## Deploying
+The web app is being hosted on a DigitalOcean droplet and can be accessed at [learnittybitty.com](learnittybitty.com).
+
 First, set up a git remote:
 
 ```bash
