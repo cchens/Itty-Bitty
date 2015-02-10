@@ -17,7 +17,7 @@ Run `sails test` from within the project folder. You can then view the web app i
 
 
 ## Deploying
-The web app is being hosted on a DigitalOcean droplet and can be accessed at [learnittybitty.com](learnittybitty.com).
+The web app is being hosted on a DigitalOcean droplet and can be accessed at [learnittybitty.com](http://learnittybitty.com).
 
 First, set up a git remote:
 
