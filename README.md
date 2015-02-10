@@ -13,7 +13,7 @@ A [Sails](http://sailsjs.org) web application for learning about bitwise operati
 
 
 ## Running locally
-Run `sails test` from within the project folder. You can then view the web app in your browser at http://localhost:1337/ (or http://0.0.0.0:1337/).
+Run `sails lift` from within the project folder. You can then view the web app in your browser at http://localhost:1337/ (or http://0.0.0.0:1337/).
 
 
 ## Deploying
