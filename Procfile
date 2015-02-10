@@ -1,1 +1,1 @@
-web: node ittybitty/app.js
+web: sails lift
