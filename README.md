@@ -41,7 +41,7 @@ cat ~/.ssh/id_rsa.pub | ssh root@learnittybitty.com "sshcommand acl-add dokku <n
 Once your public ssh key has been added to Dokku, add the remote:
 
 ```bash
-git remote add production dokku@ittybitty.com:ittybitty
+git remote add production dokku@learnittybitty.com:ittybitty
 ```
 
 Then, you can deploy to the production server:
