@@ -1,1 +1,1 @@
-web: forever start app.js
+web: NODE_ENV=production forever start app.js --silent --port=80 --prod
