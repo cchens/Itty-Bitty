@@ -1,0 +1,3 @@
+**Monday, February 9th**  
+**Tutorial Room**  
+Not an official scrum meeting as we haven't begun phase 2 yet. At our TA's request we're writing more user stories so that we can properly coordinate our scrums. We intend to coordinate the writing of these user stories on Google Docs and then push them to GitHub when they are fully complete, as we did with our phase 1. **Eric Snyder** was appointed as our scrum master, and thus is currently writing this document. We decided our first proper meeting can be on **Thursday, February 11th** when our phase 2 will be approved.
