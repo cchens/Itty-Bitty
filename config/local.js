@@ -80,22 +80,20 @@ module.exports = {
    * 'development' environment.                                              *
    ***************************************************************************/
 
-   environment: process.env.NODE_ENV || 'development',
+  environment: process.env.NODE_ENV || 'development',
 
-   // adapters: {
+  adapters: {
+    'default': 'postgres',
 
-   //  'default': 'postgres',
-
-   //  postgres: {
-   //    module   : 'sails-postgresql',
-   //    host     : 'localhost',
-   //    port     : 5432,
-   //    user     : 'psql',
-   //    password : '',
-   //    database : 'ittybitty',
-
-   //    schema: true //This makes sure that sails matches
-   //                 //the database schema to your models.
-   //  }
+    postgres: {
+      module   : 'sails-postgresql',
+      host     : 'localhost',
+      port     : 5432,
+      user     : 'postgres',
+      password : 'postgres',
+      database : 'ittybitty',
+      schema   : true
+    }
+  }
 
 };
