@@ -26,6 +26,9 @@ sails lift
 
 You can then view the web app in your browser at http://localhost:1337/ (or http://0.0.0.0:1337/).
 
+#### Branching
+Create branches to work on things. When you're done working on it, you can submit a pull request to merge it back into the `master` branch.
+
 
 ### Deploying to production
 We're using [Dokku](https://github.com/progrium/dokku) to deploy the website to a [DigitalOcean](https://www.digitalocean.com/) server.
