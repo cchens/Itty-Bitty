@@ -12,17 +12,36 @@
  */
 module.exports = function(grunt) {
 
-    grunt.config.set('sass', {
-        dev: {
-            files: [{
-                expand: true,
-                cwd: 'assets/styles/',
-                src: ['importer.scss'],
-                dest: '.tmp/public/styles/',
-                ext: '.css'
-            }]
-        }
-    });
+  grunt.config.set('sass', {
+    dev: {
+      options: {
+        style: 'compressed'
+      },
+      files: [{
+        expand: true,
+        cwd: 'assets/styles/',
+        src: ['importer.scss'],
+        dest: '.tmp/public/styles/',
+        ext: '.css'
+      }]
+    }
+  });
 
-    grunt.loadNpmTasks('grunt-contrib-sass');
+  grunt.loadNpmTasks('grunt-contrib-sass');
+
+  grunt.config.set('autoprefixer', {
+    dev: {
+      options: {
+        browsers: ['last 2 versions', '> 5%', 'ie 9']
+      },
+      multiple_files: {
+        expand: true,
+        flatten: true,
+        src: '.tmp/public/styles/*.css',
+        dest: '.tmp/public/styles/'
+      }
+    }
+  });
+
+  grunt.loadNpmTasks('grunt-autoprefixer');
 };

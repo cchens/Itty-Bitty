@@ -35,5 +35,8 @@
     "url": "git@github.com:UoT-CSC30x-W15/301W15-Prj-Team1-repo.git"
   },
   "author": "ittybitty",
-  "license": ""
+  "license": "",
+  "devDependencies": {
+    "grunt-autoprefixer": "^2.2.0"
+  }
 }
