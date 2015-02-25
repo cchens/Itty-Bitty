@@ -20,11 +20,24 @@ From within the project directory, run:
 
 #### Running locally
 Start a local server by running:
-```
+```shell
 sails lift
 ```
 
 You can then view the web app in your browser at http://localhost:1337/ (or http://0.0.0.0:1337/).
+
+##### Watching for changes
+If you're making changes to the code often and want to see the changes more or less immediately in your browser, you can install **nodemon**:
+
+```shell
+[sudo] npm install -g nodemon
+```
+
+To run the application through nodemon while watching the directory contents, make sure you're in the root of this repo directory and run:
+
+```shell
+nodemon --watch app
+```
 
 #### Branching
 Create branches to work on things. When you're done working on it, you can submit a pull request to merge it back into the `master` branch.
@@ -35,7 +48,7 @@ We're using [Dokku](https://github.com/progrium/dokku) to deploy the website to 
 
 To add your public key to the server, send it to the `sshcommand` command on the server. Assuming your public key is in `~/.ssh/id_rsa.pub` (contact the admin if not):
 
-```
+```shell
 cat ~/.ssh/id_rsa.pub | ssh root@learnittybitty.com "sshcommand acl-add dokku <name>"
 ```
 
@@ -43,13 +56,13 @@ cat ~/.ssh/id_rsa.pub | ssh root@learnittybitty.com "sshcommand acl-add dokku <n
 
 Once your public ssh key has been added to Dokku, add the remote:
 
-```bash
+```shell
 git remote add production dokku@learnittybitty.com:ittybitty
 ```
 
 Then, you can deploy to the production server:
 
-```bash
+```shell
 git push production master
 ```
 
