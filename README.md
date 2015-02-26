@@ -5,18 +5,22 @@
 A [Sails](http://sailsjs.org) web application for learning about bitwise operations and conversion between numerical bases.
 
 
+
 ### Development
+
 
 #### Prerequisites
 - [Node.js](http://nodejs.org/)
 - [Ruby](https://www.ruby-lang.org/en/)
 
-#### Dependencies
-From within the project directory, run:
 
-- `npm install` for all Node.js dependencies
-  - If you have difficulties with this: `sudo npm install`
-- `gem install sass` for [SCSS](http://sass-lang.com/)
+#### Dependencies
+To install the Node.js dependencies and the [SCSS](http://sass-lang.com/) preprocessor, run (from the root of the repo directory):
+
+```shell
+[sudo] npm install
+gem install sass
+```
 
 #### Running locally
 Start a local server by running:
@@ -39,8 +43,12 @@ To run the application through nodemon while watching the directory contents, ma
 nodemon --watch app
 ```
 
+You can view it in your browser at the usual location (port 1337). Any changes made to the core configuration of the app (e.g. anything in the `config` directory) will require you to manually restart the serverr.
+
+
 #### Branching
 Create branches to work on things. When you're done working on it, you can submit a pull request to merge it back into the `master` branch.
+
 
 
 ### Deploying to production
