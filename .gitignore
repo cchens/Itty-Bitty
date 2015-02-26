@@ -81,4 +81,4 @@ node_modules
 # Sails.js #
 ############
 
-.tmp/
+.tmp/*

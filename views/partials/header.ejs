@@ -1,11 +1,16 @@
 <header>
   <div class='container'>
+    <a id='logo' href='/'>Itty Bitty</a>
 
-    <nav>
-      <ul class='main'>
-        <li><a href='#' class='active'>Home</a></li>
-        <li><a href='#'>Assignments</a></li>
-        <li><a href='#'>Assignments</a></li>
+    <nav id='nav'>
+      <ul id='nav-main'>
+        <% if (!loggedIn) { %>
+          <li><a href='/login'>Login</a></li>
+          <li><a href='/register'>Register</a></li>
+        <% } else { %>
+          <li><a href='#'>Levels</a></li>
+          <li><a href='#'>Profile</a></li>
+        <% } %>
       </ul>
     </nav>
   </div>

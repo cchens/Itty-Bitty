@@ -22,24 +22,23 @@
 
 module.exports.routes = {
 
-  /***************************************************************************
-  *                                                                          *
-  * Make the view located at `views/homepage.ejs` (or `views/homepage.jade`, *
-  * etc. depending on your default view engine) your home page.              *
-  *                                                                          *
-  * (Alternatively, remove this and add an `index.html` file in your         *
-  * `assets` directory)                                                      *
-  *                                                                          *
-  ***************************************************************************/
-
   'get /': {
-    view: 'homepage'
+    view: 'homepage',
+    locals: {
+      loggedIn: false  // TODO: Hard-coded for now
+    }
   },
   'get /register': {
-    view: 'register'
+    view: 'register',
+    locals: {
+      loggedIn: false  // TODO: Hard-coded for now
+    }
   },
   'get /login': {
-    view: 'login'
+    view: 'login',
+    locals: {
+      loggedIn: false  // TODO: Hard-coded for now
+    }
   },
 
   /***************************************************************************
