@@ -1,0 +1,185 @@
+[2015-02-20 17:03:12] Sharon Zhang: hiii
+[2015-02-20 17:03:45] Eric Snyder: Uh, so what are we doing?
+[2015-02-20 17:03:52] Eugene Cheung: I think we're just missing Inks, and Ben can't make it
+[2015-02-20 17:04:09] Sukwon Oh: Hi everyone
+[2015-02-20 17:04:16] Sukwon Oh: sorry for being late I was in a meeting
+[2015-02-20 17:04:25] シンディー(Cindy): Not sure if Inks would be able to make a 5 am Skype call...
+[2015-02-20 17:04:32] Eugene Cheung: lol true
+[2015-02-20 17:04:42] シンディー(Cindy): Hello
+[2015-02-20 17:04:42] Sukwon Oh: so we are waiting for another person?
+[2015-02-20 17:04:53] Sharon Zhang: no, i think everyone who can make it is here
+[2015-02-20 17:05:07] Sukwon Oh: okay do you want to start a call?
+[2015-02-20 17:05:27] Sukwon Oh: it's fine if you prefer chatting too
+[2015-02-20 17:06:04] Eugene Cheung: Anyone against a call?
+[2015-02-20 17:06:08] Eric Snyder: People are using wifi and etc. so I don't think they'll have enough bandwidth
+[2015-02-20 17:06:12] Chris Chen: I might disconnect a lot
+[2015-02-20 17:06:18] Sukwon Oh: okay then let's chat
+[2015-02-20 17:06:19] Chris Chen: airport wifi is bad
+[2015-02-20 17:06:24] Sukwon Oh: where are you?? lol
+[2015-02-20 17:06:27] Eugene Cheung: what a surprise
+[2015-02-20 17:06:34] Chris Chen: lol waiting for my flight back to Toronto
+[2015-02-20 17:06:35] Chris Chen: anyway
+[2015-02-20 17:06:38] Sukwon Oh: don't tell me you are staying at airport just for this meeting
+[2015-02-20 17:06:40] Sukwon Oh: ah okay
+[2015-02-20 17:06:48] Sukwon Oh: as long as you are waiting not because of me
+[2015-02-20 17:07:29] Sukwon Oh: so what I want to do is go over how you are doing what scrum and answer if you have any questions
+[2015-02-20 17:08:13] Eric Snyder: Alright well last week we had our planning meeting for the first week of development, friday I think
+[2015-02-20 17:08:55] Sukwon Oh: okay
+[2015-02-20 17:09:07] Chris Chen: we did?
+[2015-02-20 17:09:15] Chris Chen: did I miss it lol
+[2015-02-20 17:09:18] Eric Snyder: Since then people have been in different timezones so we haven't been able to have a proper meeting
+[2015-02-20 17:09:18] シンディー(Cindy): you weren't there
+[2015-02-20 17:09:26] Eric Snyder: Yeah, I wrote down the minutes on the google doc
+[2015-02-20 17:09:38] Eric Snyder: Still need to transfer it to the github
+[2015-02-20 17:09:45] Sukwon Oh: hahaha i see
+[2015-02-20 17:10:06] Sukwon Oh: how many meeting are you planning to have for each sprint?
+[2015-02-20 17:10:23] Eric Snyder: I think we can manage 2-3 when everyone is in the same timezone, on chat or otherwise
+[2015-02-20 17:10:53] Eugene Cheung: This week was a bit hectic with people being home or in other countries for reading week though
+[2015-02-20 17:11:01] Sukwon Oh: yeah.
+[2015-02-20 17:11:06] Sukwon Oh: it's understandable
+[2015-02-20 17:11:08] Chris Chen: is there tutorial on Monday?
+[2015-02-20 17:11:13] Sukwon Oh: I told other teams to write this down
+[2015-02-20 17:11:35] Sukwon Oh: when you submit so I that I remember you had timezone difficulty
+[2015-02-20 17:11:38] Eugene Cheung: @Christina: I think he said we'd just have the midterm, but we could probably use the time afterwards for a meeting
+[2015-02-20 17:11:48] Sukwon Oh: no tutorial
+[2015-02-20 17:11:49] Sukwon Oh: i didn't go
+[2015-02-20 17:12:00] Eric Snyder: Yeah I think we'll meet after the midterm and get everyone caught up
+[2015-02-20 17:12:04] Sukwon Oh: okay
+[2015-02-20 17:12:13] Eric Snyder: So don't leave when you're done guys
+[2015-02-20 17:12:22] Sukwon Oh: so I guess you will have your first sprint review meeting after midterm?
+[2015-02-20 17:12:31] Eugene Cheung: yup
+[2015-02-20 17:12:35] Sukwon Oh: sounds cool
+[2015-02-20 17:12:49] Sukwon Oh: how's the work divided among yourselves?
+[2015-02-20 17:13:09] Sharon Zhang: do you want me to post up the google doc?
+[2015-02-20 17:13:11] Eugene Cheung: https://github.com/UoT-CSC30x-W15/301W15-Prj-Team1-repo/issues?q=is%3Aopen+is%3Aissue+milestone%3A%22Phase+2%22
+[2015-02-20 17:13:23] シンディー(Cindy): 404
+[2015-02-20 17:13:24] Eugene Cheung: You can vaguely see how the work's divided up there
+[2015-02-20 17:13:32] Eugene Cheung: @Cindy you need to log into GitHub
+[2015-02-20 17:13:58] Sukwon Oh: cool
+[2015-02-20 17:14:18] Sukwon Oh: and these are the issues for entire phase? or are you planning or expecting to add more for sprints later?
+[2015-02-20 17:14:20] Eugene Cheung: @Sukwon I'm assuming you can see the stuff on GH too?
+[2015-02-20 17:14:32] Sukwon Oh: yeah i am looking at it
+[2015-02-20 17:14:46] Eugene Cheung: Uuuh right now it's for the entire phase. I'll probably add more specific milestones for the sprints
+[2015-02-20 17:15:06] Sukwon Oh: nice
+[2015-02-20 17:15:12] Sukwon Oh: okay. because some of issue seems pretty big
+[2015-02-20 17:15:23] Eugene Cheung: Or I might make labels for the sprints
+[2015-02-20 17:15:42] Sukwon Oh: btw you guys can use ZenHub plugin if you want
+[2015-02-20 17:15:52] Eugene Cheung: oh sweet
+[2015-02-20 17:15:53] Sukwon Oh: it works better with GitHub and does similar things to trello
+[2015-02-20 17:15:59] Sukwon Oh: cool
+[2015-02-20 17:16:55] Sukwon Oh: are you going to work on all of the issues?
+[2015-02-20 17:17:00] Sukwon Oh: are they prioritized?
+[2015-02-20 17:17:05] Sukwon Oh: probably not right?
+[2015-02-20 17:17:15] Chris Chen: not within one phase I don't think
+[2015-02-20 17:17:29] Sukwon Oh: can I know which of these issues you are planning to include for this phase?
+[2015-02-20 17:17:30] Eugene Cheung: eeer I guess they'll be more prioritized when they're categorized by sprints
+[2015-02-20 17:17:40] Sukwon Oh: oh you haven't decided yet
+[2015-02-20 17:17:44] Eugene Cheung: Oh the link before was just Phase 2 stuff
+[2015-02-20 17:18:01] Sukwon Oh: ah i see
+[2015-02-20 17:18:44] Sukwon Oh: hows the implementation going actually?
+[2015-02-20 17:18:51] Sukwon Oh: did some of you start?
+[2015-02-20 17:19:16] Sukwon Oh: I tried visiting ittybitty.com
+[2015-02-20 17:19:25] Sukwon Oh: it's pretty cool you already have a site running
+[2015-02-20 17:19:28] Eugene Cheung: Oh yeah, it's 502ing right now
+[2015-02-20 17:19:36] Eugene Cheung: PS it's http://learnittybitty.com/
+[2015-02-20 17:19:42] Sukwon Oh: cool
+[2015-02-20 17:19:51] Eugene Cheung: we might need to change the name lol
+[2015-02-20 17:19:54] Sukwon Oh: yeah sorry
+[2015-02-20 17:19:55] Sukwon Oh: lol
+[2015-02-20 17:19:59] Chris Chen: lol
+[2015-02-20 17:20:02] Sukwon Oh: i think it's good
+[2015-02-20 17:20:18] Eugene Cheung: it's a bit too close to ittybitty, which is a NSFW site :\
+[2015-02-20 17:20:39] Sukwon Oh: can some of you describe a briefly your architecture? I am not very good with web developments.
+[2015-02-20 17:20:40] Sukwon Oh: oh lol
+[2015-02-20 17:20:52] Eugene Cheung: Either way, I've been configuring it for local dev. Just doesn't seem to be running properly on the server atm
+[2015-02-20 17:20:56] シンディー(Cindy): we started designing a database schema but then realized we need to figure out some other parts out first
+[2015-02-20 17:21:00] Sukwon Oh: cool that's fine
+[2015-02-20 17:21:06] Eugene Cheung: So we're using Sails.js, which is similar to Ruby on Rails
+[2015-02-20 17:21:14] Eugene Cheung: Except it's fully JavaScript (uses Node.js)
+[2015-02-20 17:21:18] Sukwon Oh: yup I watched the tutorial video
+[2015-02-20 17:21:19] Sukwon Oh: lol
+[2015-02-20 17:21:34] Eugene Cheung: And we're using a PostgreSQL database instead of Mongo
+[2015-02-20 17:21:38] Sukwon Oh: okay
+[2015-02-20 17:21:47] Eugene Cheung: because I think we're all more familiar with SQL instead of NoSQL
+[2015-02-20 17:21:54] Sukwon Oh: that makes sense
+[2015-02-20 17:22:06] Eugene Cheung: but yeah that's roughly it
+[2015-02-20 17:22:11] Eugene Cheung: Sails provides most of the "architecture"
+[2015-02-20 17:22:12] Sukwon Oh: hahaha
+[2015-02-20 17:22:23] Eugene Cheung: with the MVC components
+[2015-02-20 17:22:24] Sukwon Oh: what will your interface be like?
+[2015-02-20 17:22:37] Sukwon Oh: is it still similar to your phase 1?
+[2015-02-20 17:22:51] Eugene Cheung: yeah, probably. it'll likely be iterated as we go
+[2015-02-20 17:23:18] Eugene Cheung: essentially a complex 1 page app that dynamically shows stuff like the landing page, level selection, level contents, profile page, etc.
+[2015-02-20 17:23:27] Sukwon Oh: i see
+[2015-02-20 17:23:42] Sukwon Oh: it's a lot more clear to me now thanks
+[2015-02-20 17:23:47] Eugene Cheung: np
+[2015-02-20 17:24:02] Sukwon Oh: so this week should be sprint 3
+[2015-02-20 17:24:11] Sukwon Oh: is it correct?
+[2015-02-20 17:24:23] Sukwon Oh: i was surprised when I was meeting with other team
+[2015-02-20 17:24:26] Eugene Cheung: this upcoming week, you mean?
+[2015-02-20 17:24:59] Sukwon Oh: you have 13 days
+[2015-02-20 17:25:03] Sukwon Oh: so sprint 3 just started
+[2015-02-20 17:25:19] Eugene Cheung: I guess it is. The first sprint was basically getting the plan approved, and the second sprint was reading week...
+[2015-02-20 17:25:26] Sukwon Oh: yeah
+[2015-02-20 17:25:36] Sukwon Oh: okay
+[2015-02-20 17:25:48] Eugene Cheung: oh right it's due on a Thursday
+[2015-02-20 17:25:50] Eugene Cheung: yeah it's sprint 3
+[2015-02-20 17:26:37] Sukwon Oh: yeah after midterm you can have more scrums and everything will be okay
+[2015-02-20 17:26:40] Sukwon Oh: it sounds good
+[2015-02-20 17:26:57] Eugene Cheung: awesome (y)
+[2015-02-20 17:27:19] Sukwon Oh: can I know current process? I heard you were designing DB schema and found out something and
+[2015-02-20 17:27:26] Sukwon Oh: working on it
+[2015-02-20 17:27:30] Sukwon Oh: so after this and Db schema
+[2015-02-20 17:27:38] Sukwon Oh: you will start build pages using Sails?
+[2015-02-20 17:28:08] Eugene Cheung: we'll be building the corresponding models in Sails and hooking it up with the db first
+[2015-02-20 17:28:34] Eugene Cheung: and another subteam can work on creating a system to display tutorial content and prompt for user input that gets validated
+[2015-02-20 17:28:46] Sukwon Oh: cool
+[2015-02-20 17:28:59] Sukwon Oh: i see someone is defining tutorial content too
+[2015-02-20 17:29:05] Sukwon Oh: okay it sounds good
+[2015-02-20 17:29:14] Sukwon Oh: actually if time is short, don't worry about input validation
+[2015-02-20 17:29:23] Eugene Cheung: Yeah sure
+[2015-02-20 17:29:24] Sukwon Oh: as long as it works with proper inputs I think it will be okay
+[2015-02-20 17:29:42] Eugene Cheung: it's more or less just to check if the user has entered something and can move on with the tutorial, I guess
+[2015-02-20 17:29:48] Sukwon Oh: okay
+[2015-02-20 17:29:55] Sukwon Oh: also for these detailed tasks
+[2015-02-20 17:30:11] Sukwon Oh: create github issues and assign to someone
+[2015-02-20 17:30:15] Sukwon Oh: so I can track it later
+[2015-02-20 17:30:19] Eugene Cheung: kk
+[2015-02-20 17:30:51] Sukwon Oh: also, are you guys having regular group chats like this?
+[2015-02-20 17:31:15] Eugene Cheung: sort of. people have been busy and/or out of the country this week though
+[2015-02-20 17:31:41] Sukwon Oh: cool. just wanted to mention for daily meeting you need to write in Process.md, you can just copy and paste these chat logs
+[2015-02-20 17:32:03] Sukwon Oh: do you have any questions on phase 2 handout?
+[2015-02-20 17:32:39] Chris Chen: not really
+[2015-02-20 17:32:50] Sukwon Oh: one more thing, since there  is a code review and contribution section for individual parts make sure everyone is doing something
+[2015-02-20 17:33:06] Eugene Cheung: yeah, definitely
+[2015-02-20 17:33:08] Sukwon Oh: i guess if someone is left really with non-coding job, you can mention that in the assignment
+[2015-02-20 17:33:10] Sukwon Oh: cool
+[2015-02-20 17:33:27] Sukwon Oh: i think everything sounds good
+[2015-02-20 17:33:50] Sukwon Oh: you are stuck on nothing on implementation wise?
+[2015-02-20 17:33:58] Eugene Cheung: not yet :P
+[2015-02-20 17:34:06] Sukwon Oh: cool thank you very much for your time
+[2015-02-20 17:34:31] Sukwon Oh: good luck on your midterm!!!!
+[2015-02-20 17:34:32 | Edited 17:34:37] Sharon Zhang:  do you want a list of everyone’s email?
+[2015-02-20 17:34:44] Sukwon Oh: yes please
+[2015-02-20 17:35:11] シンディー(Cindy): thanks
+[2015-02-20 17:35:20] Sharon Zhang: i’ll send you a list with everyone else’s email
+[2015-02-20 17:35:25] Catherine Wang: Thx!
+[2015-02-20 17:35:35] Eric Snyder: Alright then
+[2015-02-20 17:35:57] Eric Snyder: I'll update the text file about the meetings later tonight
+[2015-02-20 17:36:02] Sukwon Oh: thanks!
+[2015-02-20 17:36:18] Sukwon Oh: bye everyone
+[2015-02-20 17:36:46] Sharon Zhang: bye, have a good weekend!
+[2015-02-20 17:37:04] Sukwon Oh: thanks!
+[2015-02-20 17:37:11] Sukwon Oh: same to all of you
+[2015-02-20 17:37:17] Eugene Cheung: ey.cheung@outlook.com
+benshaft@rogers.com
+yijin.wang@mail.utoronto.ca
+xtina.chen@mail.utoronto.ca
+ericsnyder12@gmail.com
+leebang31698@gmail.com
+sharon.z.hogan@gmail.com
+xinr.wu@mail.utoronto.ca
+[2015-02-20 17:37:28] Sukwon Oh: got it
+[2015-02-20 17:37:44] Sharon Zhang: oh, or we can just do that
+[2015-02-20 17:38:10] Sukwon Oh: thank you
+[2015-02-20 17:39:45] Eugene Cheung: np
