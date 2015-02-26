@@ -1,10 +1,32 @@
-body {
-  font: 100% Helvetica, sans-serif;
-  color: #333;
+.container {
+  margin: 0 auto;
+  padding: 0 1em;
+  width: 80%;
 }
 
-.test {
-  border-radius: 5px;
-  transition: all 0.3s;
-  transform: translateX(1em);
+header {
+  background: $blue;
+}
+
+main {
+  margin: 2em 0;
+}
+
+footer {
+  background: $grey;
+  color: $white;
+  padding: 2em 0;
+}
+
+.user-form {
+  background: $white;
+  border-radius: $radius;
+  box-shadow: 0 3px 5px $grey;
+  margin: 0 auto;
+  max-width: 25em;
+  padding: 2em 1em;
+
+  input[type='submit'] {
+    margin-top: 1em;
+  }
 }

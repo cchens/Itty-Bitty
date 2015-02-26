@@ -9,13 +9,17 @@
     <link rel="stylesheet" href="/styles/importer.css">
 
     <script src="/js/jquery-2.1.1.min.js"></script>
-    <!-- <script src="/js/jquery-ui.js"></script> -->
-    <script src="/js/jquery.easyModal.js"></script>
   </head>
 
   <body>
     <%- partial ('partials/header.ejs') %>
-    <%- body %>
+
+    <main>
+      <div class='container'>
+        <%- body %>
+      </div>
+    </main>
+
     <%- partial ('partials/footer.ejs') %>
 
     <script src="/js/dependencies/sails.io.js"></script>
