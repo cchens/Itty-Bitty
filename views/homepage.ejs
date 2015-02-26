@@ -1,1 +1,60 @@
-<h1>Hello world</h1>
+<aside class='dialog'>
+  <h2>Dialog title</h2>
+  <p>Some content</p>
+
+  <section class='dialog-actions'>
+    <button class="close">Centred buttons</button>
+  </section>
+</aside>
+
+<a id="open-link-selector">Open</a>
+
+<script>
+  $('.dialog').easyModal();
+  $('#open-link-selector').click(function() {
+    $('.dialog').trigger('openModal');
+  });
+</script>
+
+<table>
+            <thead>
+              <tr>
+                <th>
+                  <input type='checkbox' id='table-1'>
+                  <label for='table-1'><span></span></label>
+                </th>
+                <th>Semibold caps</th>
+                <th class='asc'>Ascending sort</th>
+                <th class='des'>Descending sort</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <input type='checkbox' id='table-2'>
+                  <label for='table-2'><span></span></label>
+                </td>
+                <td>Regular items</td>
+                <td>Lorem</td>
+                <td>Ipsum</td>
+              </tr>
+              <tr>
+                <td>
+                  <input type='checkbox' id='table-3'>
+                  <label for='table-3'><span></span></label>
+                </td>
+                <td>Alternating row colours</td>
+                <td>Mauris</td>
+                <td>Enum</td>
+              </tr>
+              <tr>
+                <td>
+                  <input type='checkbox' id='table-4'>
+                  <label for='table-4'><span></span></label>
+                </td>
+                <td><a href='#'>There could be elements</a></td>
+                <td><input placeholder='Like a text box'></td>
+                <td><button class='inline-button'>Or a button</button></td>
+              </tr>
+            </tbody>
+          </table>
