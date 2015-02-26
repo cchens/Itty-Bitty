@@ -22,24 +22,25 @@
 
 module.exports.routes = {
 
-  'get /': {
+  'GET /': {
     view: 'homepage',
     locals: {
       loggedIn: false  // TODO: Hard-coded for now
     }
   },
-  'get /register': {
+  'GET /register': {
     view: 'register',
     locals: {
       loggedIn: false  // TODO: Hard-coded for now
     }
   },
-  'get /login': {
+  'GET /login': {
     view: 'login',
     locals: {
       loggedIn: false  // TODO: Hard-coded for now
     }
   },
+  'POST /login': 'UserController.bye'
 
   /***************************************************************************
   *                                                                          *
