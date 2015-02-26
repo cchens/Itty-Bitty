@@ -43,7 +43,7 @@ To run the application through nodemon while watching the directory contents, ma
 nodemon --watch app
 ```
 
-You can view it in your browser at the usual location (port 1337). Any changes made to the core configuration of the app (e.g. anything in the `config` directory) will require you to manually restart the serverr.
+You can view it in your browser at the usual location (port 1337). Any changes made to the core configuration of the app (e.g. anything in the `config` directory) will require you to manually restart the server, which can be done by typing `rs`.
 
 
 #### Branching

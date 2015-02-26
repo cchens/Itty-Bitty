@@ -6,6 +6,10 @@
 
 module.exports = {
 
+  // index: function (req, res) {
+  //   return res.view('user');
+  // },
+
   /**
    * CommentController.create()
    */
@@ -24,11 +28,24 @@ module.exports = {
     });
   },
 
-  hi: function (req, res) {
-    return res.send("Hi there!");
+  login: function (req, res) {
+    var username = req.param('username');
+    var password = req.param('password');
+
+    User.find({
+      username: username
+      // password: password.salt()
+    }).done(function (err, users) {
+      if (users.length === 1) {
+        res.view('index', { message: 'Login success!', loggedIn: true });
+        req.session.authenticated = true;
+      } else {
+        res.view('login', { message: 'Login failed!', loggedIn: false });
+      }
+    });
   },
 
-  bye: function (req, res) {
+  register: function (req, res) {
     return res.redirect("http://www.sayonara.com");
   }
 };
