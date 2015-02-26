@@ -2,6 +2,7 @@
 @import 'constants';
 @import 'mixins';
 
+
 /** Main */
 
 body {
@@ -331,25 +332,6 @@ nav {
       a {
         color: $white;
       }
-    }
-  }
-
-  ul.sub {
-    background-color: $blue;
-    border-bottom: 2px solid $white;
-
-    li:hover,
-    .active {
-      background-color: $white;
-      color: $dark-blue;
-
-      a {
-        color: $dark-blue;
-      }
-    }
-
-    a {
-      color: $white;
     }
   }
 }
