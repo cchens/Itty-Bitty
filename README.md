@@ -31,13 +31,7 @@ sails lift
 You can then view the web app in your browser at http://localhost:1337/ (or http://0.0.0.0:1337/).
 
 ##### Watching for changes
-If you're making changes to the code often and want to see the changes more or less immediately in your browser, you can install **nodemon**:
-
-```shell
-[sudo] npm install -g nodemon
-```
-
-To run the application through nodemon while watching the directory contents, make sure you're in the root of this repo directory and run:
+If you're making changes to the code often and want to see the changes more or less immediately in your browser, you can use **nodemon** instead of running the regular `sails lift`. To run the application through nodemon while watching the directory contents, make sure you're in the root of this repo directory and run:
 
 ```shell
 nodemon --watch app
