@@ -19,6 +19,7 @@
         </div>
       </div>
     </div>
+    <a href='#home-about' id='home-more'>More</a>
   </div>
 </section>
 
@@ -35,6 +36,7 @@
     return window.scrollY >= offset;
   }
 
+  // Toggle header background depending on scroll position
   window.onscroll = function (event) {
     document.getElementById('home-header').className = isScrolledFromTop(window.innerHeight / 4) ? 'home-header-scrolled' : '';
   }
