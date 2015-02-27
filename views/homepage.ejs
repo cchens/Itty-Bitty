@@ -29,3 +29,13 @@
     <p>Learn how to manipulate bits and convert between numerical bases.</p>
   </div>
 </section>
+
+<script>
+  function isScrolledFromTop(offset) {
+    return window.scrollY >= offset;
+  }
+
+  window.onscroll = function (event) {
+    document.getElementById('home-header').className = isScrolledFromTop(window.innerHeight / 4) ? 'home-header-scrolled' : '';
+  }
+</script>

@@ -24,6 +24,7 @@ header {
 
   .container {
     display: table;
+    padding: 0 1em;
 
     @include breakpoint(small) {
       display: block;
@@ -32,7 +33,7 @@ header {
 
   a {
     color: $white;
-    padding: 0 1em;
+    padding: 2em 1em;
 
     &:hover {
       color: $white;
@@ -143,8 +144,14 @@ footer {
   left: 0;
   width: 100%;
   z-index: 10000;
-  padding: 1.5em 1em;
+  padding: 0 1em;
+  transition: background-color $time-quick;
+  will-change: background-color;
 }
+
+  .home-header-scrolled {
+    background-color: $blue !important;
+  }
 
   #login,
   #register {
