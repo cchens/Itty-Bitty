@@ -220,6 +220,7 @@ footer {
     height: 2em;
     left: 50%;
     margin-left: -1em;
+    outline: none;
     opacity: 0.7;
     position: absolute;
     text-indent: -3000em;
@@ -247,7 +248,23 @@ footer {
 
 #home-about {
   padding: 4em 1em;
+  text-align: center;
 }
+
+  .home-about-card {
+    background-color: $white;
+    border-radius: $radius;
+    box-shadow: 0 3px 5px lighten($blue, 25%);
+    display: inline-block;
+    margin: 1em;
+    padding: 1em;
+    vertical-align: top;
+    width: 25em;
+
+    p {
+      text-align: left;
+    }
+  }
 
 
 // Profile

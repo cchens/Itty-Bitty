@@ -14,7 +14,7 @@
     <div class='container'>
       <div id='home-hero-intro'>
         <div id='home-hero-intro-text'>
-          <h1>There are 10 types of people in the world...</h1>
+          <h1>There are 10 types of people...</h1>
           <h3>You know where this is going.</h3>
         </div>
       </div>
@@ -25,9 +25,33 @@
 
 <section id='home-about'>
   <div class='container'>
-    <h1>Learn</h1>
+    <div class='home-about-card'>
+      <img src='../images/binary.png'>
 
-    <p>Learn how to manipulate bits and convert between numerical bases.</p>
+      <h2>Learn</h2>
+      <p>Learn how to count in different numerical bases, including binary and hexadecimal.</p>
+    </div>
+
+    <div class='home-about-card'>
+      <img src='../images/bit.png'>
+
+      <h2>Bitwise operations</h2>
+      <p>Learn how to manipulate bits.</p>
+    </div>
+
+    <div class='home-about-card'>
+      <img src='../images/convert.png'>
+
+      <h2>Quick conversion</h2>
+      <p>Learn how to convert between binary, decimal, and hexadecimal with ease.</p>
+    </div>
+
+    <div class='home-about-card'>
+      <img src='../images/cap.png'>
+
+      <h2>Become a master</h2>
+      <p>Perform bitwise operations and numerical base conversions like a pro.</p>
+    </div>
   </div>
 </section>
 
@@ -38,6 +62,7 @@
 
   // Toggle header background depending on scroll position
   window.onscroll = function (event) {
-    document.getElementById('home-header').className = isScrolledFromTop(window.innerHeight / 4) ? 'home-header-scrolled' : '';
+    document.getElementById('home-header').className =
+      isScrolledFromTop(window.innerHeight / 4) ? 'home-header-scrolled' : '';
   }
 </script>
