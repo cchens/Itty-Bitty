@@ -12,11 +12,11 @@ body {
 }
 
 ::selection {
-  background-color: $blue;
+  background-color: $light-blue;
 }
 
 ::-moz-selection {
-  background-color: $blue;
+  background-color: $light-blue;
 }
 
 
@@ -278,7 +278,7 @@ table {
       }
 
       &:hover {
-        background: $lighter-blue;
+        background: $light-blue;
       }
     }
   }

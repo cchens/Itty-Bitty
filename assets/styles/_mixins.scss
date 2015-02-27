@@ -1,4 +1,4 @@
-/** For easier size breakpoints. */
+// For easier size breakpoints
 $breakpoints: (
   'tiny':   ( max-width:  360px ),
   'small':  ( max-width:  500px ),
@@ -17,5 +17,12 @@ $breakpoints: (
     @media ("#{$name}") {
       @content;
     }
+  }
+}
+
+// For using higher-asset assets
+@mixin hidpi {
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    @content;
   }
 }
