@@ -1,9 +1,13 @@
 {
   "name": "ittybitty",
   "private": true,
-  "version": "0.0.0",
-  "description": "a Sails application",
+  "version": "0.0.1",
+  "description": "A Sails application",
   "keywords": [],
+  "engines": {
+    "node": "^0.12",
+    "npm": ">=2.1"
+  },
   "dependencies": {
     "ejs": "~0.8.4",
     "grunt": "0.4.2",
