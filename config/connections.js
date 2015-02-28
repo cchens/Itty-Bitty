@@ -28,8 +28,19 @@ module.exports.connections = {
   * Installed by default.                                                    *
   *                                                                          *
   ***************************************************************************/
-  localDiskDb: {
-    adapter: 'sails-disk'
+  // localDiskDb: {
+  //   adapter: 'sails-disk'
+  // },
+
+  postgresql: {
+    module   : 'sails-postgresql',
+    database : 'ittybitty_dev',
+    host     : 'localhost',
+    user     : 'postgres',
+    password : 'postgres',
+    port     : 5432,
+    pool     : false,
+    ssl      : false
   }
 
 };
