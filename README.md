@@ -48,12 +48,21 @@ You should then be able to enter a `psql` console by running `psql --username=po
 
 #### Migrate the database
 
+We are using [sails-migrations](https://www.npmjs.com/package/sails-migrations) for database migrations and [sails-postgresql](https://www.npmjs.com/package/sails-postgresql) as the adapter.
+
 ```shell
 sudo -u postgres sails-migrations db:create
 sudo -u postgres sails-migrations db:migrate
 ```
 
+You might need to change the password for the postgres user first:
+
+```shell
+sudo -u postgres psql -c "ALTER USER postgres PASSWORD 'postgres';"
+```
+
 #### Running locally
+
 Start a local server by running:
 ```shell
 sails lift
