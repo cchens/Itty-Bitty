@@ -1,3 +1,8 @@
+DROP SCHEMA IF EXISTS ittybitty_dev;
+CREATE SCHEMA ittybitty_dev;
+SET search_path TO ittybitty_dev;
+
+
 CREATE TABLE users (
 	user_id serial PRIMARY KEY,
 	provider varchar(20),
@@ -25,15 +30,15 @@ CREATE TABLE levels (
 );
 
 CREATE TABLE scores (
-	user_id integer references users(user_id) NOT NULL,
-	level_id integer references levels(level_id) NOT NULL,
+	user_id integer REFERENCES users(user_id) NOT NULL,
+	level_id integer REFERENCES levels(level_id) NOT NULL,
 	score integer NOT NULL,
 	PRIMARY KEY (user_id, level_id)
 );
 
 CREATE TABLE questions (
 	question_id serial PRIMARY KEY,
-	level_id integer references levels(level_id) NOT NULL,
+	level_id integer REFERENCES levels(level_id) NOT NULL,
 	question text NOT NULL,
 	choice1 text,
 	choice2 text,

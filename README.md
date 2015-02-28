@@ -22,6 +22,37 @@ To install the Node.js dependencies and the [SCSS](http://sass-lang.com/) prepro
 gem install sass
 ```
 
+#### Configure PostgreSQL
+
+First, we need to configure PostgreSQL properly. Edit the `pg_hba.conf` file in `/etc/postgresql/9.3/main` so that the line that says
+
+```
+local   all             postgres                                peer
+```
+
+says
+
+```
+local   all             postgres                                md5
+```
+
+Then, restart Postgres by running:
+
+```shell
+sudo service postgresql restart
+```
+
+You should then be able to enter a `psql` console by running `psql --username=postgres`.
+
+*Note*: You'll need PostgreSQL 9.3.x. If you happen to be on Elementary OS, you can install it by following [these instructions](http://notes.kloop.kg/2014/11/11/install-postgresql-9-3-on-elementary-os/).
+
+#### Migrate the database
+
+```shell
+sudo -u postgres sails-migrations db:create
+sudo -u postgres sails-migrations db:migrate
+```
+
 #### Running locally
 Start a local server by running:
 ```shell
