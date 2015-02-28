@@ -2,27 +2,28 @@
 
 ### Overview
 
-A [Sails](http://sailsjs.org) web application for learning about bitwise operations and conversion between numerical bases.
-
+A [Sails.js](http://sailsjs.org) web application for learning about bitwise operations and conversion between numerical bases.
 
 
 ### Development
 
+*Note*: These instructions are generally based on a UNIX-based system.
 
 #### Prerequisites
 - [Node.js](http://nodejs.org/)
 - [Ruby](https://www.ruby-lang.org/en/)
 
-
 #### Dependencies
 To install the Node.js dependencies and the [SCSS](http://sass-lang.com/) preprocessor, run (from the root of the repo directory):
 
 ```shell
-[sudo] npm install
+sudo npm install
 gem install sass
 ```
 
 #### Configure PostgreSQL
+
+*Note*: You'll need PostgreSQL 9.3.x. If you happen to be on Elementary OS, you can install it by following [these instructions](http://notes.kloop.kg/2014/11/11/install-postgresql-9-3-on-elementary-os/).
 
 First, we need to configure PostgreSQL properly. Edit the `pg_hba.conf` file in `/etc/postgresql/9.3/main` so that the line that says
 
@@ -43,8 +44,6 @@ sudo service postgresql restart
 ```
 
 You should then be able to enter a `psql` console by running `psql --username=postgres`.
-
-*Note*: You'll need PostgreSQL 9.3.x. If you happen to be on Elementary OS, you can install it by following [these instructions](http://notes.kloop.kg/2014/11/11/install-postgresql-9-3-on-elementary-os/).
 
 #### Migrate the database
 
@@ -78,7 +77,6 @@ nodemon --watch app
 ```
 
 You can view it in your browser at the usual location (port 1337). Any changes made to the core configuration of the app (e.g. anything in the `config` directory) will require you to manually restart the server, which can be done by typing `rs`.
-
 
 #### Branching
 Create branches to work on things. When you're done working on it, you can submit a pull request to merge it back into the `master` branch.
