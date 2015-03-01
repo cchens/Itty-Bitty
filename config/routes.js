@@ -27,7 +27,7 @@ module.exports.routes = {
     action: 'index'
   },
 
-  'POST /login': 'UserController.login',
+  'POST /login': 'UsersController.login',
   'GET /login': {
     view: 'login',
     locals: {
@@ -35,7 +35,7 @@ module.exports.routes = {
     }
   },
 
-  'POST /register': 'UserController.register',
+  'POST /register': 'UsersController.register',
   'GET /register': {
     view: 'register',
     locals: {

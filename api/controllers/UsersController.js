@@ -1,5 +1,5 @@
 /**
- * UserController
+ * UsersController
  *
  * Server-side logic for managing users
  */
