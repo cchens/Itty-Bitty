@@ -16,9 +16,6 @@ module.exports = {
     },
 
     level_id: {
-      type: 'integer',
-      unique: true
-      notNull: true
       model: 'Levels'
     },
 
