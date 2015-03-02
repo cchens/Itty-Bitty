@@ -28,7 +28,7 @@ module.exports = {
     displayName: {
       type: 'string',
       notNull: true
-    }
+    },
 
     name: {
       type: 'json'

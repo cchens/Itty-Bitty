@@ -24,7 +24,7 @@ module.exports = {
     description: {
       type: 'string',
       defaultTo: null
-    },
+    }
 
   }
 };

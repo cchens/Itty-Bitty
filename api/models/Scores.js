@@ -20,7 +20,7 @@ module.exports = {
     score: {
       type: 'integer',
       notNull: true
-    },
+    }
 
   }
 };

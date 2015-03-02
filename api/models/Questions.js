@@ -22,28 +22,28 @@ module.exports = {
     question: {
       type: 'string',
       notNull: true
-    }
+    },
 
     choice1: {
       type: 'string'
-    }
+    },
 
     choice2: {
       type: 'string'
-    }
+    },
 
     choice3: {
       type: 'string'
-    }
+    },
 
     choice4: {
       type: 'string'
-    }
+    },
 
     answer: {
       type: 'string',
       notNull: true
-    }
+    },
 
     explanation: {
       type: 'string',
