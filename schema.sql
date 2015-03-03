@@ -26,7 +26,8 @@ CREATE TABLE levels (
 	name varchar(200) UNIQUE,
 	description text DEFAULT NULL,
 	type varchar(50) NOT NULL,
-	difficulty integer NOT NULL
+	difficulty integer NOT NULL,
+	content json
 );
 
 CREATE TABLE scores (
