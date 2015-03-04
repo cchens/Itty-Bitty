@@ -14,6 +14,8 @@ module.exports = {
     var type = req.params.type;
 
     if (type === 'bitwise' || type === 'bases') {
+      // TODO: fetch levels to display
+
       return res.view('levels', { 'type': type });
     } else {
       return res.redirect('tutorials');
