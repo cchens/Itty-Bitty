@@ -24,12 +24,6 @@ module.exports.routes = {
 
   'GET /': 'SiteController.index',
 
-  // 'POST /login': 'UsersController.login',
-  // 'GET /login': 'UsersController.viewLogin',
-
-  // 'POST /register': 'UsersController.register',
-  // 'GET /register': 'UsersController.viewRegister',
-
   'GET /login': 'AuthController.login',
   'GET /logout': 'AuthController.logout',
   'GET /register': 'AuthController.register',

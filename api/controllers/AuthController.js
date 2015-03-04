@@ -9,14 +9,6 @@ var AuthController = {
   /**
    * Render the login page
    *
-   * The login form itself is just a simple HTML form:
-   *
-      <form role="form" action="/auth/local" method="post">
-        <input type="text" name="identifier" placeholder="Username or Email">
-        <input type="password" name="password" placeholder="Password">
-        <button type="submit">Sign in</button>
-      </form>
-   *
    * You could optionally add CSRF-protection as outlined in the documentation:
    * http://sailsjs.org/#!documentation/config.csrf
    *
@@ -74,15 +66,6 @@ var AuthController = {
 
   /**
    * Render the registration page
-   *
-   * Just like the login form, the registration form is just simple HTML:
-   *
-      <form role="form" action="/auth/local/register" method="post">
-        <input type="text" name="username" placeholder="Username">
-        <input type="text" name="email" placeholder="Email">
-        <input type="password" name="password" placeholder="Password">
-        <button type="submit">Sign up</button>
-      </form>
    *
    * @param {Object} req
    * @param {Object} res
