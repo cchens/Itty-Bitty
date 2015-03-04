@@ -9,6 +9,11 @@ module.exports = {
 
   attributes: {
 
+    content: {
+      type: 'json',
+      defaultsTo: null
+    }
+
     level_id: {
       type: 'integer',
       autoIncrement: true,
