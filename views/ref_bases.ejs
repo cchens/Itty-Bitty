@@ -18,7 +18,7 @@
 				<td>0</td>
 			</tr>
 			<tr>
-				<td></td>
+				<td>digit number</td>
 				<td>7</td>
 				<td>6</td>
 				<td>5</td>
@@ -33,30 +33,37 @@
 
 	<li>Multiply each bit by 2^(its digit number) <br>
 
-	ex.
 		<table>
 			<tr>
+				<td>ex. </td>
 				<td>(1 x 2^7) = 128</td>
 			</tr>
 			<tr>
+				<td></td>
 				<td>(0 x 2^6) = 0</td>
 			<tr>
 			<tr>
+				<td></td>
 				<td>(1 x 2^5) = 32</td>
 			<tr>
 			<tr>
+				<td></td>
 				<td>(1 x 2^4) = 16</td>
 			<tr>
 			<tr>
+				<td></td>
 				<td>(0 x 2^3) = 0</td>
 			<tr>
 			<tr>
+				<td></td>
 				<td>(0 x 2^2) = 0</td>
 			<tr>
 			<tr>
+				<td></td>
 				<td>(1 x 2^1) = 2</td>
 			<tr>
 			<tr>
+				<td></td>
 				<td>(0 x 2^0) = 0</td>
 			<tr>
 		</table>
@@ -67,3 +74,143 @@
 	ex. 128 + 0 + 32 + 16 + 0 + 0 + 2 + 0 = 178</li>
 </ol>
 
+<h3>Decimal to Binary</h3>
+
+<ol>
+	<li>Repeatedly divide the decimal number by 2 until the quotient is 0 or 1, keeping track of the remainder each time. <br>
+
+		<table>
+			<tr>
+				<td>ex. </td>
+				<td>42 / 2 = 21 R <b>0</b></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>21 / 2 = 10 R <b>1</b></td>
+			<tr>
+			<tr>
+				<td></td>
+				<td>10 / 2 = 5 R <b>0</b></td>
+			<tr>
+			<tr>
+				<td></td>
+				<td>5 / 2 = 2 R <b>1</b></td>
+			<tr>
+			<tr>
+				<td></td>
+				<td>2 / 2 = <b>1</b> R <b>0</b></td>
+			<tr>
+		</table>
+	</li> <br>
+
+	<li>Append the remainders, with the remainder from the last division as the leftmost bit and the remainder from the first division as the rightmost bit. <br>
+
+		ex. 01110</li> <br>
+
+	<li>Append the quotient from the last remainder to the front. This is your binary value.<br>
+
+		ex. 101110</li>
+</ol>
+
+<h3>Binary to Hexadecimal</h3>
+
+<ol>
+	<li>Split the binary number into groups of 4. If the number does not have a multiple of 4 digits, pad the left with 0’s until it does.<br>
+
+		ex. 0101011 &#8594; 010 1011 &#8594; 0010 1011</li><br>
+
+	<li>Multiply the leftmost digit in each group by 8, the second digit by 4, the third digit by 2, and the rightmost digit by 1.<br>
+
+		<table>
+			<tr>
+				<td>ex. </td>
+				<td></td>
+				<td>0</td>
+				<td>0</td>
+				<td>1</td>
+				<td>0</td>
+				<td> </td>
+				<td>1</td>
+				<td>0</td>
+				<td>1</td>
+				<td>1</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>&times</td>
+				<td>8</td>
+				<td>4</td>
+				<td>2</td>
+				<td>1</td>
+				<td> </td>
+				<td>8</td>
+				<td>4</td>
+				<td>2</td>
+				<td>1</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>=</td>
+				<td>0</td>
+				<td>0</td>
+				<td>2</td>
+				<td>0</td>
+				<td> </td>
+				<td>8</td>
+				<td>4</td>
+				<td>2</td>
+				<td>1</td>
+			</tr>
+		</table>
+	</li> <br>
+
+	<li>Sum up the digits in each group. <br>
+
+		<table>
+			<tr>
+				<td>ex. </td>
+				<td>0020 &#8594; 2</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>8021 &#8594; 11</td>
+			</tr>
+		</table>
+	</li><br>
+
+	<li>Append the sums in order. This is your hexadecimal value! Remember that hex number 10-15 are represented by the letters A-F, respectively.<br>
+
+		ex. 2 11 = 2B</li>
+</ol>
+
+
+<h3>Hexadecimal to Binary</h3>
+
+<ol>
+	<li>If the hex value has letters, convert the letters into decimal values.<br>
+
+		ex. B2 &#8594; 11 2</li><br>
+
+	<li>Convert each decimal number into binary in groups of 4. (Recall earlier lesson)
+
+		<table>
+			<tr>
+				<td>ex. </td>
+				<td>11 &#8594; 1011</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>2 &#8594; 0010</td>
+			</tr>
+		</table>
+	</li><br>
+
+	<li>Append the groups together in order. You're done!<br>
+
+		ex. 1011 0010 &#8594; 10110010</li>
+</ol>
+
+<h3>Decimal to Hexadecimal</h3>
+
+<ol>
+	<li>
