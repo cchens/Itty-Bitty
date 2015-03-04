@@ -1,1 +1,69 @@
 <h1>Bases reference</h1>
+
+<h3>Binary to Decimal</h3>
+
+<ol>
+	<li>Number the digits starting from 0 and going to the right. The leftmost digit should end up as (number of digits) - 1 <br>
+
+		<table>
+			<tr>
+				<td>ex. </td>
+			<td>1</td>
+				<td>0</td>
+				<td>1</td>
+				<td>1</td>
+				<td>0</td>
+				<td>0</td>
+				<td>1</td>
+				<td>0</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>7</td>
+				<td>6</td>
+				<td>5</td>
+				<td>4</td>
+				<td>3</td>
+				<td>2</td>
+				<td>1</td>
+				<td>0</td>
+			</tr>
+		</table>
+	</li>
+
+	<li>Multiply each bit by 2^(its digit number) <br>
+
+	ex.
+		<table>
+			<tr>
+				<td>(1 x 2^7) = 128</td>
+			</tr>
+			<tr>
+				<td>(0 x 2^6) = 0</td>
+			<tr>
+			<tr>
+				<td>(1 x 2^5) = 32</td>
+			<tr>
+			<tr>
+				<td>(1 x 2^4) = 16</td>
+			<tr>
+			<tr>
+				<td>(0 x 2^3) = 0</td>
+			<tr>
+			<tr>
+				<td>(0 x 2^2) = 0</td>
+			<tr>
+			<tr>
+				<td>(1 x 2^1) = 2</td>
+			<tr>
+			<tr>
+				<td>(0 x 2^0) = 0</td>
+			<tr>
+		</table>
+	</li>
+
+	<li>Sum the results from the last step. This is the decimal form of the original binary number! <br>
+
+	ex. 128 + 0 + 32 + 16 + 0 + 0 + 2 + 0 = 178</li>
+</ol>
+
