@@ -1,0 +1,22 @@
+<div class='user-form'>
+  <h1>Sign up</h1>
+
+  <% if (errors) {%>
+    <% errors.forEach(function (error) { %>
+      <%= __(error) %>
+    <% }) %>
+  <% } %>
+
+  <form role='form' action='/auth/local/register' method='post'>
+    <label>Username:</label>
+    <input type='text' name='username' placeholder='Username' required>
+
+    <label>Email:</label>
+    <input type='text' name='email' placeholder='Email' required>
+
+    <label>Password:</label>
+    <input type='password' name='password' placeholder='Password' required>
+
+    <input type='submit' value='Sign up'>
+  </form>
+</div>

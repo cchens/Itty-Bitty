@@ -44,6 +44,15 @@
   "author": "ittybitty",
   "license": "",
   "devDependencies": {
-    "grunt-autoprefixer": "^2.2.0"
+    "bcryptjs": "^2.1.0",
+    "grunt-autoprefixer": "^2.2.0",
+    "passport": "^0.2.1",
+    "passport-facebook": "^2.0.0",
+    "passport-github": "^0.1.5",
+    "passport-google-oauth": "^0.1.5",
+    "passport-local": "^1.0.0",
+    "passport-twitter": "^1.0.3",
+    "sails-generate-auth": "^0.2.0",
+    "validator": "^3.33.0"
   }
 }

@@ -24,11 +24,22 @@ module.exports.routes = {
 
   'GET /': 'SiteController.index',
 
-  'POST /login': 'UsersController.login',
-  'GET /login': 'UsersController.viewLogin',
+  // 'POST /login': 'UsersController.login',
+  // 'GET /login': 'UsersController.viewLogin',
 
-  'POST /register': 'UsersController.register',
-  'GET /register': 'UsersController.viewRegister',
+  // 'POST /register': 'UsersController.register',
+  // 'GET /register': 'UsersController.viewRegister',
+
+  'GET /login': 'AuthController.login',
+  'GET /logout': 'AuthController.logout',
+  'GET /register': 'AuthController.register',
+
+  'POST /auth/local': 'AuthController.callback',
+  'POST /auth/local/:action': 'AuthController.callback',
+
+  'GET /auth/:provider': 'AuthController.provider',
+  'GET /auth/:provider/callback': 'AuthController.callback',
+  'GET /auth/:provider/:action': 'AuthController.callback',
 
   'GET /tutorials': 'LevelsController.index',
 
