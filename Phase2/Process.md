@@ -27,6 +27,9 @@ Tech stack:
 - Tutorials stored as raw text within database?
   + Need to explore options
 
+### Friday, February 20th
+See meeting-2015-02-20 in 301W15-Prj-Team1-repo\Phase2
+
 ### Monday, February 23rd
 Location: Tutorial
 
@@ -37,6 +40,9 @@ To do:
 - Finish setting up server (SASS support, database)
 - Start drafting tutorials (1 each?)
 - Start prototyping tutorial system (display material, prompt for answer, validate answer, move on appropriately)
+
+### Friday. February 27th
+See meeting-2015-02-27 in 301W15-Prj-Team1-repo\Phase2
 
 ### Monday, March 2nd
 Location: Tutorial
