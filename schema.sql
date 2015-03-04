@@ -27,7 +27,7 @@ CREATE TABLE levels (
 	description text DEFAULT NULL,
 	type varchar(50) NOT NULL,
 	difficulty integer NOT NULL,
-	content json
+	content json NOT NULL
 );
 
 CREATE TABLE scores (
