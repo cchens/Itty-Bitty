@@ -47,6 +47,8 @@ You should then be able to enter a `psql` console by running `psql --username=po
 
 #### Migrate the database
 
+**Note**: IGNORE THIS FOR NOW, we're using fixtures.
+
 We are using [sails-migrations](https://www.npmjs.com/package/sails-migrations) for database migrations and [sails-postgresql](https://www.npmjs.com/package/sails-postgresql) as the adapter.
 
 ```shell
