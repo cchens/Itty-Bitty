@@ -29,9 +29,10 @@ module.exports = {
   },
 
   viewLogin: function(req, res) {
-    return res.view('login', {
-      loggedIn: false
-    });
+    if (!req.session.authenticated)
+      return res.view('login');
+    else
+      return res.redirect('back');
   },
 
   login: function (req, res) {
@@ -44,18 +45,19 @@ module.exports = {
       // password: password.salt()
     }).done(function (err, users) {
       if (users.length === 1) {
-        res.view('index', { message: 'Login success!', loggedIn: true });
+        res.view('index', { message: 'Login success!' });
         req.session.authenticated = true;
       } else {
-        res.view('login', { message: 'Login failed!', loggedIn: false });
+        res.view('login', { message: 'Login failed!' });
       }
     });
   },
 
   viewRegister: function(req, res) {
-    return res.view('register', {
-      loggedIn: false
-    });
+    if (!req.session.authenticated)
+      return res.view('register');
+    else
+      return res.redirect('back');
   },
 
   register: function (req, res) {
