@@ -1,13 +1,26 @@
 <h1>Tutorial</h1>
+  <div class='container'>
+	<%= sails.config.myconf.tutorial %>
+  </div>
 </br>
-
 <h1>Questions</h1>
+  <div class='container'>
+	<%= sails.config.myconf.anyobject.Question %>
+  </div>
+
 </br>
-
-
 <h1>Answers</h1>
 <div>
 	<input type = "text" name = "answer">
 	</br>
 	<input type = submit>
 </div>
+</br>
+
+<button id="demo" onclick="myFunction()">Next Question</button>
+
+<script>
+function myFunction() {
+    document.getElementById("demo").style.color = "red";
+}
+</script>
