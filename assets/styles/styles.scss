@@ -149,6 +149,10 @@ footer {
   }
 }
 
+  #login-providers {
+    margin-top: 2em;
+  }
+
 
 // Homepage
 // ========================================================
@@ -173,7 +177,7 @@ footer {
     border: 1px solid $blue;
     border-radius: 30px;
     display: block;
-    margin: 3em auto 0;
+    margin: 3em auto 1em;
     padding: 1em 2em;
     width: 15em;
 
