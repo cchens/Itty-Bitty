@@ -38,6 +38,8 @@ module.exports.routes = {
   'GET /tutorials': 'LevelsController.index',
   'GET /tutorials/:type': 'LevelsController.levels',
 
+  'GET /tutorials/:type/:level': 'LevelsController.level',
+
   /***************************************************************************
   *                                                                          *
   * Custom routes here...                                                    *
