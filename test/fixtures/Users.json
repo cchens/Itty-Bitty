@@ -1,14 +1,35 @@
 [
   {
     "user_id": 1,
+    "provider": "local",
+    "id": "a",
+    "name": {},
     "displayName": "arkon",
     "email": "arkon@email.ca",
-    "password": "password"
+    "photo": "url",
+    "achievements": {},
+    "password": "password1"
   },
   {
     "user_id": 2,
+    "provider": "local",
+    "id": "b",
+    "name": {},
     "displayName": "eric",
     "email": "eric@email.ca",
-    "password": "password"
+    "photo": "url",
+    "achievements": {},
+    "password": "password2"
+  },
+  {
+    "user_id": 3,
+    "provider": "local",
+    "id": "c",
+    "name": {},
+    "displayName": "sharon",
+    "email": "sharon@email.ca",
+    "photo": "url",
+    "achievements": {},
+    "password": "password3"
   }
 ]

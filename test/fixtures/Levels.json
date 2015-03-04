@@ -1,32 +1,50 @@
 [
   {
     "level_id": 1,
+    "name": "A",
+    "description": "Short description",
     "type": "bitwise",
-    "difficulty": 1
+    "difficulty": 1,
+    "content": {}
   },
   {
     "level_id": 2,
+    "name": "B",
+    "description": "Short description",
     "type": "bitwise",
-    "difficulty": 1
+    "difficulty": 1,
+    "content": {}
   },
   {
     "level_id": 3,
+    "name": "C",
+    "description": "Short description",
     "type": "bitwise",
-    "difficulty": 1
+    "difficulty": 1,
+    "content": {}
   },
   {
     "level_id": 4,
+    "name": "D",
+    "description": "Short description",
     "type": "bases",
-    "difficulty": 1
+    "difficulty": 1,
+    "content": {}
   },
   {
     "level_id": 5,
+    "name": "E",
+    "description": "Short description",
     "type": "bases",
-    "difficulty": 1
+    "difficulty": 1,
+    "content": {}
   },
   {
     "level_id": 6,
+    "name": "F",
+    "description": "Short description",
     "type": "bases",
-    "difficulty": 1
+    "difficulty": 1,
+    "content": {}
   }
 ]

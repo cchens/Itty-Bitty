@@ -25,19 +25,23 @@ module.exports = {
     },
 
     choice1: {
-      type: 'string'
+      type: 'string',
+      defaultTo: null
     },
 
     choice2: {
-      type: 'string'
+      type: 'string',
+      defaultTo: null
     },
 
     choice3: {
-      type: 'string'
+      type: 'string',
+      defaultTo: null
     },
 
     choice4: {
-      type: 'string'
+      type: 'string',
+      defaultTo: null
     },
 
     answer: {

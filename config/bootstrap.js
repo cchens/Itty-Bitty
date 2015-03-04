@@ -11,7 +11,7 @@
 
 var Barrels = require('barrels');
 
-module.exports.bootstrap = function(cb) {
+module.exports.bootstrap = function(done) {
 
   // Load Passport providers
   sails.services.passport.loadStrategies();
@@ -22,9 +22,7 @@ module.exports.bootstrap = function(cb) {
   barrels.populate(function(err) {
     if (err)
       return done(err);
-  });
 
-  // It's very important to trigger this callback method when you are finished
-  // with the bootstrap!  (otherwise your server will never lift, since it's waiting on the bootstrap)
-  cb();
+    done();
+  });
 };
