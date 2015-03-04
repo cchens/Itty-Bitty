@@ -1,0 +1,32 @@
+[
+  {
+    "level_id": 1,
+    "type": "bitwise",
+    "difficulty": 1
+  },
+  {
+    "level_id": 2,
+    "type": "bitwise",
+    "difficulty": 1
+  },
+  {
+    "level_id": 3,
+    "type": "bitwise",
+    "difficulty": 1
+  },
+  {
+    "level_id": 4,
+    "type": "bases",
+    "difficulty": 1
+  },
+  {
+    "level_id": 5,
+    "type": "bases",
+    "difficulty": 1
+  },
+  {
+    "level_id": 6,
+    "type": "bases",
+    "difficulty": 1
+  }
+]

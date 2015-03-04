@@ -9,10 +9,20 @@
  * http://sailsjs.org/#/documentation/reference/sails.config/sails.config.bootstrap.html
  */
 
+var Barrels = require('barrels');
+
 module.exports.bootstrap = function(cb) {
 
   // Load Passport providers
   sails.services.passport.loadStrategies();
+
+  // Fixtures
+  var barrels = new Barrels();
+  var fixtures = barrels.data;
+  barrels.populate(function(err) {
+    if (err)
+      return done(err);
+  });
 
   // It's very important to trigger this callback method when you are finished
   // with the bootstrap!  (otherwise your server will never lift, since it's waiting on the bootstrap)

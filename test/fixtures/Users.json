@@ -1,0 +1,14 @@
+[
+  {
+    "user_id": 1,
+    "displayName": "arkon",
+    "email": "arkon@email.ca",
+    "password": "password"
+  },
+  {
+    "user_id": 2,
+    "displayName": "eric",
+    "email": "eric@email.ca",
+    "password": "password"
+  }
+]
