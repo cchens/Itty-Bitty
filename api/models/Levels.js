@@ -9,11 +9,6 @@ module.exports = {
 
   attributes: {
 
-    content: {
-      type: 'json',
-      defaultsTo: null
-    }
-
     level_id: {
       type: 'integer',
       autoIncrement: true,
@@ -40,6 +35,11 @@ module.exports = {
     difficulty: {
       type: 'integer',
       notNull: true
+    },
+
+    content: {
+      type: 'json',
+      defaultsTo: null
     }
 
   }

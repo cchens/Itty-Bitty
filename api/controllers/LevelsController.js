@@ -22,13 +22,4 @@ module.exports = {
     }
   },
 
-  level: function (req, res) {
-    var type  = req.params.type,
-        level = req.params.level;
-
-    // TODO: get appropriate level content from db
-
-    return res.view('level', { 'type': type, 'level': level });
-  }
-
 };

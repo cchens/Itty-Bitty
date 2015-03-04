@@ -38,7 +38,10 @@ module.exports.routes = {
   'GET /tutorials': 'LevelsController.index',
   'GET /tutorials/:type': 'LevelsController.levels',
 
-  'GET /tutorials/:type/:level': 'LevelsController.level',
+  'GET /tutorials/:type/:level': 'QuizController.index',
+
+  'GET /ref/bitwise': { view: 'ref_bitwise' },
+  'GET /ref/bases': { view: 'ref_bases' },
 
   /***************************************************************************
   *                                                                          *
