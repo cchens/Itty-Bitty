@@ -36,6 +36,7 @@ module.exports.routes = {
   'GET /auth/:provider/:action': 'AuthController.callback',
 
   'GET /tutorials': 'LevelsController.index',
+  'GET /tutorials/:type': 'LevelsController.levels',
 
   /***************************************************************************
   *                                                                          *

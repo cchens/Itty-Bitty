@@ -160,6 +160,7 @@ var AuthController = {
   disconnect: function (req, res) {
     passport.disconnect(req, res);
   }
+
 };
 
 module.exports = AuthController;
