@@ -76,6 +76,22 @@ header {
     }
   }
 
+    #nav-main li {
+      margin-left: 1em;
+    }
+
+    #register {
+      border: 1px solid $white;
+      border-radius: 3em;
+      padding-left: 2em;
+      padding-right: 2em;
+
+      &:hover {
+        background-color: $white;
+        color: $dark-blue;
+      }
+    }
+
 
 // Main content block
 // ========================================================
@@ -137,7 +153,7 @@ footer {
 // Homepage
 // ========================================================
 
-#home-header {
+#home header {
   background: transparent;
   position: fixed;
   top: 0;
@@ -151,23 +167,6 @@ footer {
   .home-header-scrolled {
     background-color: $blue !important;
     box-shadow: 0 1px 5px $dark-blue;
-  }
-
-  #login,
-  #register {
-    color: $white;
-    padding: 0.5em 1.5em;
-  }
-
-  #register {
-    border: 1px solid $white;
-    border-radius: 20px;
-    margin-left: 1em;
-
-    &:hover {
-      background-color: $white;
-      color: $dark-blue;
-    }
   }
 
   #register_alt {
@@ -211,6 +210,7 @@ footer {
   #home-hero-intro {
     display: table-cell;
     height: 100%;
+    text-align: center;
     vertical-align: middle;
   }
 

@@ -22,26 +22,15 @@
 
 module.exports.routes = {
 
-  'GET /': {
-    controller: 'SiteController',
-    action: 'index'
-  },
+  'GET /': 'SiteController.index',
 
   'POST /login': 'UsersController.login',
-  'GET /login': {
-    view: 'login',
-    locals: {
-      loggedIn: false  // TODO: Hard-coded for now
-    }
-  },
+  'GET /login': 'UsersController.viewLogin',
 
   'POST /register': 'UsersController.register',
-  'GET /register': {
-    view: 'register',
-    locals: {
-      loggedIn: false  // TODO: Hard-coded for now
-    }
-  },
+  'GET /register': 'UsersController.viewRegister',
+
+  'GET /tutorials': 'LevelsController.index',
 
   /***************************************************************************
   *                                                                          *

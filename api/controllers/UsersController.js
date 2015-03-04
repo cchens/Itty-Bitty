@@ -28,7 +28,14 @@ module.exports = {
     });
   },
 
+  viewLogin: function(req, res) {
+    return res.view('login', {
+      loggedIn: false
+    });
+  },
+
   login: function (req, res) {
+    // TODO: proper login
     var username = req.param('username');
     var password = req.param('password');
 
@@ -45,7 +52,14 @@ module.exports = {
     });
   },
 
+  viewRegister: function(req, res) {
+    return res.view('register', {
+      loggedIn: false
+    });
+  },
+
   register: function (req, res) {
+    // TODO: proper registration
     return res.redirect("http://www.sayonara.com");
   }
 };
