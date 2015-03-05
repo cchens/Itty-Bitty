@@ -1,8 +1,6 @@
-<h1>Tutorial</h1>
-<h4><%= title %></h4>
-<p><%= tutorial.description %></p>
+<h1><%= title %></h1>
+<h4><%= tutorial.description %></h4>
 
-<!-- checks for all the possible data, currently unable to display videos or imgs -->
 <div id='tutorial-material'>
   <% for (var i = 0; i < tutorial.content.length; i++) { %>
     <% if (tutorial.content[i].type == 'text') { %>
@@ -55,7 +53,6 @@
     var end = 0;
     var errors = 0;
 
-
     <% for (var i = 0; i < questions.length; i++) { %>
       document.getElementById("submit-<%= i %>").onclick = function(event) {
         end = Date.now();
@@ -71,7 +68,7 @@
             alert("Question <%= i %>: Incorrect...");
           }
           alert(document.getElementById("open_answer-<%= i %>").value === "<%= questions[i].answer %>");
-        } 
+        }
         else {
           if ($("input[name='answer-mc-<%= i %>']:checked").val() === "<%= questions[i].answer %>") {
             alert("Question <%= i%>: Correct!");
