@@ -5,10 +5,12 @@
 <ol>
 	<li>Number the digits starting from 0 and going to the right. The leftmost digit should end up as (number of digits) - 1 <br>
 
+		ex. 10110010
+
 		<table>
 			<tr>
-				<td>ex. </td>
-			<td>1</td>
+				<td></td>
+				<td>1</td>
 				<td>0</td>
 				<td>1</td>
 				<td>1</td>
@@ -77,7 +79,7 @@
 <h3>Decimal to Binary</h3>
 
 <ol>
-	<li>Repeatedly divide the decimal number by 2 until the quotient is 0 or 1, keeping track of the remainder each time. <br>
+	<li>Repeatedly divide the decimal number by 2 until the quotient is 0, keeping track of the remainder each time. <br>
 
 		<table>
 			<tr>
@@ -98,16 +100,16 @@
 			<tr>
 			<tr>
 				<td></td>
-				<td>2 / 2 = <b>1</b> R <b>0</b></td>
+				<td>2 / 2 = 1 R <b>0</b></td>
+			<tr>
+			<tr>
+				<td></td>
+				<td>1 / 2 = 0 R <b>1</b></td>
 			<tr>
 		</table>
 	</li> <br>
 
-	<li>Append the remainders, with the remainder from the last division as the leftmost bit and the remainder from the first division as the rightmost bit. <br>
-
-		ex. 01110</li> <br>
-
-	<li>Append the quotient from the last remainder to the front. This is your binary value.<br>
+	<li>Append the remainders, with the remainder from the last division as the leftmost bit and the remainder from the first division as the rightmost bit. This is your binary value.<br>
 
 		ex. 101110</li>
 </ol>
@@ -213,4 +215,112 @@
 <h3>Decimal to Hexadecimal</h3>
 
 <ol>
-	<li>
+	<li>Repeatedly divide the decimal number by 16 until the quotient is 0, keeping track of the remainder each time.
+
+		<table>
+			<tr>
+				<td>ex. </td>
+				<td>2015 / 16 = 125 R <b>15</b></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>125 / 16 = 7 R <b>13</b></td>
+			<tr>
+			<tr>
+				<td></td>
+				<td>7 / 16 = 0 R <b>7</b></td>
+			<tr>
+		</table>
+
+	</li><br>
+
+	<li>Append the remainders, with the remainder from the last division as the leftmost bit and the remainder from the first division as the rightmost bit.
+
+		ex. 7 13 15</li><br>
+
+	<li>Convert any values between 10-15 to their corresponding letters.
+
+		<table>
+			<tr>
+				<td>ex. </td>
+				<td>13 &#8594; D</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>15 &#8594; F</td>
+			</tr>
+		</table>
+		</li><br>
+
+	<li>Append the remainders, with the remainder from the last division as the leftmost bit and the remainder from the first division as the rightmost bit. This is your hexadecimal value.<br>
+
+		ex. 7DF</li>
+
+</ol>
+
+<h3>Hexadecimal to Decimal</h3>
+
+<ol>
+	<li>Convert any letters to their corresponding decimal values.<br>
+
+		ex. FE22
+
+		<table>
+			<tr>
+				<td>F &#8594; 15</td>
+			</tr>
+			<tr>
+				<td>E &#8594; 14</td>
+			</tr>
+		</table>
+	</li><br>
+
+	<li>Number the digits starting from 0 and going to the right. The leftmost digit should end up as (number of digits) - 1<br>
+
+		ex.
+
+		<table>
+			<tr>
+				<td></td>
+				<td>15</td>
+				<td>14</td>
+				<td>2</td>
+				<td>2</td>
+			</tr>
+			<tr>
+				<td>digit number</td>
+				<td>3</td>
+				<td>2</td>
+				<td>1</td>
+				<td>0</td>
+			</tr>
+		</table>
+	</li> <br>
+
+	<li>Multiply each bit by 16^(its digit number) <br>
+
+		<table>
+			<tr>
+				<td>ex. </td>
+				<td>(15 x 16^3) = 61440</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>(14 x 16^2) = 3584</td>
+			<tr>
+			<tr>
+				<td></td>
+				<td>(2 x 16^1) = 32</td>
+			<tr>
+			<tr>
+				<td></td>
+				<td>(2 x 16^0) = 2</td>
+			<tr>
+		</table>
+	</li> <br>
+
+	<li>Sum the results from the last step. This is the your decimal number.<br>
+
+	ex. 61440 + 3584 + 32 + 2 = 65058</li>
+
+</ol>
