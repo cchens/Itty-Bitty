@@ -95,6 +95,13 @@ You can view it in your browser at the usual location (port 1337). Any changes m
 #### Branching
 Create branches to work on things. When you're done working on it, you can submit a pull request to merge it back into the `master` branch.
 
+#### Reference
+Some useful links:
+
+- [Sails documentation](http://sailsjs.org/#!/documentation) (a lot of the links in the included comments in the app are out of date)
+- [Waterline docs](https://github.com/balderdashy/waterline-docs) for writing queries
+- [An example Sails tutorial](http://www.gazpachu.com/en/tutorial-how-to-build-a-multi-player-quiz-app-with-sails-js/)
+- [A handy REST client for Chrome](https://chrome.google.com/webstore/detail/postman-rest-client/fdmmgilgnpjigdojojpjoooidkmcomcm?hl=en)
 
 
 ### Deploying to production
