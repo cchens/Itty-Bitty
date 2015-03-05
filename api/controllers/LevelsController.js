@@ -14,11 +14,22 @@ module.exports = {
     var type = req.params.type;
 
     if (type === 'bitwise' || type === 'bases') {
-      // TODO: fetch levels to display
+      Levels
+      .find()
+      .where({ type: type })
+      .exec(function (err, levels) {
+        if (levels === undefined) return res.notFound();
+        if (err) return res.negotiate(err);
 
-      return res.view('levels', { 'type': type });
+        // TODO: Gets all the levels, but need to get the numbers with difficulties
+        console.log(levels);
+
+        res.view('levels', {
+          'type': type
+        });
+      });
     } else {
-      return res.redirect('tutorials');
+      res.redirect('tutorials');
     }
   },
 
