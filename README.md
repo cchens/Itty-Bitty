@@ -57,25 +57,25 @@ We are using [barrels](https://github.com/bredikhin/barrels) to load fixtures fr
 You will need to change the password for the postgres user first to ensure it matches the configuration settings:
 
 ```shell
-psql --username=postgres -c "ALTER USER postgres PASSWORD 'postgres';"
+psql -U postgres -c "ALTER USER postgres PASSWORD 'postgres';"
 ```
 
 To initialize the database:
 
 ```shell
-sudo -u postgres sails-migrations db:create
+sails-migrations db:create
 ```
 
 or
 
 ```shell
-createdb --username=postgres ittybitty_dev
+createdb -U postgres ittybitty_dev
 ```
 
 To drop the database, you could do it manually in `psql` or run:
 
 ```shell
-sudo -u postgres sails-migrations db:drop
+sails-migrations db:drop
 ```
 
 We are using [sails-migrations](https://www.npmjs.com/package/sails-migrations) for database migrations and [sails-postgresql](https://www.npmjs.com/package/sails-postgresql) as the adapter.
