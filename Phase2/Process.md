@@ -28,7 +28,7 @@ Tech stack:
   + Need to explore options
 
 ### Friday, February 20th
-See meeting-2015-02-20 in Phase2/Logs
+See `meeting-2015-02-20.txt` in Phase2/Logs.
 
 ### Monday, February 23rd
 Location: Tutorial
@@ -42,7 +42,7 @@ To do:
 - Start prototyping tutorial system (display material, prompt for answer, validate answer, move on appropriately)
 
 ### Friday. February 27th
-See meeting-2015-02-27 in Phase2/Logs
+See `meeting-2015-02-27.txt` in Phase2/Logs.
 
 ### Monday, March 2nd
 Location: Tutorial
