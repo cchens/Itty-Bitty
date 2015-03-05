@@ -16,7 +16,7 @@ module.exports.bootstrap = function(done) {
   // Load Passport providers
   sails.services.passport.loadStrategies();
 
-  // Fixtures
+  // Load fixtures (from test/fixtures/) into database
   var barrels = new Barrels();
   var fixtures = barrels.data;
   barrels.populate(function(err) {
