@@ -54,17 +54,25 @@ You should then be able to enter a `psql` console by running `psql --username=po
 
 We are using [barrels](https://github.com/bredikhin/barrels) to load fixtures from `test/fixtures`. The data is automatically loaded every time the server is launched (lifted). You will be prompted to choose how the tables/collections/sets are migrated (not migrated, attempt to keep existing data, or drop and rebuild).
 
-We are using [sails-migrations](https://www.npmjs.com/package/sails-migrations) for database migrations and [sails-postgresql](https://www.npmjs.com/package/sails-postgresql) as the adapter.
+You will need to change the password for the postgres user first to ensure it matches the configuration settings:
+
+```shell
+sudo -u postgres psql -c "ALTER USER postgres PASSWORD 'postgres';"
+```
+
+To initialize the database:
 
 ```shell
 sudo -u postgres sails-migrations db:create
 ```
 
-You might need to change the password for the postgres user first:
+or
 
 ```shell
-sudo -u postgres psql -c "ALTER USER postgres PASSWORD 'postgres';"
+createdb --username=postgres ittybitty_dev
 ```
+
+We are using [sails-migrations](https://www.npmjs.com/package/sails-migrations) for database migrations and [sails-postgresql](https://www.npmjs.com/package/sails-postgresql) as the adapter.
 
 #### Running locally
 

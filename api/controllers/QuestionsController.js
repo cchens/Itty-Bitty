@@ -6,7 +6,7 @@
 
 module.exports = {
 
-  index: function (req,res) {
+  index: function (req, res) {
     var type  = req.params.type,
         level = req.params.level;
 
