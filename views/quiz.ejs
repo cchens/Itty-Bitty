@@ -1,16 +1,18 @@
 Type <%= type %>, level <%= level %>
 
 <h1>Tutorial</h1>
-<%=  tutorial[0].description %>
+<%= tutorial[0].description %>
 
 <!-- checks for all the possible data, currently unable to display videos or imgs -->
 <ul>
-<% for(var i=0; i<tutorial[0].content.length; i++) {%>
-	<% if(tutorial[0].content[i].type == 'text'){ %> <p><%= tutorial[0].content[i].data %></p> <%} 
-	else if(tutorial[0].content[i].type == 'image'){ %> <p><%= tutorial[0].content[i].data %></p> <%} 
-		else if(tutorial[0].content[i].type == 'video'){ %> <p><%= tutorial[0].content[i].data %></p> <%} 
-	%>
-
+<% for (var i = 0; i < tutorial[0].content.length; i++) { %>
+  <% if (tutorial[0].content[i].type == 'text') { %>
+    <p><%= tutorial[0].content[i].data %></p>
+  <% } else if (tutorial[0].content[i].type == 'image') { %>
+    <p><%= tutorial[0].content[i].data %></p>
+  <% } else if (tutorial[0].content[i].type == 'video') { %>
+    <p><%= tutorial[0].content[i].data %></p>
+  <% } %>
 <% } %>
 </ul>
 
@@ -18,17 +20,15 @@ Type <%= type %>, level <%= level %>
 
 <!-- so if there are multiple questions for one tutorial,
  should be able to display all of them -->
- 
+
 <h2>Questions</h2>
-<% for(var i=0; i<questions.length; i++) {%>
+<% for (var i = 0; i < questions.length; i++) { %>
+  <p><%= questions[i].question %></p>
 
-	<p><%= questions[i].question %></p>
-
-	<p><% if(questions[i].choice1){ %> <%= questions[i].choice1 %> <%} %></p>
-	<p><% if(questions[i].choice2){ %> <%= questions[i].choice2 %> <%} %></p>
-	<p><% if(questions[i].choice3){ %> <%= questions[i].choice3 %> <%} %></p>
-	<p><% if(questions[i].choice4){ %> <%= questions[i].choice4 %> <%} %></p>
-
+  <p><% if (questions[i].choice1) { %> <%= questions[i].choice1 %> <% } %></p>
+  <p><% if (questions[i].choice2) { %> <%= questions[i].choice2 %> <% } %></p>
+  <p><% if (questions[i].choice3) { %> <%= questions[i].choice3 %> <% } %></p>
+  <p><% if (questions[i].choice4) { %> <%= questions[i].choice4 %> <% } %></p>
 <% } %>
 
 <h2>Answers</h2>
@@ -39,14 +39,8 @@ Type <%= type %>, level <%= level %>
 </div>
 <br>
 
-<button id="demo">Next Question</button>
-
 <script>
-	$("#submit").click(function() {
-		alert($("#answer").val() === questions[0].answer);
-	});
-
-	document.getElementById("demo").onclick = function() {
-		this.style.color = "red";
-	}
+  $("#submit").click(function() {
+    alert($("#answer").val() === <%= questions[0].answer %>);
+  });
 </script>

@@ -31,11 +31,13 @@ module.exports = {
           res.view('quiz', {
             'type': type,
             'level': level,
-            'tutorial':levels,
+            'tutorial': levels,
             'questions': questions
           });
         });
       });
+    } else {
+      res.redirect('/');
     }
   }
 
