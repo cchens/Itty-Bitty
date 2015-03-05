@@ -24,8 +24,11 @@ module.exports = {
         // TODO: Gets all the levels, but need to get the numbers with difficulties
         console.log(levels);
 
+
         res.view('levels', {
           'type': type
+          'levels': levels
+
         });
       });
     } else {

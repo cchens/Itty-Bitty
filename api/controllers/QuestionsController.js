@@ -1,5 +1,5 @@
 /**
- * QuizController
+ * QuestionController
  *
  * Description
  */

@@ -10,15 +10,27 @@ Levels
 
 <p>Welcome to the journey with Itty Bitty!</p>
 
+<table id="levels_table">
+ <% for (var i = 0; i < levels.length; i++) { %>
+ <p><%= levels[i]. %></p>
+
   <table id="levels_table">
     <thead>
       <tr>
-        <th>Beginner</th>
-        <th>Intermediate</th>
-        <th>Advanced</th>
+        <% for (var i = 0; i < levels.length; i++) { %>
+          <th><%= levels[i].difficulty %></th>
+        <% } %>
       </tr>
     </thead>
     <tbody>
+      <% for (var i = 0; i < levels.length; i++) { %>
+        <tr>
+          <td><a href="/tutorials/<%= type %>/<%= levels[i].level_num %>" style="display:block;">1</a></td>
+        </tr>
+      <% } %>
+
+    </tbody>
+  </table> <br>
       <tr>
         <td><a href="/tutorials/<%= type %>/1" style="display:block;">1</a></td>
         <td><a href="/tutorials/<%= type %>/6" style="display:block;">6</a></td>
