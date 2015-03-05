@@ -23,9 +23,9 @@ CREATE TABLE achievements (
 
 CREATE TABLE levels (
 	level_id serial PRIMARY KEY,
-	name varchar(200) UNIQUE,
 	description text DEFAULT NULL,
 	type varchar(50) NOT NULL,
+	level_num integer NOT NULL,
 	difficulty integer NOT NULL,
 	content json NOT NULL
 );

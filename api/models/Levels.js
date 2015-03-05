@@ -15,12 +15,6 @@ module.exports = {
       primaryKey: true
     },
 
-    name: {
-      type: 'string',
-      size: 200,
-      unique: true,
-    },
-
     description: {
       type: 'string',
       defaultTo: null
@@ -29,7 +23,12 @@ module.exports = {
     type: {
       type: 'string',
       size: 50,
-      notNull: true,
+      notNull: true
+    },
+
+    level_num: {
+      type: 'integer',
+      notNull: true
     },
 
     difficulty: {
