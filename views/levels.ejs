@@ -13,15 +13,17 @@ Levels
 <table id="levels_table">
   <thead>
     <tr>
-      <% for (var i = 0; i < levels.length; i++) { %>
-        <th><%= levels[i].difficulty %></th>
-      <% } %>
+	  <th>Level Number</th>
+	  <th>Description</th>
+	  <th>Difficulties</th>
     </tr>
   </thead>
   <tbody>
     <% for (var i = 0; i < levels.length; i++) { %>
       <tr>
         <td><a href="/tutorials/<%= type %>/<%= levels[i].level_num %>" style="display:block;"><%= levels[i].level_num %></a></td>
+		<td><a href="/tutorials/<%= type %>/<%= levels[i].level_num %>" style="display:block;"><%= levels[i].description %></a></td>
+		<td><a href="/tutorials/<%= type %>/<%= levels[i].level_num %>" style="display:block;"><%= levels[i].difficulty %></a></td>
       </tr>
     <% } %>
   </tbody>
