@@ -42,5 +42,26 @@ module.exports = {
       defaultsTo: null
     }
 
+  },
+
+  getLevels: function (level_type) {
+    Levels.find()
+    .where({ type: level_type })
+    .exec(function (err, levels) {
+      if (err) return res.negotiate(err);
+
+      return levels;
+    });
+  },
+
+  getContent: function (level_id) {
+    Levels.find()
+    .where({ level_id: level_id })
+    .exec(function (err, level) {
+      if (err) return res.negotiate(err);
+
+      return level.contents;
+    });
   }
+
 };

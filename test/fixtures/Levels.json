@@ -5,7 +5,20 @@
     "description": "Short description",
     "type": "bitwise",
     "difficulty": 1,
-    "content": {}
+    "content": [
+      {
+        "type": "text",
+        "data": "Lorem ipsum"
+      },
+      {
+        "type": "image",
+        "data": "http://i.imgur.com/MAfHEIG.jpg"
+      },
+      {
+        "type": "video",
+        "data": "http://i.imgur.com/ipom2Nn.webm"
+      }
+    ]
   },
   {
     "level_id": 2,
@@ -13,7 +26,20 @@
     "description": "Short description",
     "type": "bitwise",
     "difficulty": 1,
-    "content": {}
+    "content": [
+      {
+        "type": "text",
+        "data": "Lorem ipsum"
+      },
+      {
+        "type": "image",
+        "data": "http://i.imgur.com/MAfHEIG.jpg"
+      },
+      {
+        "type": "video",
+        "data": "http://i.imgur.com/ipom2Nn.webm"
+      }
+    ]
   },
   {
     "level_id": 3,
@@ -21,7 +47,20 @@
     "description": "Short description",
     "type": "bitwise",
     "difficulty": 1,
-    "content": {}
+    "content": [
+      {
+        "type": "text",
+        "data": "Lorem ipsum"
+      },
+      {
+        "type": "image",
+        "data": "http://i.imgur.com/MAfHEIG.jpg"
+      },
+      {
+        "type": "video",
+        "data": "http://i.imgur.com/ipom2Nn.webm"
+      }
+    ]
   },
   {
     "level_id": 4,
@@ -29,7 +68,20 @@
     "description": "Short description",
     "type": "bases",
     "difficulty": 1,
-    "content": {}
+    "content": [
+      {
+        "type": "text",
+        "data": "Lorem ipsum"
+      },
+      {
+        "type": "image",
+        "data": "http://i.imgur.com/MAfHEIG.jpg"
+      },
+      {
+        "type": "video",
+        "data": "http://i.imgur.com/ipom2Nn.webm"
+      }
+    ]
   },
   {
     "level_id": 5,
@@ -37,7 +89,20 @@
     "description": "Short description",
     "type": "bases",
     "difficulty": 1,
-    "content": {}
+    "content": [
+      {
+        "type": "text",
+        "data": "Lorem ipsum"
+      },
+      {
+        "type": "image",
+        "data": "http://i.imgur.com/MAfHEIG.jpg"
+      },
+      {
+        "type": "video",
+        "data": "http://i.imgur.com/ipom2Nn.webm"
+      }
+    ]
   },
   {
     "level_id": 6,
@@ -45,6 +110,19 @@
     "description": "Short description",
     "type": "bases",
     "difficulty": 1,
-    "content": {}
+    "content": [
+      {
+        "type": "text",
+        "data": "Lorem ipsum"
+      },
+      {
+        "type": "image",
+        "data": "http://i.imgur.com/MAfHEIG.jpg"
+      },
+      {
+        "type": "video",
+        "data": "http://i.imgur.com/ipom2Nn.webm"
+      }
+    ]
   }
 ]

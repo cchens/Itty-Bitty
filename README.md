@@ -18,10 +18,13 @@ To install the Node.js dependencies and the [SCSS](http://sass-lang.com/) prepro
 
 ```shell
 sudo npm install
+sudo npm install -g sails
 sudo npm install -g sails-migrations
 sudo npm install -g nodemon
 gem install sass
 ```
+
+The `-g` flag installs the packages globally, so you can easily access them.
 
 #### Configure PostgreSQL
 
