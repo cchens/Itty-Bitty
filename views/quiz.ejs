@@ -1,26 +1,17 @@
 Type <%= type %>, level <%= level %>
 
 <h1>Tutorial</h1>
-<!-- currently just dislays the content tutorial description
-        will add the actual content later -->
-<%=  tutorial[0].description %>
-<br>
+	<div class='container'>
+	<!- currently just dislays the content tutorial description
+	  		will add the actual content later -->
+	<%=  tutorial[0].description %>
+	</div>
+</br>
 
 
-<h2>Questions</h2>
+<!-- TODO: tutorial content with exercise -->
 
-<%= questions[0].question %>
-<br>
-<% if(questions[0].choice1){ %> <%= questions[0].choice1 %> <%} %>
-<br>
-<% if(questions[0].choice2){ %> <%= questions[0].choice2 %> <%} %>
-<br>
-<% if(questions[0].choice3){ %> <%= questions[0].choice3 %> <%} %>
-<br>
-<% if(questions[0].choice4){ %> <%= questions[0].choice4 %> <%} %>
-<br>
 
-<<<<<<< HEAD
 <h1>Questions</h1>
 	<div class='container'>	
 	  
@@ -60,25 +51,20 @@ Type <%= type %>, level <%= level %>
 		}%>
 
 	</div>
-=======
->>>>>>> origin/master
 
-<h2>Answers</h2>
+</br>
+
+
+<h1>Answers</h1>
 <div>
-<<<<<<< HEAD
 Dunno if needed TBH, build up the answer forms/checks above
-=======
-  <input type="text" name="answer">
-  <br>
-  <input type="submit">
->>>>>>> origin/master
 </div>
-<br>
+</br>
 
-<button id="demo">Next Question</button>
+<button id="demo" onclick="myFunction()">Next Question</button>
 
 <script>
-  document.getElementById("demo").onclick = function() {
-    this.style.color = "red";
-  }
+function myFunction() {
+    document.getElementById("demo").style.color = "red";
+}
 </script>
