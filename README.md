@@ -7,7 +7,7 @@ A [Sails.js](http://sailsjs.org) web application for learning about bitwise oper
 
 ### Development
 
-*Note*: These instructions are generally based on a UNIX-based system.
+*Note*: These instructions were written with a Linux system in mind. It should also work on OS X, but has not been tested on Windows.
 
 #### Prerequisites
 - [Node.js](http://nodejs.org/)
@@ -18,6 +18,8 @@ To install the Node.js dependencies and the [SCSS](http://sass-lang.com/) prepro
 
 ```shell
 sudo npm install
+sudo npm install -g sails-migrations
+sudo npm install -g nodemon
 gem install sass
 ```
 
@@ -47,13 +49,12 @@ You should then be able to enter a `psql` console by running `psql --username=po
 
 #### Migrate the database
 
-**Note**: IGNORE THIS FOR NOW, we're using fixtures.
+We are using [barrels](https://github.com/bredikhin/barrels) to load fixtures from `test/fixtures`. The data is automatically loaded every time the server is launched (lifted). You will be prompted to choose how the tables/collections/sets are migrated (not migrated, attempt to keep existing data, or drop and rebuild).
 
 We are using [sails-migrations](https://www.npmjs.com/package/sails-migrations) for database migrations and [sails-postgresql](https://www.npmjs.com/package/sails-postgresql) as the adapter.
 
 ```shell
 sudo -u postgres sails-migrations db:create
-sudo -u postgres sails-migrations db:migrate
 ```
 
 You might need to change the password for the postgres user first:
