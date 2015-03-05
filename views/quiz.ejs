@@ -50,7 +50,7 @@
   $(document).ready(function () {
     var difficulty = <%= tutorial.difficulty %>;
     var score = 100 * difficulty;
-    var threshold = score * 0.75;
+    var threshold = Math.ceil(score * 0.75);
     var start = Date.now();
     var end = 0;
     var errors = 0;
