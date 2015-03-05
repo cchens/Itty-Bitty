@@ -21,14 +21,9 @@ module.exports = {
         if (levels === undefined) return res.notFound();
         if (err) return res.negotiate(err);
 
-        // TODO: Gets all the levels, but need to get the numbers with difficulties
-        console.log(levels);
-
-
         res.view('levels', {
-          'type': type
+          'type': type,
           'levels': levels
-
         });
       });
     } else {

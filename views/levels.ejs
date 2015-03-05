@@ -3,7 +3,7 @@
   Bitwise
 <% } else { %>
   Base
-    <% } %>
+<% } %>
 Levels
 </h1>
 
@@ -11,52 +11,20 @@ Levels
 <p>Welcome to the journey with Itty Bitty!</p>
 
 <table id="levels_table">
- <% for (var i = 0; i < levels.length; i++) { %>
- <p><%= levels[i]. %></p>
-
-  <table id="levels_table">
-    <thead>
-      <tr>
-        <% for (var i = 0; i < levels.length; i++) { %>
-          <th><%= levels[i].difficulty %></th>
-        <% } %>
-      </tr>
-    </thead>
-    <tbody>
-      <% for (var i = 0; i < levels.length; i++) { %>
-        <tr>
-          <td><a href="/tutorials/<%= type %>/<%= levels[i].level_num %>" style="display:block;">1</a></td>
-        </tr>
-      <% } %>
-
-    </tbody>
-  </table> <br>
-      <tr>
-        <td><a href="/tutorials/<%= type %>/1" style="display:block;">1</a></td>
-        <td><a href="/tutorials/<%= type %>/6" style="display:block;">6</a></td>
-        <td><a href="/tutorials/<%= type %>/11" style="display:block;">11</a></td>
-      </tr>
-      <tr>
-        <td><a href="/tutorials/<%= type %>/2" style="display:block;">2</a></td>
-    <td><a href="/tutorials/<%= type %>/7" style="display:block;">7</a></td>
-    <td><a href="/tutorials/<%= type %>/12" style="display:block;">12</a></td>
-      </tr>
-      <tr>
-    <td><a href="/tutorials/<%= type %>/3" style="display:block;">3</a></td>
-    <td><a href="/tutorials/<%= type %>/8" style="display:block;">8</a></td>
-    <td><a href="/tutorials/<%= type %>/13" style="display:block;">13</a></td>
-      </tr>
-      <tr>
-        <td><a href="/tutorials/<%= type %>/4" style="display:block;">4</a></td>
-    <td><a href="/tutorials/<%= type %>/9" style="display:block;">9</a></td>
-    <td><a href="/tutorials/<%= type %>/14" style="display:block;">14</a></td>
-      </tr>
+  <thead>
     <tr>
-        <td><a href="/tutorials/<%= type %>/5" style="display:block;">5</a></td>
-    <td><a href="/tutorials/<%= type %>/10" style="display:block;">10</a></td>
-    <td><a href="/tutorials/<%= type %>/15" style="display:block;">15</a></td>
+      <% for (var i = 0; i < levels.length; i++) { %>
+        <th><%= levels[i].difficulty %></th>
+      <% } %>
+    </tr>
+  </thead>
+  <tbody>
+    <% for (var i = 0; i < levels.length; i++) { %>
+      <tr>
+        <td><a href="/tutorials/<%= type %>/<%= levels[i].level_num %>" style="display:block;"><%= levels[i].level_num %></a></td>
       </tr>
-    </tbody>
-  </table> <br>
+    <% } %>
+  </tbody>
+</table>
 
 <a href="/ref/<%= type %>">Reference sheet</a>
