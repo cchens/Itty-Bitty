@@ -33,7 +33,7 @@ module.exports.connections = {
   },
 
   postgresql: {
-    module   : 'sails-postgresql',
+    adapter  : 'sails-postgresql',
     database : 'ittybitty_dev',
     host     : 'localhost',
     user     : 'postgres',

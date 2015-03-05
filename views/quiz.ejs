@@ -1,17 +1,26 @@
+Type <%= type %>, level <%= level %>
+
 <h1>Tutorial</h1>
   <div class='container'>
 	<%= sails.config.myconf.tutorial %>
   </div>
 </br>
 
-Type <%= type %>, level <%= level %>
 
 <!-- TODO: tutorial content with exercise -->
 
 
 <h1>Questions</h1>
-  <div class='container'>
-	<%= sails.config.myconf.anyobject.Question %>
+  <div class='container'>	
+  	<%=  questions[0].question %>
+  	</br>
+	<%=  questions[0].choice1 %>
+  	</br>
+	<%=  questions[0].choice2 %>
+	</br>
+	<%=  questions[0].choice3 %>
+	</br>
+	<%=  questions[0].choice4 %>
   </div>
 
 </br>
