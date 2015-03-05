@@ -4,31 +4,28 @@ Type <%= type %>, level <%= level %>
 <%= tutorial[0].description %>
 
 <!-- checks for all the possible data, currently unable to display videos or imgs -->
-<ul>
+
 <% for (var i = 0; i < tutorial[0].content.length; i++) { %>
   <% if (tutorial[0].content[i].type == 'text') { %>
     <p><%= tutorial[0].content[i].data %></p>
   <% } else if (tutorial[0].content[i].type == 'image') { %>
-    <p><%= tutorial[0].content[i].data %></p>
+    <p><img src='<%= tutorial[0].content[i].data %>' alt='Image' /></p>
   <% } else if (tutorial[0].content[i].type == 'video') { %>
-    <p><%= tutorial[0].content[i].data %></p>
+    <p><video src='<%= tutorial[0].content[i].data %>' controls>HTML5 video not supported in this browser</video></p>
   <% } %>
 <% } %>
-</ul>
-
 <br>
-
-<!-- so if there are multiple questions for one tutorial,
- should be able to display all of them -->
 
 <h2>Questions</h2>
 <% for (var i = 0; i < questions.length; i++) { %>
-  <p><%= questions[i].question %></p>
+  <div class='question'>
+    <p><%= questions[i].question %></p>
 
-  <p><% if (questions[i].choice1) { %> <%= questions[i].choice1 %> <% } %></p>
-  <p><% if (questions[i].choice2) { %> <%= questions[i].choice2 %> <% } %></p>
-  <p><% if (questions[i].choice3) { %> <%= questions[i].choice3 %> <% } %></p>
-  <p><% if (questions[i].choice4) { %> <%= questions[i].choice4 %> <% } %></p>
+    <p><% if (questions[i].choice1) { %> <%= questions[i].choice1 %> <% } %></p>
+    <p><% if (questions[i].choice2) { %> <%= questions[i].choice2 %> <% } %></p>
+    <p><% if (questions[i].choice3) { %> <%= questions[i].choice3 %> <% } %></p>
+    <p><% if (questions[i].choice4) { %> <%= questions[i].choice4 %> <% } %></p>
+  </div>
 <% } %>
 
 <h2>Answers</h2>
