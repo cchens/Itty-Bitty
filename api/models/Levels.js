@@ -26,7 +26,7 @@ module.exports = {
       notNull: true
     },
 
-    level_id: {
+    level_num: {
       type: 'integer',
       notNull: true
     },
