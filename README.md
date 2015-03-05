@@ -57,7 +57,7 @@ We are using [barrels](https://github.com/bredikhin/barrels) to load fixtures fr
 You will need to change the password for the postgres user first to ensure it matches the configuration settings:
 
 ```shell
-sudo -u postgres psql -c "ALTER USER postgres PASSWORD 'postgres';"
+psql --username=postgres -c "ALTER USER postgres PASSWORD 'postgres';"
 ```
 
 To initialize the database:
