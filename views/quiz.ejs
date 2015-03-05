@@ -25,37 +25,39 @@
   <% for (var i = 0; i < questions.length; i++) { %>
     <% var is_mc = true; %>
 
-    <form class='question'>
+    <div class='question'>
       <p><%= questions[i].question %></p>
 
       <% if (questions[i].choice1) { %>
-        <label><input type="radio" name="question-mc" value="1"> <%= questions[i].choice1 %></label>
+        <label><input type="radio" name="answer-mc-<%= i %>" value="1"> <%= questions[i].choice1 %></label>
       <% } else { %>
-        <input type="text" id="soln">
+        <input type="text" id="open_answer-<%= i %>">
       <% } %>
       <% if (questions[i].choice2) { %>
-        <label><input type="radio" name="question-mc" value="2"> <%= questions[i].choice2 %></label>
+        <label><input type="radio" name="answer-mc-<%= i %>" value="2"> <%= questions[i].choice2 %></label>
       <% } %>
       <% if (questions[i].choice3) { %>
-        <label><input type="radio" name="question-mc" value="3"> <%= questions[i].choice3 %></label>
+        <label><input type="radio" name="answer-mc-<%= i %>" value="3"> <%= questions[i].choice3 %></label>
       <% } %>
       <% if (questions[i].choice4) { %>
-        <label><input type="radio" name="question-mc" value="4"> <%= questions[i].choice4 %></label>
+        <label><input type="radio" name="answer-mc-<%= i %>" value="4"> <%= questions[i].choice4 %></label>
       <% } %>
-    </form>
-  <% } %>
 
-  <h2>Answers</h2>
-  <div>
-    <input type="text" id="answer">
-    <br>
-    <button id="submit">Submit</button>
-  </div>
-  <br>
+      <button id="submit-<%= i %>">Submit</button>
+    </div>
+  <% } %>
 </div>
 
 <script>
-  $("#submit").click(function() {
-    alert($("#answer").val() === <%= questions[0].answer %>);
-  });
+  <% for (var i = 0; i < questions.length; i++) { %>
+    document.getElementById("submit-<%= i %>").onclick = function(event) {
+      if (document.getElementById("open_answer-<%= i %>")) {
+        alert(document.getElementById("open_answer-<%= i %>").value === "<%= questions[i].answer %>");
+      } else {
+        alert($("input[name='answer-mc-<%= i %>']:checked").val() === "<%= questions[i].answer %>");
+      }
+
+      event.stopPropagation();
+    };
+  <% } %>
 </script>
