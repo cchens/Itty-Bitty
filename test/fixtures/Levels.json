@@ -1,7 +1,7 @@
 [
   {
     "level_id": 1,
-    "name": "A",
+    "name": "Bits Level 1",
     "description": "Short description",
     "type": "bitwise",
     "difficulty": 1,
@@ -22,7 +22,7 @@
   },
   {
     "level_id": 2,
-    "name": "B",
+    "name": "Bits Level 2",
     "description": "Short description",
     "type": "bitwise",
     "difficulty": 1,
@@ -43,7 +43,7 @@
   },
   {
     "level_id": 3,
-    "name": "C",
+    "name": "Bits Level 3",
     "description": "Short description",
     "type": "bitwise",
     "difficulty": 1,
@@ -64,7 +64,7 @@
   },
   {
     "level_id": 4,
-    "name": "D",
+    "name": "Bases Level 1",
     "description": "Short description",
     "type": "bases",
     "difficulty": 1,
@@ -85,7 +85,7 @@
   },
   {
     "level_id": 5,
-    "name": "E",
+    "name": "Bases Level 2",
     "description": "Short description",
     "type": "bases",
     "difficulty": 1,
@@ -106,7 +106,7 @@
   },
   {
     "level_id": 6,
-    "name": "F",
+    "name": "Bases Level 3",
     "description": "Short description",
     "type": "bases",
     "difficulty": 1,
