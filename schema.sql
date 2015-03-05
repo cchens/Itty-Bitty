@@ -1,4 +1,4 @@
-DROP SCHEMA IF EXISTS ittybitty_dev;
+DROP SCHEMA IF EXISTS ittybitty_dev CASCADE;
 CREATE SCHEMA ittybitty_dev;
 SET search_path TO ittybitty_dev;
 
