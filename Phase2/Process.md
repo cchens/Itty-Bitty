@@ -1,8 +1,8 @@
 ## Sprint summaries
 
-*Note*: A lot of discussion happened via Slack chat due to scheduling difficulties amongst the group members. The logs are available in the Phase 2 folder, but they aren't processed to be very readable...
+*Note*: A lot of discussion happened via Slack chat due to scheduling difficulties amongst the group members. The logs are available in the Phase2/Logs directory, but they aren't processed to be very readable...
 
-### Monday, February 9th**  
+### Monday, February 9th**
 Location: Tutorial Room
 
 Not an official scrum meeting as we haven't begun Phase 2 yet. At our TA's request we're writing more user stories so that we can properly coordinate our scrums. We intend to coordinate the writing of these user stories on Google Docs and then push them to GitHub when they are fully complete, as we did with our phase 1. **Eric Snyder** was appointed as our scrum master, and thus is currently writing this document. We decided our first proper meeting can be on **Thursday, February 11th** when our Phase 2 will be approved.
@@ -28,7 +28,7 @@ Tech stack:
   + Need to explore options
 
 ### Friday, February 20th
-See meeting-2015-02-20 in 301W15-Prj-Team1-repo\Phase2
+See meeting-2015-02-20 in Phase2/Logs
 
 ### Monday, February 23rd
 Location: Tutorial
@@ -42,7 +42,7 @@ To do:
 - Start prototyping tutorial system (display material, prompt for answer, validate answer, move on appropriately)
 
 ### Friday. February 27th
-See meeting-2015-02-27 in 301W15-Prj-Team1-repo\Phase2
+See meeting-2015-02-27 in Phase2/Logs
 
 ### Monday, March 2nd
 Location: Tutorial
