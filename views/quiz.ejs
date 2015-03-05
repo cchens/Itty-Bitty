@@ -49,15 +49,46 @@
 </div>
 
 <script>
-  <% for (var i = 0; i < questions.length; i++) { %>
-    document.getElementById("submit-<%= i %>").onclick = function(event) {
-      if (document.getElementById("open_answer-<%= i %>")) {
-        alert(document.getElementById("open_answer-<%= i %>").value === "<%= questions[i].answer %>");
-      } else {
-        alert($("input[name='answer-mc-<%= i %>']:checked").val() === "<%= questions[i].answer %>");
-      }
+  $(document).ready(function () {
+    var score = 100;
+    var start = Date.now();
+    var end = 0;
+    var errors = 0;
 
-      event.stopPropagation();
-    };
-  <% } %>
+
+    <% for (var i = 0; i < questions.length; i++) { %>
+      document.getElementById("submit-<%= i %>").onclick = function(event) {
+        end = Date.now();
+        score -= (start - end) / 1000;
+
+        if (document.getElementById("open_answer-<%= i %>")) {
+          if (document.getElementById("open_answer-<%= i %>").value === "<%= questions[i].answer %>") {
+            alert("Question <%= i%>: Correct!");
+          }
+          else {
+            errors++;
+            score = score - Math.pow(2, errors);
+            alert("Question <%= i %>: Incorrect...");
+          }
+          alert(document.getElementById("open_answer-<%= i %>").value === "<%= questions[i].answer %>");
+        } 
+        else {
+          if ($("input[name='answer-mc-<%= i %>']:checked").val() === "<%= questions[i].answer %>") {
+            alert("Question <%= i%>: Correct!");
+          }
+          else {
+            errors++;
+            score = score - Math.pow(2, errors);
+            alert("Question <%= i %>: Incorrect...");
+          }
+        }
+
+        if (score > 0) {
+          score = 0;
+        }
+        event.stopPropagation();
+      };
+    <% } %>
+  });
+
 </script>
