@@ -1,25 +1,35 @@
 Type <%= type %>, level <%= level %>
 
 <h1>Tutorial</h1>
-<!-- currently just dislays the content tutorial description
-        will add the actual content later -->
 <%=  tutorial[0].description %>
+
+<!-- checks for all the possible data, currently unable to display videos or imgs -->
+<ul>
+<% for(var i=0; i<tutorial[0].content.length; i++) {%>
+	<% if(tutorial[0].content[i].type == 'text'){ %> <p><%= tutorial[0].content[i].data %></p> <%} 
+	else if(tutorial[0].content[i].type == 'image'){ %> <p><%= tutorial[0].content[i].data %></p> <%} 
+		else if(tutorial[0].content[i].type == 'video'){ %> <p><%= tutorial[0].content[i].data %></p> <%} 
+	%>
+
+<% } %>
+</ul>
+
 <br>
 
-
+<!-- so if there are multiple questions for one tutorial,
+ should be able to display all of them -->
+ 
 <h2>Questions</h2>
+<% for(var i=0; i<questions.length; i++) {%>
 
-<%= questions[0].question %>
-<br>
-<% if(questions[0].choice1){ %> <%= questions[0].choice1 %> <%} %>
-<br>
-<% if(questions[0].choice2){ %> <%= questions[0].choice2 %> <%} %>
-<br>
-<% if(questions[0].choice3){ %> <%= questions[0].choice3 %> <%} %>
-<br>
-<% if(questions[0].choice4){ %> <%= questions[0].choice4 %> <%} %>
-<br>
+	<p><%= questions[i].question %></p>
 
+	<p><% if(questions[i].choice1){ %> <%= questions[i].choice1 %> <%} %></p>
+	<p><% if(questions[i].choice2){ %> <%= questions[i].choice2 %> <%} %></p>
+	<p><% if(questions[i].choice3){ %> <%= questions[i].choice3 %> <%} %></p>
+	<p><% if(questions[i].choice4){ %> <%= questions[i].choice4 %> <%} %></p>
+
+<% } %>
 
 <h2>Answers</h2>
 <div>
