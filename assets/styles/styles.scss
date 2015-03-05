@@ -16,6 +16,17 @@ body {
   width: 80%;
 }
 
+// Cards
+%card {
+  background-color: $white;
+  border-radius: $radius;
+  box-shadow: 0 3px 5px lighten($blue, 25%);
+  display: inline-block;
+  margin: 1em;
+  padding: 1em;
+  vertical-align: top;
+}
+
 
 // Header
 // ========================================================
@@ -276,13 +287,7 @@ footer {
 }
 
   .home-about-card {
-    background-color: $white;
-    border-radius: $radius;
-    box-shadow: 0 3px 5px lighten($blue, 25%);
-    display: inline-block;
-    margin: 1em;
-    padding: 1em;
-    vertical-align: top;
+    @extend %card;
     width: 20%;
 
     @include breakpoint(large) {
@@ -311,13 +316,26 @@ footer {
   }
 
 
-// Profile
-// ========================================================
-
-
 // Topic/level selection menus
 // ========================================================
 
+#topics_menu {
+  text-align: center;
+
+  a {
+    @extend %card;
+    width: 40%;
+  }
+
+  img {
+    width: 110px;
+  }
+}
+
 
 // Level
+// ========================================================
+
+
+// Profile
 // ========================================================
