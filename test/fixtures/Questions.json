@@ -2,7 +2,7 @@
   {
     "question_id": 1,
     "level_id": 1,
-    "question": "Question 1",
+    "question": "Question 1?",
     "choice1": "A",
     "choice2": "B",
     "choice3": "C",
@@ -13,7 +13,7 @@
   {
     "question_id": 2,
     "level_id": 2,
-    "question": "Question 2",
+    "question": "Question 2?",
     "answer": "duh",
     "explanation": "It's obvious"
   }

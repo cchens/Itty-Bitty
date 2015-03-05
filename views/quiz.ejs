@@ -1,40 +1,58 @@
-Type <%= type %>, level <%= level %>
-
 <h1>Tutorial</h1>
-<%= tutorial[0].description %>
+<h4><%= title %></h4>
+<p><%= tutorial.description %></p>
 
 <!-- checks for all the possible data, currently unable to display videos or imgs -->
-
-<% for (var i = 0; i < tutorial[0].content.length; i++) { %>
-  <% if (tutorial[0].content[i].type == 'text') { %>
-    <p><%= tutorial[0].content[i].data %></p>
-  <% } else if (tutorial[0].content[i].type == 'image') { %>
-    <p><img src='<%= tutorial[0].content[i].data %>' alt='Image' /></p>
-  <% } else if (tutorial[0].content[i].type == 'video') { %>
-    <p><video src='<%= tutorial[0].content[i].data %>' controls>HTML5 video not supported in this browser</video></p>
+<div id='tutorial-material'>
+  <% for (var i = 0; i < tutorial.content.length; i++) { %>
+    <% if (tutorial.content[i].type == 'text') { %>
+      <p><%= tutorial.content[i].data %></p>
+    <% } else if (tutorial.content[i].type == 'image') { %>
+      <p><img src='<%= tutorial.content[i].data %>' alt='Image' /></p>
+    <% } else if (tutorial.content[i].type == 'video') { %>
+      <p><video src='<%= tutorial.content[i].data %>' controls>HTML5 video not supported in this browser</video></p>
+    <% } %>
   <% } %>
-<% } %>
-<br>
-
-<h2>Questions</h2>
-<% for (var i = 0; i < questions.length; i++) { %>
-  <div class='question'>
-    <p><%= questions[i].question %></p>
-
-    <p><% if (questions[i].choice1) { %> <%= questions[i].choice1 %> <% } %></p>
-    <p><% if (questions[i].choice2) { %> <%= questions[i].choice2 %> <% } %></p>
-    <p><% if (questions[i].choice3) { %> <%= questions[i].choice3 %> <% } %></p>
-    <p><% if (questions[i].choice4) { %> <%= questions[i].choice4 %> <% } %></p>
-  </div>
-<% } %>
-
-<h2>Answers</h2>
-<div>
-  <input type="text" id="answer">
-  <br>
-  <button id="submit">Submit</button>
 </div>
-<br>
+
+<div id='tutorial-exercise'>
+  <% if (questions.length > 1) { %>
+    <h2>Exercises</h2>
+  <% } else { %>
+    <h2>Exercise</h2>
+  <% } %>
+
+  <% for (var i = 0; i < questions.length; i++) { %>
+    <% var is_mc = true; %>
+
+    <form class='question'>
+      <p><%= questions[i].question %></p>
+
+      <% if (questions[i].choice1) { %>
+        <label><input type="radio" name="question-mc" value="1"> <%= questions[i].choice1 %></label>
+      <% } else { %>
+        <input type="text" id="soln">
+      <% } %>
+      <% if (questions[i].choice2) { %>
+        <label><input type="radio" name="question-mc" value="2"> <%= questions[i].choice2 %></label>
+      <% } %>
+      <% if (questions[i].choice3) { %>
+        <label><input type="radio" name="question-mc" value="3"> <%= questions[i].choice3 %></label>
+      <% } %>
+      <% if (questions[i].choice4) { %>
+        <label><input type="radio" name="question-mc" value="4"> <%= questions[i].choice4 %></label>
+      <% } %>
+    </form>
+  <% } %>
+
+  <h2>Answers</h2>
+  <div>
+    <input type="text" id="answer">
+    <br>
+    <button id="submit">Submit</button>
+  </div>
+  <br>
+</div>
 
 <script>
   $("#submit").click(function() {
