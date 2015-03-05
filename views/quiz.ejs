@@ -1,31 +1,42 @@
 Type <%= type %>, level <%= level %>
 
 <h1>Tutorial</h1>
+	<div class='container'>
+	<!- currently just dislays the content tutorial description
+	  		will add the actual content later -->
+	<%=  tutorial[0].description %>
+	</div>
+</br>
 
-<br>
 
 <!-- TODO: tutorial content with exercise -->
 
 
-<h2>Questions</h2>
-<%= questions[0].question %>
-<br>
-<%= questions[0].choice1 %>
-<br>
-<%= questions[0].choice2 %>
-<br>
-<%= questions[0].choice3 %>
-<br>
-<%= questions[0].choice4 %>
-<br>
+<h1>Questions</h1>
+	<div class='container'>	
+	  
+		<%=  questions[0].question %>
+	  	</br>
+		<% if(questions[0].choice1){ %> <%= questions[0].choice1 %> <%} %>
+	  	</br>
+		<% if(questions[0].choice2){ %> <%= questions[0].choice2 %> <%} %>
+		</br>
+		<% if(questions[0].choice3){ %> <%= questions[0].choice3 %> <%} %>
+		</br>
+		<% if(questions[0].choice4){ %> <%= questions[0].choice4 %> <%} %>
+		
+	</div>
 
-<h2>Answer</h2>
+</br>
+
+
+<h1>Answers</h1>
 <div>
-	<input type="text" name="answer">
-	<br>
-	<input type="submit">
+	<input type = "text" name = "answer">
+	</br>
+	<input type = submit>
 </div>
-<br>
+</br>
 
 <button id="demo" onclick="myFunction()">Next Question</button>
 
