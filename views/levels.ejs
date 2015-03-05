@@ -1,11 +1,11 @@
-Type:
-<div>
-  <% if (type) {%>
-    <%= type %>
-  <% } %>
-</div>
-
-<h1>Levels</h1>
+<h1>
+<% if (type == 'bitwise') {%>
+    <%='Bitwise'%>
+    <% } else { %>
+    <%='Bases'%>
+    <% } %> 
+    Levels
+</h1>
 
 <head>
   <style>
@@ -16,7 +16,6 @@ Type:
     th, td {
         padding: 15px;
     }
-
     div {
         text-align: center;
     }
