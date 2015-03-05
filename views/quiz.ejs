@@ -1,36 +1,32 @@
 Type <%= type %>, level <%= level %>
 
 <h1>Tutorial</h1>
-  <div class='container'>
-	<%= sails.config.myconf.tutorial %>
-  </div>
-</br>
+<%= sails.config.myconf.tutorial %>
 
+<br>
 
 <!-- TODO: tutorial content with exercise -->
 
 
-<h1>Questions</h1>
-  <div class='container'>	
-  	<%=  questions[0].question %>
-  	</br>
-	<%=  questions[0].choice1 %>
-  	</br>
-	<%=  questions[0].choice2 %>
-	</br>
-	<%=  questions[0].choice3 %>
-	</br>
-	<%=  questions[0].choice4 %>
-  </div>
+<h2>Questions</h2>
+<%=  questions[0].question %>
+<br>
+<%=  questions[0].choice1 %>
+<br>
+<%=  questions[0].choice2 %>
+<br>
+<%=  questions[0].choice3 %>
+<br>
+<%=  questions[0].choice4 %>
+<br>
 
-</br>
-<h1>Answers</h1>
+<h2>Answer</h2>
 <div>
-	<input type = "text" name = "answer">
-	</br>
-	<input type = submit>
+	<input type="text" name="answer">
+	<br>
+	<input type="submit">
 </div>
-</br>
+<br>
 
 <button id="demo" onclick="myFunction()">Next Question</button>
 
