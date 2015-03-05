@@ -48,7 +48,9 @@
 
 <script>
   $(document).ready(function () {
-    var score = 100;
+    var difficulty = <%= tutorial.difficulty %>;
+    var score = 100 * difficulty;
+    var threshold = score * 0.75;
     var start = Date.now();
     var end = 0;
     var errors = 0;
@@ -86,7 +88,12 @@
         event.stopPropagation();
       };
     <% } %>
-    alert("Score: " + score);
+    if (score > threshold) {
+      alert("You passed! Score: " + score);
+    }
+    else {
+      alert("You failed! You got: " + score + " but needed: " + threshold);
+    }
   });
 
 </script>
