@@ -43,7 +43,7 @@ module.exports.routes = {
   'GET /ref/bitwise': { view: 'ref_bitwise' },
   'GET /ref/bases': { view: 'ref_bases' },
 
-  'GET /quiz/:level': 'QuestionsController.index',
+  //'GET /quiz/:type/:level': 'QuestionsController.index',
 
 
   /***************************************************************************

@@ -11,12 +11,12 @@ module.exports = {
         level = req.params.level;
 
     // get appropriate level content from db
-    // e.g. http://localhost:1337/quiz/1
-    if (level) {
+    // e.g. http://localhost:1337/tutorials/bitwise/1
+    if (level && type) {
       // checks for the tutoral content by checking level id
       // this will need to be changed so checks for types too
       Levels
-      .find({ level_id: level })
+      .find({ level_num: level, type: type })
       .exec(function (err, levels) {
         if (levels === undefined) return res.notFound();
         if (err) return res.negotiate(err);
