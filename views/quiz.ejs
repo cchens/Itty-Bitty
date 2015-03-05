@@ -23,16 +23,20 @@ Type <%= type %>, level <%= level %>
 
 <h2>Answers</h2>
 <div>
-  <input type="text" name="answer">
+  <input type="text" id="answer">
   <br>
-  <input type="submit">
+  <button id="submit">Submit</button>
 </div>
 <br>
 
 <button id="demo">Next Question</button>
 
 <script>
-  document.getElementById("demo").onclick = function() {
-    this.style.color = "red";
-  }
+	$("#submit").click(function() {
+		alert($("#answer").val() === questions[0].answer);
+	})
+
+	document.getElementById("demo").onclick = function() {
+		this.style.color = "red";
+	}
 </script>
