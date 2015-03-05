@@ -1,22 +1,27 @@
+Type:
+<div>
+  <% if (type) {%>
+    <%= type %>
+  <% } %>
+</div>
+
 <h1>Levels</h1>
 
 <head>
-<style>
-table, th, td {
-    border: 5px solid grey;
-}
-th, td {
-    padding: 15px;
-}
-</style>
+  <style>
+    table, th, td {
+        border: 5px solid grey;
+        text-align: center
+    }
+    th, td {
+        padding: 15px;
+    }
+
+    div {
+        text-align: center;
+    }
+  </style>
 </head>
-
-Type:
-<% if (type) {%>
-  <%= type %>
-<% } %>
-
-<!-- TODO: display table of levels -->
 
 <p>Welcome to the journey with Itty Bitty!</p>
 
@@ -36,23 +41,23 @@ Type:
       </tr>
       <tr>
         <td><a href="/tutorials/<%= type %>/2" style="display:block;">2</a></td>
-		<td><a href="/tutorials/<%= type %>/7" style="display:block;">7</a></td>
-		<td><a href="/tutorials/<%= type %>/12" style="display:block;">12</a></td>
+    <td><a href="/tutorials/<%= type %>/7" style="display:block;">7</a></td>
+    <td><a href="/tutorials/<%= type %>/12" style="display:block;">12</a></td>
       </tr>
       <tr>
-		<td><a href="/tutorials/<%= type %>/3" style="display:block;">3</a></td>
-		<td><a href="/tutorials/<%= type %>/8" style="display:block;">8</a></td>
-		<td><a href="/tutorials/<%= type %>/13" style="display:block;">13</a></td>
+    <td><a href="/tutorials/<%= type %>/3" style="display:block;">3</a></td>
+    <td><a href="/tutorials/<%= type %>/8" style="display:block;">8</a></td>
+    <td><a href="/tutorials/<%= type %>/13" style="display:block;">13</a></td>
       </tr>
       <tr>
         <td><a href="/tutorials/<%= type %>/4" style="display:block;">4</a></td>
-		<td><a href="/tutorials/<%= type %>/9" style="display:block;">9</a></td>
-		<td><a href="/tutorials/<%= type %>/14" style="display:block;">14</a></td>
+    <td><a href="/tutorials/<%= type %>/9" style="display:block;">9</a></td>
+    <td><a href="/tutorials/<%= type %>/14" style="display:block;">14</a></td>
       </tr>
-	  <tr>
+    <tr>
         <td><a href="/tutorials/<%= type %>/5" style="display:block;">5</a></td>
-		<td><a href="/tutorials/<%= type %>/10" style="display:block;">10</a></td>
-		<td><a href="/tutorials/<%= type %>/15" style="display:block;">15</a></td>
+    <td><a href="/tutorials/<%= type %>/10" style="display:block;">10</a></td>
+    <td><a href="/tutorials/<%= type %>/15" style="display:block;">15</a></td>
       </tr>
     </tbody>
   </table> <br>
