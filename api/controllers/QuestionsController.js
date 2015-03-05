@@ -15,14 +15,16 @@ module.exports = {
     if (type && level_num) {
       // Checks for the tutoral content by checking type and level_num
       Levels
-      .findOne({ type: type, level_num: level_num })
+      .findOne()
+      .where({ type: type, level_num: level_num })
       .exec(function (err, level) {
         if (level === undefined) return res.notFound();
         if (err) return res.negotiate(err);
 
         // Checks for the question data for this level
         Questions
-        .find({ level_id: level.level_id })
+        .find()
+        .where({ level_id: level.level_id })
         .exec(function (err, questions) {
           if (questions === undefined) return res.notFound();
           if (err) return res.negotiate(err);
