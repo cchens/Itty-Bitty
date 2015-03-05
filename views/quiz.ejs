@@ -21,28 +21,25 @@ Type <%= type %>, level <%= level %>
 	  	<!-- Assumed that if there is no 'choice1', it's a long-answer question -->
 	  	<form>
 		<% if(questions[0].choice1){ %> 
-			<input type="radio" name="radio_but" value="a"> <%= questions[0].choice1 %> <%} %>
+			<input type="radio" name="radio_but" value="a"> <%= questions[0].choice1 } %>
 		<% else{ is_mc = false; %> 
 			<input type="text" id="soln"> <%}%>
 	  	</br>
 		<% if(questions[0].choice2){ %> 
-			<input type="radio" name="radio_but" value="b"> <%= questions[0].choice2 %> <%} %>
+			<input type="radio" name="radio_but" value="b"> <%= questions[0].choice2 } %>
 		</br>
 		<% if(questions[0].choice3){ %> 
-			<input type="radio" name="radio_but" value="c"> <%= questions[0].choice3 %> <%} %>
+			<input type="radio" name="radio_but" value="c"> <%= questions[0].choice3 } %>
 		</br>
 		<% if(questions[0].choice4){ %> 
-			<input type="radio" name="radio_but" value="d"> <%= questions[0].choice4 %> <%} %>
+			<input type="radio" name="radio_but" value="d"> <%= questions[0].choice4 } %>
 		</form>
 		
 		<button id="submit" onClick="verify()">Submit Answer</button>
 		
 		<%function verify() {
 			if (is_mc) {
-				switch(questions[0].answer) {
-					case 'A':
-					alert($("input[radio_but]:checked").val() === questions[0].answer);
-				}
+				alert($("input[radio_but]:checked").val() === questions[0].answer);
 			}
 			else {
 				alert($("#soln").val() === questions[0].answer);
