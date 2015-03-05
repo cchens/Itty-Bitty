@@ -3,33 +3,33 @@
     "user_id": 1,
     "provider": "local",
     "id": "a",
-    "name": {},
+    "name": [],
     "displayName": "arkon",
     "email": "arkon@email.ca",
     "photo": "url",
-    "achievements": {},
+    "achievements": [],
     "password": "password1"
   },
   {
     "user_id": 2,
     "provider": "local",
     "id": "b",
-    "name": {},
+    "name": [],
     "displayName": "eric",
     "email": "eric@email.ca",
     "photo": "url",
-    "achievements": {},
+    "achievements": [],
     "password": "password2"
   },
   {
     "user_id": 3,
     "provider": "local",
     "id": "c",
-    "name": {},
+    "name": [],
     "displayName": "sharon",
     "email": "sharon@email.ca",
     "photo": "url",
-    "achievements": {},
+    "achievements": [],
     "password": "password3"
   }
 ]
