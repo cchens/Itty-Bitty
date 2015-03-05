@@ -7,7 +7,7 @@ A [Sails.js](http://sailsjs.org) web application for learning about bitwise oper
 
 ### Development
 
-*Note*: These instructions were written with a Linux system in mind. It should also work on OS X, but has not been tested on Windows.
+*Note*: These instructions were written with a Linux system in mind. It should also work on OS X, but has not been tested on Windows. Windows users can ignore all the `sudo` keywords.
 
 #### Prerequisites
 - [Node.js](http://nodejs.org/)
@@ -70,6 +70,12 @@ or
 
 ```shell
 createdb --username=postgres ittybitty_dev
+```
+
+To drop the database, you could do it manually in `psql` or run:
+
+```shell
+sudo -u postgres sails-migrations db:drop
 ```
 
 We are using [sails-migrations](https://www.npmjs.com/package/sails-migrations) for database migrations and [sails-postgresql](https://www.npmjs.com/package/sails-postgresql) as the adapter.
