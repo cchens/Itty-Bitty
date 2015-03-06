@@ -22,8 +22,17 @@ Levels
     <% for (var i = 0; i < levels.length; i++) { %>
       <tr>
         <td><a href="/tutorials/<%= type %>/<%= levels[i].level_num %>" style="display:block;"><%= levels[i].level_num %></a></td>
-		<td><a href="/tutorials/<%= type %>/<%= levels[i].level_num %>" style="display:block;"><%= levels[i].description %></a></td>
-		<td><a href="/tutorials/<%= type %>/<%= levels[i].level_num %>" style="display:block;"><%= levels[i].difficulty %></a></td>
+    		<td><a href="/tutorials/<%= type %>/<%= levels[i].level_num %>" style="display:block;"><%= levels[i].description %></a></td>
+    		<td><a href="/tutorials/<%= type %>/<%= levels[i].level_num %>" style="display:block;">
+
+        <!-- this is based on if there are only 3 levels of difficulty  -->
+
+        <% if (levels[i].difficulty == '1') { %> Easy <% }
+          else if (levels[i].difficulty == '2') { %> Medium <% } 
+          else if (levels[i].difficulty == '3') { %> Hard <% }
+        %>
+
+        </a></td>
       </tr>
     <% } %>
   </tbody>
