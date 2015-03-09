@@ -1,7 +1,7 @@
 [
   {
     "level_id": 1,
-    "description": "Short description",
+    "description": "Introduction to AND",
     "type": "bitwise",
     "level_num": 1,
     "difficulty": 1,
@@ -22,7 +22,7 @@
   },
   {
     "level_id": 2,
-    "description": "Short description",
+    "description": "Introduction to OR",
     "type": "bitwise",
     "level_num": 2,
     "difficulty": 1,
@@ -43,7 +43,7 @@
   },
   {
     "level_id": 3,
-    "description": "Short description",
+    "description": "Introduction to NOT",
     "type": "bitwise",
     "level_num": 3,
     "difficulty": 1,
@@ -62,50 +62,163 @@
       }
     ]
   },
-  {
+    {
     "level_id": 4,
-    "description": "Short description",
+    "description": "Introduction to XOR",
+    "type": "bitwise",
+    "level_num": 4,
+    "difficulty": 1,
+    "content": [
+      {
+        "type": "text",
+        "data": "Lorem ipsum"
+      },
+      {
+        "type": "image",
+        "data": "http://i.imgur.com/MAfHEIG.jpg"
+      },
+      {
+        "type": "video",
+        "data": "http://i.imgur.com/ipom2Nn.webm"
+      }
+    ]
+  },
+    {
+    "level_id": 5,
+    "description": "Introduction to NAND",
+    "type": "bitwise",
+    "level_num": 5,
+    "difficulty": 1,
+    "content": [
+      {
+        "type": "text",
+        "data": "Lorem ipsum"
+      },
+      {
+        "type": "image",
+        "data": "http://i.imgur.com/MAfHEIG.jpg"
+      },
+      {
+        "type": "video",
+        "data": "http://i.imgur.com/ipom2Nn.webm"
+      }
+    ]
+  },
+    {
+    "level_id": 6,
+    "description": "Introduction to NOR",
+    "type": "bitwise",
+    "level_num": 6,
+    "difficulty": 1,
+    "content": [
+      {
+        "type": "text",
+        "data": "Since you have learned OR in the previous level, it is difficult for you to learn NOR."
+      },
+	  {
+        "type": "text",
+        "data": "NOR is like NOT OR. All you need to do is to perform OR operation, and flip all the bits in the result."
+      },
+	  {
+        "type": "text",
+        "data": "Here is an example:"
+      },
+      {
+        "type": "image",
+        "data": "http://s5.postimg.org/c5ah90jg5/NOR_example.jpg"
+      }
+    ]
+  },
+    {
+    "level_id": 7,
+    "description": "Introduction to Left Shift",
+    "type": "bitwise",
+    "level_num": 7,
+    "difficulty": 1,
+    "content": [
+      {
+        "type": "text",
+        "data": "Shift the bits to the left. Zeros are shifted in to replace the discarded bits."
+      },
+	  {
+        "type": "text",
+        "data": "Here's the example: [Wikipedia, http://en.wikipedia.org/wiki/Bitwise_operation#Bit_shifts]"
+      },
+      {
+        "type": "image",
+        "data": "http://s5.postimg.org/twm3ngyut/left_Shift_example.jpg"
+      }
+    ]
+  },
+    {
+    "level_id": 8,
+    "description": "Introduction to Right Shift",
+    "type": "bitwise",
+    "level_num": 8,
+    "difficulty": 1,
+    "content": [
+      {
+        "type": "text",
+        "data": "Shift the bits to the right. Zeros are shifted in to replace the discarded bits."
+      },
+	  {
+        "type": "text",
+        "data": "Here is an example: [Expedia, http://en.wikipedia.org/wiki/Bitwise_operation#Bit_shifts]"
+      },
+      {
+        "type": "image",
+        "data": "http://s5.postimg.org/byws5xab9/right_Shift_example.jpg"
+      }
+    ]
+  },
+  {
+    "level_id": 9,
+    "description": "Introduction: Converting Base 2 to Base 10",
     "type": "bases",
     "level_num": 1,
     "difficulty": 1,
     "content": [
       {
         "type": "text",
-        "data": "Lorem ipsum"
+        "data": "Example with explanation: Covert binary number 10101011 to decimal."
       },
       {
         "type": "image",
-        "data": "http://i.imgur.com/MAfHEIG.jpg"
+        "data": "http://s5.postimg.org/43qu4uq2d/Base2_10.jpg"
       },
       {
-        "type": "video",
-        "data": "http://i.imgur.com/ipom2Nn.webm"
+        "type": "text",
+        "data": "Therefore binary number 10101011 is equivalent to decimal number 171."
       }
     ]
   },
   {
-    "level_id": 5,
-    "description": "Short description",
+    "level_id": 10,
+    "description": "Introduction: Converting Base 10 to Base 2",
     "type": "bases",
     "level_num": 2,
     "difficulty": 1,
     "content": [
       {
         "type": "text",
-        "data": "Lorem ipsum"
+        "data": "Example with explanation: Covert decimal number 78 to decimal."
+      },
+	  {
+        "type": "text",
+        "data": "Divide the number repeatedly by 2 until reach 1, keep track of the remainder."
       },
       {
         "type": "image",
-        "data": "http://i.imgur.com/MAfHEIG.jpg"
+        "data": "http://s5.postimg.org/b1qcx1yt1/Base10_2.jpg"
       },
       {
-        "type": "video",
-        "data": "http://i.imgur.com/ipom2Nn.webm"
+        "type": "text",
+        "data": "Summarize the remainder from bottom to top, and appending a one to the left of the result. Therefore decimal number 78 is equivalent to binary number 1001110."
       }
     ]
   },
   {
-    "level_id": 6,
+    "level_id": 11,
     "description": "Short description",
     "type": "bases",
     "level_num": 3,
