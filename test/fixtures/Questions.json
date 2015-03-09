@@ -23,5 +23,61 @@
     "question": "Question 2?",
     "answer": "duh",
     "explanation": "It's obvious"
+  },
+  {
+    "question_id": 4,
+    "level_id": 6,
+    "question": "What is the answer of 0110 NOR 1010? (Answer in 4 bits please.)",
+    "answer": "0001",
+    "explanation": "It's obvious"
+  },
+  {
+    "question_id": 5,
+    "level_id": 6,
+    "question": "What is the answer of 10001101 NOR 00100111? (Answer in 8 bits please.)",
+    "answer": "01010000",
+    "explanation": "It's obvious"
+  },
+  {
+    "question_id": 6,
+    "level_id": 7,
+    "question": "What is the answer of 11011010 shifting 3 bits to the left? (Answer in 8 bits please.)",
+    "answer": "11010000",
+    "explanation": "It's obvious"
+  },
+  {
+    "question_id": 7,
+    "level_id": 8,
+    "question": "What is the answer of 11011010 shifting 4 bits to the right? (Answer in 8 bits please.)",
+    "answer": "00001101",
+    "explanation": "It's obvious"
+  },
+  {
+    "question_id": 8,
+    "level_id": 9,
+    "question": "What is 00101100(base 2) in base 10?",
+    "answer": "44",
+    "explanation": "It's obvious"
+  },
+  {
+    "question_id": 9,
+    "level_id": 9,
+    "question": "What is 10100010(base 2) in base 10?",
+    "answer": "162",
+    "explanation": "It's obvious"
+  },
+  {
+    "question_id": 10,
+    "level_id": 10,
+    "question": "What is 32(base 10) in base 2? (Answer in 8 bits please.)",
+    "answer": "00010000",
+    "explanation": "It's obvious"
+  },
+  {
+    "question_id": 11,
+    "level_id": 10,
+    "question": "What is 101(base 10) in base 2? (Answer in 8 bits please.)",
+    "answer": "01100101",
+    "explanation": "It's obvious"
   }
 ]
