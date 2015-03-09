@@ -316,6 +316,20 @@ footer {
   }
 
 
+// Error pages
+// ========================================================
+
+#error_page {
+  font-family: $mono-fonts !important;
+  font-size: 0.9em;
+  text-align: center;
+
+  h3 {
+    margin: 0.5em 0 1em;
+  }
+}
+
+
 // Topic/level selection menus
 // ========================================================
 
