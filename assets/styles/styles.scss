@@ -230,11 +230,11 @@ footer {
   }
 
   #home-hero-intro-text {
-    background: linear-gradient($pink, $orange);
+    color: $pink;
+    background: -webkit-linear-gradient($pink, $orange);
     background-size: cover;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    color: $pink;
 
     h3 {
       margin-top: 0.75em;
