@@ -24,8 +24,8 @@ module.exports.passport = {
     protocol: 'oauth',
     strategy: require('passport-twitter').Strategy,
     options: {
-      consumerKey: 'your-consumer-key',
-      consumerSecret: 'your-consumer-secret'
+      consumerKey: 'GYrfzWxVlL2nVZkNptyEYz7jY',
+      consumerSecret: 'L3SRN8Xt39386LaXsn3ZNQI1XgpR8niMq3fz72iLKMPN5jXt49'
     }
   },
 
@@ -34,8 +34,8 @@ module.exports.passport = {
     protocol: 'oauth2',
     strategy: require('passport-github').Strategy,
     options: {
-      clientID: 'your-client-id',
-      clientSecret: 'your-client-secret'
+      clientID: '5166844b011f5029504e',
+      clientSecret: '4a64f45f2a010eefcc121222d84a83a62d419264'
     }
   },
 
@@ -44,8 +44,8 @@ module.exports.passport = {
     protocol: 'oauth2',
     strategy: require('passport-facebook').Strategy,
     options: {
-      clientID: 'your-client-id',
-      clientSecret: 'your-client-secret'
+      clientID: '1377242345932332',
+      clientSecret: '8df9fcf772867cbe3c749e526d28f115'
     }
   },
 
@@ -54,8 +54,9 @@ module.exports.passport = {
     protocol: 'oauth2',
     strategy: require('passport-google-oauth').OAuth2Strategy,
     options: {
-      clientID: 'your-client-id',
-      clientSecret: 'your-client-secret'
+      clientID: '478667748175-5j82nkudo6ogu1guorb658at2vl2cusl.apps.googleusercontent.com',
+      clientSecret: 'g4XnyZpBoe-IjgpKBX4aI3cf',
+      scope: ['email']
     }
   }
 };
