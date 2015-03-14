@@ -80,6 +80,7 @@ header {
   }
 
   #nav {
+    color: $white;
     text-align: right;
 
     @include breakpoint(small) {
