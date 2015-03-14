@@ -20,10 +20,10 @@
 module.exports.policies = {
 
   '*': ['passport'],
-  
+
   'auth': {
     '*': ['passport']
-  }
+  },
 
   // 'users': {
   //   'find': false,
