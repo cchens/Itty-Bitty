@@ -81,7 +81,7 @@ exports.register = function (req, res, next) {
 /**
  * Assign local Passport to user
  *
- * This function can be used to assign a local Passport to a user who doens't
+ * This function can be used to assign a local Passport to a user who doesn't
  * have one already. This would be the case if the user registered using a
  * third-party service and therefore never set a password.
  *
