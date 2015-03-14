@@ -18,8 +18,7 @@
           <li><a href='/register' id='register'>Sign up</a></li>
         <% } else { %>
           <li><a href='/tutorials'>Tutorials</a></li>
-          <li><%= user.username %></li>
-          <li><a href='/logout'>Log out</a></li>
+          <li><%= user.username %>: <a href='/logout'>Log out</a></li>
         <% } %>
       </ul>
     </nav>

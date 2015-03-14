@@ -91,6 +91,27 @@ nodemon --watch app
 
 You can view it in your browser at the usual location (port 1337). Any changes made to the core configuration of the app (e.g. anything in the `config` directory) will require you to manually restart the server, which can be done by typing `rs`.
 
+##### Debugging
+To debug the app, you can install node-inspector:
+
+```shell
+sudo npm install -g node-inspector
+```
+
+Then, launch the Sails app in debug mode:
+
+```shell
+sails debug
+```
+
+And in another shell, launch node-inspector:
+
+```shell
+node-inspector --debug-port 5858
+```
+
+You can then visit http://127.0.0.1:8080/debug?port=5858 to see the debugger for the Sails app (which is still accessed via port 1337, as normal).
+
 #### Branching
 Create branches to work on things. When you're done working on it, you can submit a pull request to merge it back into the `master` branch.
 
