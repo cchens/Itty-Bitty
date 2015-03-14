@@ -16,7 +16,7 @@
         <% if (!req.user) { %>
           <li><a href='/login'>Login</a></li>
           <li><a href='/register' id='register'>Sign up</a></li>
-
+        <% } else { %>
           <li><a href='/tutorials'>Tutorials</a></li>
         <% } %>
       </ul>
