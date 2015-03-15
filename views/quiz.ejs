@@ -56,7 +56,9 @@
     var errors = 0;
 
     <% for (var i = 0; i < questions.length; i++) { %>
-      document.getElementById("submit-<%= i %>").onclick = function(event) {
+      document.getElementById("submit-<%= i %>").onclick = function (event) {
+        event.stopPropagation();
+
         end = Date.now();
         score -= (start - end) / 1000;
 
@@ -85,15 +87,15 @@
         if (score > 0) {
           score = 0;
         }
-        event.stopPropagation();
+
+        if (score > threshold) {
+          alert("You passed! Score: " + score);
+        }
+        else {
+          alert("You failed! You got: " + score + " but needed: " + threshold);
+        }
       };
     <% } %>
-    if (score > threshold) {
-      alert("You passed! Score: " + score);
-    }
-    else {
-      alert("You failed! You got: " + score + " but needed: " + threshold);
-    }
   });
 
 </script>
