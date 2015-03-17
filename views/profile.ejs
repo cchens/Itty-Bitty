@@ -1,6 +1,13 @@
 <h1>Profile</h1>
 
-<p>Username: <%= user.username %></p>
-<p>Email: <%= user.email %></p>
-<p>User number: <%= user.id %></p>
+<p>User #<%= user.id %>: <%= user.username %></p>
+<p>Email address: <%= user.email %></p>
 <p>Joined: <%= user.createdAt %></p>
+
+<h2>Progress (+ scores)</h2>
+<% for (var i = 0; i < scores.length; i++) { %>
+    <h3><%= scores[i].score %> points in level <%= scores[i].level_id %></h3>
+    <p>Unlocked on <%= scores[i].createdAt %></p>
+<% } %>
+
+<h2>Achievements</h2>

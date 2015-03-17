@@ -14,35 +14,40 @@
 </div>
 
 <div id='tutorial-exercise'>
-  <% if (questions.length > 1) { %>
-    <h2>Exercises</h2>
-  <% } else { %>
-    <h2>Exercise</h2>
-  <% } %>
+  <% if (questions.length > 0) { %>
+    <% if (questions.length > 1) { %>
+      <h2>Exercises</h2>
+    <% } else { %>
+      <h2>Exercise</h2>
+    <% } %>
 
-  <% for (var i = 0; i < questions.length; i++) { %>
-    <% var is_mc = true; %>
+    <% for (var i = 0; i < questions.length; i++) { %>
+      <% var is_mc = true; %>
 
-    <div class='question'>
-      <p><%= questions[i].question %></p>
+      <div class='question'>
+        <p><%= questions[i].question %></p>
 
-      <% if (questions[i].choice1) { %>
-        <label><input type="radio" name="answer-mc-<%= i %>" value="1"> <%= questions[i].choice1 %></label>
-      <% } else { %>
-        <input type="text" id="open_answer-<%= i %>">
-      <% } %>
-      <% if (questions[i].choice2) { %>
-        <label><input type="radio" name="answer-mc-<%= i %>" value="2"> <%= questions[i].choice2 %></label>
-      <% } %>
-      <% if (questions[i].choice3) { %>
-        <label><input type="radio" name="answer-mc-<%= i %>" value="3"> <%= questions[i].choice3 %></label>
-      <% } %>
-      <% if (questions[i].choice4) { %>
-        <label><input type="radio" name="answer-mc-<%= i %>" value="4"> <%= questions[i].choice4 %></label>
-      <% } %>
+        <% if (questions[i].choice1) { %>
+          <label><input type="radio" name="answer-mc-<%= i %>" value="1"> <%= questions[i].choice1 %></label>
+        <% } else { %>
+          <input type="text" id="open_answer-<%= i %>">
+        <% } %>
+        <% if (questions[i].choice2) { %>
+          <label><input type="radio" name="answer-mc-<%= i %>" value="2"> <%= questions[i].choice2 %></label>
+        <% } %>
+        <% if (questions[i].choice3) { %>
+          <label><input type="radio" name="answer-mc-<%= i %>" value="3"> <%= questions[i].choice3 %></label>
+        <% } %>
+        <% if (questions[i].choice4) { %>
+          <label><input type="radio" name="answer-mc-<%= i %>" value="4"> <%= questions[i].choice4 %></label>
+        <% } %>
 
-      <button class='quiz-submit' id="submit-<%= i %>">Submit</button>
-    </div>
+        <button class='quiz-submit' id="submit-<%= i %>">Submit</button>
+      </div>
+    <% } %>
+
+    <a class='ref-link' href="/ref/<%= type %>" target='_blank'>Reference sheet</a>
+    <a class='ref-link'>This is too hard!</a>
   <% } %>
 </div>
 
