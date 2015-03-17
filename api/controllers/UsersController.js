@@ -6,10 +6,6 @@
 
 module.exports = {
 
-  // index: function (req, res) {
-  //   return res.view('user');
-  // },
-
   /**
    * CommentController.create()
    */
@@ -29,7 +25,19 @@ module.exports = {
   },
 
   profile: function (req, res) {
-    return res.view('profile');
+    var user_id = req.user.id;
+
+    Scores
+    .find()
+    .where({ user_id: user_id })
+    .exec(function (err, scores) {
+      if (scores === undefined) return res.notFound();
+      if (err) return res.negotiate(err);
+
+      res.view('profile', {
+        'scores': scores
+      });
+    });
   },
 
 };
