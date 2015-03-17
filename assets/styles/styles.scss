@@ -371,6 +371,40 @@ footer {
 // Level
 // ========================================================
 
+#tutorial-material,
+#tutorial-exercise {
+  display: inline-block;
+  margin: 0 2%;
+  vertical-align: top;
+  width: 45%;
+
+  img,
+  video {
+    max-width: 100%;
+  }
+
+  @include breakpoint(mobile) {
+    width: 100%;
+  }
+}
+
+.question input,
+.quiz-submit {
+  display: inline-block;
+  width: auto;
+}
+
+.quiz-submit {
+  min-width: 0;
+  width: 100px !important;
+}
+
+.question {
+  border-bottom: 1px solid #999;
+  margin-bottom: 1em;
+  padding-bottom: 1em;
+}
+
 
 // Profile
 // ========================================================
