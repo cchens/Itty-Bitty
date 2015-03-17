@@ -26,6 +26,10 @@ module.exports = {
     return res.json({
       todo: 'Not implemented yet!'
     });
-  }
+  },
+
+  profile: function (req, res) {
+    return res.view('profile');
+  },
 
 };

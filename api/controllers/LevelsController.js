@@ -31,4 +31,8 @@ module.exports = {
     }
   },
 
+  leaderboards: function (req, res) {
+    return res.view('leaderboards');
+  },
+
 };

@@ -89,7 +89,11 @@ header {
   }
 
     #nav-main li {
-      margin-left: 1em;
+      margin-left: 0.5em;
+    }
+
+    #nav-user a {
+      padding: 0 0.5em;
     }
 
     #register {
@@ -353,6 +357,14 @@ footer {
   th {
     text-align: center;
   }
+}
+
+.ref-link {
+  @extend button;
+
+  display: inline-block;
+  margin: 1em auto;
+  -webkit-appearance: none;
 }
 
 

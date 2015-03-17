@@ -28,7 +28,7 @@ Levels
         <!-- this is based on if there are only 3 levels of difficulty  -->
 
         <% if (levels[i].difficulty == '1') { %> Easy <% }
-          else if (levels[i].difficulty == '2') { %> Medium <% } 
+          else if (levels[i].difficulty == '2') { %> Medium <% }
           else if (levels[i].difficulty == '3') { %> Hard <% }
         %>
 
@@ -38,4 +38,4 @@ Levels
   </tbody>
 </table>
 
-<a href="/ref/<%= type %>">Reference sheet</a>
+<a class='ref-link' href="/ref/<%= type %>">Reference sheet</a>
