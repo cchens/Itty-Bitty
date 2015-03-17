@@ -31,10 +31,4 @@ module.exports = {
     }
   },
 
-  leaderboards: function (req, res) {
-    if (!req.user) res.redirect('/login');
-
-    return res.view('leaderboards');
-  },
-
 };
