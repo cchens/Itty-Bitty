@@ -42,15 +42,16 @@ module.exports.routes = {
   'GET /ref/bitwise': { view: 'ref_bitwise' },
   'GET /ref/bases': { view: 'ref_bases' },
 
+  'GET /profile': 'UsersController.profile',
+  'GET /leaderboards': 'LevelsController.leaderboards',
 
-  /***************************************************************************
-  *                                                                          *
-  * Custom routes here...                                                    *
-  *                                                                          *
-  *  If a request to a URL doesn't match any of the custom routes above, it  *
-  * is matched against Sails route blueprints. See `config/blueprints.js`    *
-  * for configuration options and examples.                                  *
-  *                                                                          *
-  ***************************************************************************/
+
+  /*************************************************************************
+  *                                                                        *
+  * If a request to a URL doesn't match any of the custom routes above, it *
+  * is matched against Sails route blueprints. See `config/blueprints.js`  *
+  * for configuration options and examples.                                *
+  *                                                                        *
+  *************************************************************************/
 
 };
