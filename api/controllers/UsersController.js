@@ -30,6 +30,7 @@ module.exports = {
     Scores
     .find()
     .where({ user_id: user_id })
+    .sort('level_id ASC')
     .exec(function (err, scores) {
       if (scores === undefined) return res.notFound();
       if (err) return res.negotiate(err);
