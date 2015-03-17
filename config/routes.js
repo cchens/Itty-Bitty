@@ -43,7 +43,7 @@ module.exports.routes = {
   'GET /ref/bases': { view: 'ref_bases' },
 
   'GET /profile': 'UsersController.profile',
-  'GET /leaderboards': 'LevelsController.leaderboards',
+  'GET /leaderboards': 'ScoresController.leaderboards',
 
 
   /*************************************************************************

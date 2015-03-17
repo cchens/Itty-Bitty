@@ -1,1 +1,5 @@
 <h1>Leaderboards</h1>
+
+<% for (var i = 0; i < scores.length; i++) { %>
+  <h3><%= scores[i].score %> points in level <%= scores[i].level_id %> by user <%= scores[i].user_id %></h3>
+<% } %>
