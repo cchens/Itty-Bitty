@@ -56,7 +56,7 @@ module.exports.passport = {
     options: {
       clientID: '478667748175-nmmt4je3nbqqcsvh4goa413gcv3cf339.apps.googleusercontent.com',
       clientSecret: 'P37PK3JhdgpYDTpxneNigU34',
-      scope: ['email']
+      scope: ['profile', 'email']
     }
   }
 };
