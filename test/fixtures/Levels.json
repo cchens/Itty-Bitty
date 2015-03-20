@@ -20,6 +20,7 @@
       }
     ]
   },
+
   {
     "level_id": 2,
     "description": "Introduction to OR",
@@ -41,6 +42,7 @@
       }
     ]
   },
+
   {
     "level_id": 3,
     "description": "Introduction to NOT",
@@ -62,7 +64,8 @@
       }
     ]
   },
-    {
+
+  {
     "level_id": 4,
     "description": "Introduction to XOR",
     "type": "bitwise",
@@ -83,7 +86,8 @@
       }
     ]
   },
-    {
+
+  {
     "level_id": 5,
     "description": "Introduction to NAND",
     "type": "bitwise",
@@ -104,7 +108,8 @@
       }
     ]
   },
-    {
+
+  {
     "level_id": 6,
     "description": "Introduction to NOR",
     "type": "bitwise",
@@ -115,11 +120,11 @@
         "type": "text",
         "data": "Since you have learned OR in the previous level, it is difficult for you to learn NOR."
       },
-	  {
+	    {
         "type": "text",
         "data": "NOR is like NOT OR. All you need to do is to perform OR operation, and flip all the bits in the result."
       },
-	  {
+	    {
         "type": "text",
         "data": "Here is an example:"
       },
@@ -129,7 +134,8 @@
       }
     ]
   },
-    {
+
+  {
     "level_id": 7,
     "description": "Introduction to Left Shift",
     "type": "bitwise",
@@ -140,7 +146,7 @@
         "type": "text",
         "data": "Shift the bits to the left. Zeros are shifted in to replace the discarded bits."
       },
-	  {
+	    {
         "type": "text",
         "data": "Here's the example: [Wikipedia, http://en.wikipedia.org/wiki/Bitwise_operation#Bit_shifts]"
       },
@@ -150,7 +156,8 @@
       }
     ]
   },
-    {
+
+  {
     "level_id": 8,
     "description": "Introduction to Right Shift",
     "type": "bitwise",
@@ -161,7 +168,7 @@
         "type": "text",
         "data": "Shift the bits to the right. Zeros are shifted in to replace the discarded bits."
       },
-	  {
+	    {
         "type": "text",
         "data": "Here is an example: [Expedia, http://en.wikipedia.org/wiki/Bitwise_operation#Bit_shifts]"
       },
@@ -171,6 +178,7 @@
       }
     ]
   },
+
   {
     "level_id": 9,
     "description": "Introduction: Converting Base 2 to Base 10",
@@ -202,9 +210,9 @@
     "content": [
       {
         "type": "text",
-        "data": "Example with explanation: Covert decimal number 78 to decimal."
+        "data": "Example with explanation: Convert decimal number 78 to decimal."
       },
-	  {
+	    {
         "type": "text",
         "data": "Divide the number repeatedly by 2 until reach 1, keep track of the remainder."
       },
@@ -241,7 +249,7 @@
     ]
   },
 
-    {
+  {
     "level_id": 12,
     "description": "Introduction: Converting Base 16 to Base 2",
     "type": "bases",
@@ -306,8 +314,4 @@
       }
     ]
   }
-
-
-
-
 ]
