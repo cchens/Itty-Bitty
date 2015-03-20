@@ -192,6 +192,7 @@
       }
     ]
   },
+
   {
     "level_id": 10,
     "description": "Introduction: Converting Base 10 to Base 2",
@@ -217,9 +218,10 @@
       }
     ]
   },
+
   {
     "level_id": 11,
-    "description": "Short description",
+    "description": "Introduction: Converting Base 2 to Base 16",
     "type": "bases",
     "level_num": 3,
     "difficulty": 1,
@@ -237,5 +239,75 @@
         "data": "http://i.imgur.com/ipom2Nn.webm"
       }
     ]
+  },
+
+    {
+    "level_id": 12,
+    "description": "Introduction: Converting Base 16 to Base 2",
+    "type": "bases",
+    "level_num": 4,
+    "difficulty": 1,
+    "content": [
+      {
+        "type": "text",
+        "data": "Lorem ipsum"
+      },
+      {
+        "type": "image",
+        "data": "http://i.imgur.com/MAfHEIG.jpg"
+      },
+      {
+        "type": "video",
+        "data": "http://i.imgur.com/ipom2Nn.webm"
+      }
+    ]
+  },
+
+    {
+    "level_id": 13,
+    "description": "Introduction: Converting Base 10 to Base 16",
+    "type": "bases",
+    "level_num": 5,
+    "difficulty": 3,
+    "content": [
+      {
+        "type": "text",
+        "data": "Lorem ipsum"
+      },
+      {
+        "type": "image",
+        "data": "http://i.imgur.com/MAfHEIG.jpg"
+      },
+      {
+        "type": "video",
+        "data": "http://i.imgur.com/ipom2Nn.webm"
+      }
+    ]
+  },
+
+  {
+    "level_id": 14,
+    "description": "Introduction: Converting Base 16 to Base 10",
+    "type": "bases",
+    "level_num": 6,
+    "difficulty": 2,
+    "content": [
+      {
+        "type": "text",
+        "data": "Lorem ipsum"
+      },
+      {
+        "type": "image",
+        "data": "http://i.imgur.com/MAfHEIG.jpg"
+      },
+      {
+        "type": "video",
+        "data": "http://i.imgur.com/ipom2Nn.webm"
+      }
+    ]
   }
+
+
+
+
 ]
