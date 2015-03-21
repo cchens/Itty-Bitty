@@ -17,6 +17,7 @@ module.exports = {
       Levels
       .find()
       .where({ type: type })
+      .sort('level_num ASC')
       .exec(function (err, levels) {
         if (levels === undefined) return res.notFound();
         if (err) return res.negotiate(err);
