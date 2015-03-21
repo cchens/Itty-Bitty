@@ -2,26 +2,24 @@
   {
     "question_id": 1,
     "level_id": 1,
-    "question": "Question 1a stuff",
-    "choice1": "A: wow",
-    "choice2": "B: such",
-    "choice3": "C: multiple",
-    "choice4": "D: choices",
-    "answer": "1",
+    "question": "1100 1010
+0010 1011",
+    "answer": "0000 1010",
     "explanation": "It's obvious"
   },
   {
     "question_id": 2,
-    "level_id": 1,
-    "question": "Question 1b stuff",
-    "answer": "duh",
+    "level_id": 2,
+    "question": "0100 1100
+1110 1001",
+    "answer": "1110 1101",
     "explanation": "It's obvious"
   },
   {
     "question_id": 3,
-    "level_id": 2,
-    "question": "Question 2?",
-    "answer": "duh",
+    "level_id": 3,
+    "question": "1011 0011",
+    "answer": "0100 1100",
     "explanation": "It's obvious"
   },
   {
@@ -79,5 +77,21 @@
     "question": "What is 101(base 10) in base 2? (Answer in 8 bits please.)",
     "answer": "01100101",
     "explanation": "It's obvious"
-  }
+  },
+  {
+    "question_id": 12,
+    "level_id": 4,
+    "question": "0110 1001
+1101 1000",
+    "answer": "1011 0001",
+    "explanation": "It's obvious"
+  },
+    {
+    "question_id": 12,
+    "level_id": 5,
+    "question": "1101 0101
+0011 0111",
+    "answer": "1110 1010",
+    "explanation": "It's obvious"
+  },
 ]
