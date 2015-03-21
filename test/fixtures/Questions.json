@@ -96,5 +96,28 @@
     "question": "Convert 1011010 into Hexadecimal.",
     "answer": "5A",
     "explanation": "YOLO"
+  },
+  {
+    "question_id": 15,
+    "level_id": 12,
+    "question": "Convert hexadecimal AD into binary. (Answer in form xxxx xxxx)",
+    "answer": "1010 1101",
+    "explanation": "YOLO"
+  },
+  {
+    "question_id": 16,
+    "level_id": 13,
+    "question": "Convert decimal 1030 into hexadecimal.",
+    "answer": "406",
+    "explanation": "YOLO"
+  },
+  {
+    "question_id": 17,
+    "level_id": 14,
+    "question": "Convert hexadecimal 2B into decimal.",
+    "answer": "43",
+    "explanation": "YOLO"
   }
+
+
 ]

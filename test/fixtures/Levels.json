@@ -254,15 +254,7 @@
     "content": [
       {
         "type": "text",
-        "data": "Lorem ipsum"
-      },
-      {
-        "type": "image",
-        "data": "http://i.imgur.com/MAfHEIG.jpg"
-      },
-      {
-        "type": "video",
-        "data": "http://i.imgur.com/ipom2Nn.webm"
+        "data": "In this section, we are going to introduce the technology of Inversing the steps above.\n\nExample: 4D\nStep 1:\nConverts into decimal form.\n\n4 - 4\nD - 13\nStep 2: \nConverts into binary form, grouping by 4. We already learn how to convert decimal into binary, if you get stuck in this section, try Base 2 to 10.\n\n4 - 0101\n13 - 0111\n\nStep 3:\nPuts them together.\n\n0101 0111\n\nThat’s all.\n"
       }
     ]
   },
@@ -276,15 +268,7 @@
     "content": [
       {
         "type": "text",
-        "data": "Lorem ipsum"
-      },
-      {
-        "type": "image",
-        "data": "http://i.imgur.com/MAfHEIG.jpg"
-      },
-      {
-        "type": "video",
-        "data": "http://i.imgur.com/ipom2Nn.webm"
+        "data": "In this section, we are going to learn how to convert base 10 (decimal) to base 16 (hex).\n\nUse 1337 as example.\n\nStep 1:\nWe keep adding n with 1 until reach or over the number x. (n begin with 0)\nx = 1337\n16^n\n\n16^0 = 1\n16^1 = 16\n16^2 = 256\n16^3 = 4096\n\nIn this case, we take 256 to calculate hex because s is the largest number that smaller than 1337.\n\nStep 2:\nIn this step, we are going to use the number we got from step 1 to calculate hex number one by one, from left to right.\nKeep adding n until reach or over our target number. (n begins with 0)\n256*n\n\nIn this case,\n256*0 = 1\n256*1 = 256\n256*2 = 512\n256*3 = 768\n256*4 = 1024\n256*5 = 1280\n256*6 = 1536\n\nSince the sum is over 1337, we take 5 and convert it into hex number.\nThen, we take 1337 - 16^5 = 57 and go back to first step, and repeat step 1 to 2 to calculate all of them.\n\nDemonstration for rest of number:\n57\n\nStep 1:\nTarget: 57\n16^1 = 16\n16^2 = 256\n\nTake 16 because 16^2 is too large.\nStep 2:\n\n16*0 = 0\n...\n16*3 = 48\n16*4 = 64\n\nThus we take 3, and convert it to hex, which is 3.\nNow we have first 2 hex number, 5 and 3.\n\n57 - 16^3 = 9\n\nNow we take 9 and repeat steps.\n\n16^0 = 1\n16^ 1 = 16\n\nWe use 1 to perform next step.\n1*0 = 0\n1*1 = 1\n…\n1*9 = 9\n\nConvert 9 to hex, which is 9.\n\nFinally, we got 539. (hex)\n"
       }
     ]
   },
@@ -298,15 +282,7 @@
     "content": [
       {
         "type": "text",
-        "data": "Lorem ipsum"
-      },
-      {
-        "type": "image",
-        "data": "http://i.imgur.com/MAfHEIG.jpg"
-      },
-      {
-        "type": "video",
-        "data": "http://i.imgur.com/ipom2Nn.webm"
+        "data": "In this section, we are going to introduce the technology of converting hex to decimal.\n\nUse 1EE7 to go through example.\nStep 1:\nFinds out how many digits in hex number. In this case, there is 4 digits.\n\nStep 2: Converts each digit in 1EE7 into decimal. (Link to Hex decimal cheat sheet)\n\n1EE7\n1 -1\nE - 14\nE - 14\n7 - 7\n\nWe take 1, 14, 14, 7 to next step. If you know how to do binary-decimal conversion, skip to Step S.\n\nStep 3:\nIn decimal, we use base 10 to calculate answer. There are 3 digits in 321, so:\n\n3*10^2 + 2*10^2 + 1*10^0 = 321\n\nIn hex, we use 16 as base, thus\n1*16^3 + 14*16^2 + 14*16^1 + 7*16^0 = 4096 + 3584 + 224 + 7 = 7911\n\nStep S: \nConvert 1, 14, 14, 7 into binary.\n1 - 0001\n14 - 1110\n14 - 1110\n7 - 0111\n\nNext, convert them into decimal. \n0001 1110 1110 0111 => 7911\n\nFinally, we have 7911 as a decimal form of 1EE7."
       }
     ]
   }
