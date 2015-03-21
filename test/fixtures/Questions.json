@@ -89,5 +89,12 @@
     "question": "1101 0101 NAND 0011 0111",
     "answer": "1110 1010",
     "explanation": "It's obvious"
+  },
+  {
+    "question_id": 14,
+    "level_id": 11,
+    "question": "Convert 1011010 into Hexadecimal.",
+    "answer": "5A",
+    "explanation": "YOLO"
   }
 ]
