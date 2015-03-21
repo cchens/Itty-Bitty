@@ -7,10 +7,10 @@
 module.exports = {
 
   index: function (req, res) {
-    if (!req.session.authenticated) {
+    if (!req.user) {
       return res.view('homepage', { layout: 'homelayout' });
     } else {
-      return res.view('homepage', { layout: 'layout' });
+      return res.view('tutorials');
     }
   }
 
