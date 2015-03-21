@@ -240,15 +240,7 @@
     "content": [
       {
         "type": "text",
-        "data": "Lorem ipsum"
-      },
-      {
-        "type": "image",
-        "data": "http://i.imgur.com/MAfHEIG.jpg"
-      },
-      {
-        "type": "video",
-        "data": "http://i.imgur.com/ipom2Nn.webm"
+        "data": "In this level, we are going to introduce the conversion between base 2(binary) and base 16(hexadecimal).\n\nWe are going to use 1010110 as example to go through steps.\n\nStep 1:\n Splitting binary to groups of 4, if the left-most group has less than 4 digits, fills up blank with 0s. For our example, it will be:\n0101 0110\n\nStep 2:\nMultiplying each group with 8 4 2 1. (If you already learn binary-decimal conversion, skip to step S)\n\n0101 0110\n8421 8421\n\n0401 0420\n\nStep 3:\nSumming up numbers in each group.\n\n0401 0420\n  5     6\n\nStep S: \nConvert binary into decimal, then convert them into heximal.\n\n 0101-5 0110-6\n\n5 - 5 (hex)\n6 - 6 (hex)\n\nFinally, binary 1010110 has been converted into hex 56. In addition, in hex, number 0-9 are shown as how they are, and 10-15 are shown in alphabets."
       }
     ]
   },
