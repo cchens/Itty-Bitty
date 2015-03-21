@@ -72,7 +72,7 @@
         event.stopPropagation();
 
         end = Date.now();
-        score -= (start - end) / 1000;
+        score -= (end - start) / 1000;
 
         if (document.getElementById("open_answer-<%= i %>")) {
           if (document.getElementById("open_answer-<%= i %>").value === "<%= questions[i].answer %>") {
@@ -96,9 +96,7 @@
           }
         }
 
-        if (score > 0) {
-          score = 0;
-        }
+        if (score <= 0) { score = 0; }
 
         if (score > threshold) {
           alert("You passed! Score: " + score);
