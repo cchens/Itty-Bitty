@@ -2,16 +2,14 @@
   {
     "question_id": 1,
     "level_id": 1,
-    "question": "1100 1010
-0010 1011",
+    "question": "1100 1010\n0010 1011",
     "answer": "0000 1010",
     "explanation": "It's obvious"
   },
   {
     "question_id": 2,
     "level_id": 2,
-    "question": "0100 1100
-1110 1001",
+    "question": "0100 1100\n1110 1001",
     "answer": "1110 1101",
     "explanation": "It's obvious"
   },
@@ -81,17 +79,15 @@
   {
     "question_id": 12,
     "level_id": 4,
-    "question": "0110 1001
-1101 1000",
+    "question": "0110 1001\n1101 1000",
     "answer": "1011 0001",
     "explanation": "It's obvious"
   },
-    {
-    "question_id": 12,
+  {
+    "question_id": 13,
     "level_id": 5,
-    "question": "1101 0101
-0011 0111",
+    "question": "1101 0101\n0011 0111",
     "answer": "1110 1010",
     "explanation": "It's obvious"
-  },
+  }
 ]
