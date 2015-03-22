@@ -25,6 +25,7 @@ var Answer = {
   validateAnswer: function (answer, next) {
 
     if (answer.mcAnswer) {
+      /*
       Questions
       .find()
       .where({ question_id: answer.question_id })
@@ -34,7 +35,7 @@ var Answer = {
 
         return answer === questions.answer;
       }
-
+      */
     }
     else if (answer.strAnswer) {
 
