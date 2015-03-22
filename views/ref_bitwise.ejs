@@ -1,244 +1,266 @@
 <h1>Bitwise reference</h1>
-
 <br>
+
 
 <h3>AND</h3>
 
-<p>The AND operator takes two binary numbers of equal length and multiplies them. If both bits in the a position are 1, AND evaluates to 1 at that position. Otherwise, AND evaluates to 0 at that position. <br>
+<p>
+  The AND operator takes two binary numbers of equal length and multiplies them. If both bits in the a position are 1, AND evaluates to 1 at that position. Otherwise, AND evaluates to 0 at that position. <br>
 
   <table border="1">
     <thead>
       <tr>
         <th>A</th>
-        <th>B</th> 
+        <th>B</th>
         <th>ANS</th>
       </tr>
     </thead>
     <tbody>
       <tr>
         <td>0</td>
-        <td>0</td> 
+        <td>0</td>
         <td>0</td>
       </tr>
       <tr>
         <td>0</td>
-        <td>1</td> 
+        <td>1</td>
         <td>0</td>
       </tr>
       <tr>
         <td>1</td>
-        <td>0</td> 
+        <td>0</td>
         <td>0</td>
       </tr>
       <tr>
         <td>1</td>
-        <td>1</td> 
+        <td>1</td>
         <td>1</td>
       </tr>
     </tbody>
-  </table> <br>
+  </table>
+  <br>
 
-ex. 10110010 AND 00101011 = 00100010</p>
-
+  ex. 10110010 AND 00101011 = 00100010
+</p>
 <br>
+
 
 <h3>OR</h3>
 
-<p>The OR operator takes two binary numbers of equal length. If either bit in a position is 1, OR evaluates to 1 at that position. Otherwise, OR evaluates to 0 at that position. Note that OR is not an "either or" operator: it evaluates to 1 if both bits are 1! <br>
+<p>
+  The OR operator takes two binary numbers of equal length. If either bit in a position is 1, OR evaluates to 1 at that position. Otherwise, OR evaluates to 0 at that position. Note that OR is not an "either or" operator: it evaluates to 1 if both bits are 1! <br>
 
   <table border="1">
     <thead>
       <tr>
         <th>A</th>
-        <th>B</th> 
+        <th>B</th>
         <th>ANS</th>
       </tr>
     </thead>
     <tbody>
       <tr>
         <td>0</td>
-        <td>0</td> 
+        <td>0</td>
         <td>0</td>
       </tr>
       <tr>
         <td>0</td>
-        <td>1</td> 
+        <td>1</td>
         <td>1</td>
       </tr>
       <tr>
         <td>1</td>
-        <td>0</td> 
+        <td>0</td>
         <td>1</td>
       </tr>
       <tr>
         <td>1</td>
-        <td>1</td> 
+        <td>1</td>
         <td>1</td>
       </tr>
     </tbody>
-  </table> <br>
+  </table>
+  <br>
 
-ex. 10110010 OR 00101011 = 10111011</p>
-
+  ex. 10110010 OR 00101011 = 10111011
+</p>
 <br>
+
 
 <h3>NOT</h3>
 
-<p>The NOT operator takes a single binary number, and returns the negation of that number: every 0 becomes a 1 and every 1 becomes a 0. <br>
+<p>
+  The NOT operator takes a single binary number, and returns the negation of that number: every 0 becomes a 1 and every 1 becomes a 0. <br>
 
   <table border="1">
     <thead>
       <tr>
         <th>A</th>
-        <th>ANS</th> 
+        <th>ANS</th>
       </tr>
     </thead>
     <tbody>
       <tr>
         <td>0</td>
-        <td>1</td> 
+        <td>1</td>
       </tr>
       <tr>
         <td>1</td>
-        <td>0</td> 
+        <td>0</td>
       </tr>
     </tbody>
-  </table> <br>
+  </table>
+  <br>
 
-ex. ex. NOT 10110010 = 01001101</p>
-
+  ex. ex. NOT 10110010 = 01001101
+</p>
 <br>
+
 
 <h3>XOR</h3>
 
-<p>The XOR operator, also known as exclusive or, takes two binary numbers of equal length. It is similar to OR in that if one bit at a position is 1, XOR evaluates to 1 at that position. However, unlike OR, XOR evaluates to 0 if both bits at the position are 1! Think of XOR like an "either or" operator. <br>
+<p>
+  The XOR operator, also known as exclusive or, takes two binary numbers of equal length. It is similar to OR in that if one bit at a position is 1, XOR evaluates to 1 at that position. However, unlike OR, XOR evaluates to 0 if both bits at the position are 1! Think of XOR like an "either or" operator. <br>
 
   <table border="1">
     <thead>
       <tr>
         <th>A</th>
-        <th>B</th> 
+        <th>B</th>
         <th>ANS</th>
       </tr>
     </thead>
     <tbody>
       <tr>
         <td>0</td>
-        <td>0</td> 
+        <td>0</td>
         <td>0</td>
       </tr>
       <tr>
         <td>0</td>
-        <td>1</td> 
+        <td>1</td>
         <td>1</td>
       </tr>
       <tr>
         <td>1</td>
-        <td>0</td> 
+        <td>0</td>
         <td>1</td>
       </tr>
       <tr>
         <td>1</td>
-        <td>1</td> 
+        <td>1</td>
         <td>0</td>
       </tr>
     </tbody>
-  </table> <br>
+  </table>
+  <br>
 
-ex. 10110010 XOR 00101011 = 10011001</p>
-
+  ex. 10110010 XOR 00101011 = 10011001
+</p>
 <br>
+
 
 <h3>NAND</h3>
 
-<p>The NAND, or "not and" operator, takes two binary numbers of equal length. It is essentially the opposite of AND: if both bits in the a position are 1, AND evaluates to 0 at that position. Otherwise, AND evaluates to 1 at that position. One can think of NAND as performing AND on the two numbers, then performing NOT on the result. <br>
+<p>
+  The NAND, or "not and" operator, takes two binary numbers of equal length. It is essentially the opposite of AND: if both bits in the a position are 1, AND evaluates to 0 at that position. Otherwise, AND evaluates to 1 at that position. One can think of NAND as performing AND on the two numbers, then performing NOT on the result. <br>
 
   <table border="1">
     <thead>
       <tr>
         <th>A</th>
-        <th>B</th> 
+        <th>B</th>
         <th>ANS</th>
       </tr>
     </thead>
     <tbody>
       <tr>
         <td>0</td>
-        <td>0</td> 
+        <td>0</td>
         <td>1</td>
       </tr>
       <tr>
         <td>0</td>
-        <td>1</td> 
+        <td>1</td>
         <td>1</td>
       </tr>
       <tr>
         <td>1</td>
-        <td>0</td> 
+        <td>0</td>
         <td>1</td>
       </tr>
       <tr>
         <td>1</td>
-        <td>1</td> 
+        <td>1</td>
         <td>0</td>
       </tr>
     </tbody>
-  </table> <br>
+  </table>
+  <br>
 
-ex. 10110010 NAND 00101011 = 11011101</p>
-
+  ex. 10110010 NAND 00101011 = 11011101
+</p>
 <br>
+
 
 <h3>NOR</h3>
 
-<p>The NOR, or "not or" operator, takes two binary numbers of equal length. It is essentially the opposite of OR: if either bit in a position is 1, OR evaluates to 0 at that position. Otherwise, OR evaluates to 1 at that position. One can think of NOR as performing OR on the two numbers, then performing NOT on the result. <br>
+<p>
+  The NOR, or "not or" operator, takes two binary numbers of equal length. It is essentially the opposite of OR: if either bit in a position is 1, OR evaluates to 0 at that position. Otherwise, OR evaluates to 1 at that position. One can think of NOR as performing OR on the two numbers, then performing NOT on the result. <br>
 
   <table border="1">
     <thead>
       <tr>
         <th>A</th>
-        <th>B</th> 
+        <th>B</th>
         <th>ANS</th>
       </tr>
     </thead>
     <tbody>
       <tr>
         <td>0</td>
-        <td>0</td> 
+        <td>0</td>
         <td>0</td>
       </tr>
       <tr>
         <td>0</td>
-        <td>1</td> 
+        <td>1</td>
         <td>0</td>
       </tr>
       <tr>
         <td>1</td>
-        <td>0</td> 
+        <td>0</td>
         <td>0</td>
       </tr>
       <tr>
         <td>1</td>
-        <td>1</td> 
+        <td>1</td>
         <td>1</td>
       </tr>
     </tbody>
-  </table> <br>
+  </table>
+  <br>
 
-ex. 10110010 NOR 00101011 = 01000100</p>
-
+  ex. 10110010 NOR 00101011 = 01000100
+</p>
 <br>
+
 
 <h3>LEFT SHIFT</h3>
 
-<p>In a LEFT SHIFT, every bit is shifted to the left by one position. Any bit that "falls off" the right side are discarded, and a 0 is put in place of the leftmost bit. <br>
+<p>
+  In a LEFT SHIFT, every bit is shifted to the left by one position. Any bit that "falls off" the right side are discarded, and a 0 is put in place of the leftmost bit. <br>
 
-ex. 11011101 LEFT SHIFT = 01101110</p>
-
+  ex. 11011101 LEFT SHIFT = 01101110
+</p>
 <br>
+
 
 <h3>RIGHT SHIFT</h3>
 
-<p>In a RIGHT SHIFT, every bit is shifted to the right by one position. Any bit that "falls off" the left side are discarded, and a 0 is put in place of the rightmost bit. <br>
+<p>
+  In a RIGHT SHIFT, every bit is shifted to the right by one position. Any bit that "falls off" the left side are discarded, and a 0 is put in place of the rightmost bit. <br>
 
-ex. 11011101 RIGHT SHIFT = 11011100</p>
+  ex. 11011101 RIGHT SHIFT = 11011100
+</p>
