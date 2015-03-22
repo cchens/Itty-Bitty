@@ -5,114 +5,81 @@
 <ol>
 	<li>Number the digits starting from 0 and going to the right. The leftmost digit should end up as (number of digits) - 1 <br>
 
-		ex. 10110010
+		ex. 10110010<br><br>
 
-		<table>
-			<tr>
-				<td></td>
-				<td>1</td>
-				<td>0</td>
-				<td>1</td>
-				<td>1</td>
-				<td>0</td>
-				<td>0</td>
-				<td>1</td>
-				<td>0</td>
-			</tr>
-			<tr>
-				<td>digit number</td>
-				<td>7</td>
-				<td>6</td>
-				<td>5</td>
-				<td>4</td>
-				<td>3</td>
-				<td>2</td>
-				<td>1</td>
-				<td>0</td>
-			</tr>
-		</table>
+			<div id="digitnumber">
+    			<span>&nbsp;</span>
+			</div>
+
+			<div class="example">
+			    <span>1 0 1 1 0 0 1 0</span>
+			</div>
+
+			<br>
+
+			<div id="digitnumber">
+			    <span>digit number</span>
+			</div>
+
+			<div class="example">
+			    <span>7 6 5 4 3 2 1 0</span>
+			</div>
+
+
 	</li> <br>
 
 	<li>Multiply each bit by 2^(its digit number) <br>
 
-		<table>
-			<tr>
-				<td>ex. </td>
-				<td>(1 x 2^7) = 128</td>
-			</tr>
-			<tr>
-				<td></td>
-				<td>(0 x 2^6) = 0</td>
-			<tr>
-			<tr>
-				<td></td>
-				<td>(1 x 2^5) = 32</td>
-			<tr>
-			<tr>
-				<td></td>
-				<td>(1 x 2^4) = 16</td>
-			<tr>
-			<tr>
-				<td></td>
-				<td>(0 x 2^3) = 0</td>
-			<tr>
-			<tr>
-				<td></td>
-				<td>(0 x 2^2) = 0</td>
-			<tr>
-			<tr>
-				<td></td>
-				<td>(1 x 2^1) = 2</td>
-			<tr>
-			<tr>
-				<td></td>
-				<td>(0 x 2^0) = 0</td>
-			<tr>
-		</table>
+		ex.<br>
+
+		(1 x 2^7) = 128<br>
+
+		(0 x 2^6) = 0<br>
+
+		(1 x 2^5) = 32<br>
+
+		(1 x 2^4) = 16<br>
+
+		(0 x 2^3) = 0<br>
+
+		(0 x 2^2) = 0<br>
+
+		(1 x 2^1) = 2<br>
+
+		(0 x 2^0) = 0
+
 	</li> <br>
 
 	<li>Sum the results from the last step. This is the decimal form of the original binary number! <br>
 
 	ex. 128 + 0 + 32 + 16 + 0 + 0 + 2 + 0 = 178</li>
-</ol>
+</ol><br>
 
 <h3>Decimal to Binary</h3>
 
 <ol>
 	<li>Repeatedly divide the decimal number by 2 until the quotient is 0, keeping track of the remainder each time. <br>
 
-		<table>
-			<tr>
-				<td>ex. </td>
-				<td>42 / 2 = 21 R <b>0</b></td>
-			</tr>
-			<tr>
-				<td></td>
-				<td>21 / 2 = 10 R <b>1</b></td>
-			<tr>
-			<tr>
-				<td></td>
-				<td>10 / 2 = 5 R <b>0</b></td>
-			<tr>
-			<tr>
-				<td></td>
-				<td>5 / 2 = 2 R <b>1</b></td>
-			<tr>
-			<tr>
-				<td></td>
-				<td>2 / 2 = 1 R <b>0</b></td>
-			<tr>
-			<tr>
-				<td></td>
-				<td>1 / 2 = 0 R <b>1</b></td>
-			<tr>
-		</table>
+		ex. 42<br><br>
+
+		42 / 2 = 21 R <b>0</b><br>
+
+		21 / 2 = 10 R <b>1</b><br>
+
+		10 / 2 = 5 R <b>0</b><br>
+
+		5 / 2 = 2 R <b>1</b><br>
+
+		2 / 2 = 1 R <b>0</b><br>
+
+		1 / 2 = 0 R <b>1</b>
+
 	</li> <br>
 
-	<li>Append the remainders, with the remainder from the last division as the leftmost bit and the remainder from the first division as the rightmost bit. This is your binary value.<br>
+	<li>Append the remainders, starting with the remainder from the last division as the leftmost bit and the remainder from the first division as the rightmost bit. This is your binary value.<br>
 
-		ex. 101110</li>
-</ol>
+		ex. 101010</li>
+</ol><br>
 
 <h3>Binary to Hexadecimal</h3>
 
@@ -123,67 +90,52 @@
 
 	<li>Multiply the leftmost digit in each group by 8, the second digit by 4, the third digit by 2, and the rightmost digit by 1.<br>
 
-		<table>
-			<tr>
-				<td>ex. </td>
-				<td></td>
-				<td>0</td>
-				<td>0</td>
-				<td>1</td>
-				<td>0</td>
-				<td> </td>
-				<td>1</td>
-				<td>0</td>
-				<td>1</td>
-				<td>1</td>
-			</tr>
-			<tr>
-				<td></td>
-				<td>&times</td>
-				<td>8</td>
-				<td>4</td>
-				<td>2</td>
-				<td>1</td>
-				<td> </td>
-				<td>8</td>
-				<td>4</td>
-				<td>2</td>
-				<td>1</td>
-			</tr>
-			<tr>
-				<td></td>
-				<td>=</td>
-				<td>0</td>
-				<td>0</td>
-				<td>2</td>
-				<td>0</td>
-				<td> </td>
-				<td>8</td>
-				<td>4</td>
-				<td>2</td>
-				<td>1</td>
-			</tr>
-		</table>
+		ex.	<br><br>
+
+			<div id="operator">
+    			<span>&nbsp;</span>
+			</div>
+
+			<div class="example">
+			    <span>0010 1011</span>
+			</div>
+
+			<br>
+
+			<div id="operator">
+    			<span>&times</span>
+			</div>
+
+			<div class="example">
+			    <span>8421 8421</span>
+			</div>
+
+			<br>
+
+			<div id="operator">
+    			<span>=</span>
+			</div>
+
+			<div class="example">
+			    <span>0020 8421</span>
+			</div>
+		
 	</li> <br>
 
 	<li>Sum up the digits in each group. <br>
 
-		<table>
-			<tr>
-				<td>ex. </td>
-				<td>0020 &#8594; 2</td>
-			</tr>
-			<tr>
-				<td></td>
-				<td>8021 &#8594; 11</td>
-			</tr>
-		</table>
+		ex.<br>
+			
+		0020 &#8594; 2<br>
+
+		8021 &#8594; 11
+			
 	</li><br>
 
 	<li>Append the sums in order. This is your hexadecimal value! Remember that hex number 10-15 are represented by the letters A-F, respectively.<br>
 
 		ex. 2 11 = 2B</li>
-</ol>
+</ol><br>
 
 
 <h3>Hexadecimal to Binary</h3>
@@ -193,44 +145,33 @@
 
 		ex. B2 &#8594; 11 2</li><br>
 
-	<li>Convert each decimal number into binary in groups of 4. (Recall earlier lesson)
+	<li>Convert each decimal number into binary in groups of 4. (Recall earlier lesson)<br>
 
-		<table>
-			<tr>
-				<td>ex. </td>
-				<td>11 &#8594; 1011</td>
-			</tr>
-			<tr>
-				<td></td>
-				<td>2 &#8594; 0010</td>
-			</tr>
-		</table>
+		ex.<br>
+
+		11 &#8594; 1011<br>
+	
+		2 &#8594; 0010
+
 	</li><br>
 
 	<li>Append the groups together in order. You're done!<br>
 
 		ex. 1011 0010 &#8594; 10110010</li>
-</ol>
+</ol><br>
 
 <h3>Decimal to Hexadecimal</h3>
 
 <ol>
-	<li>Repeatedly divide the decimal number by 16 until the quotient is 0, keeping track of the remainder each time.
+	<li>Repeatedly divide the decimal number by 16 until the quotient is 0, keeping track of the remainder each time.<br>
 
-		<table>
-			<tr>
-				<td>ex. </td>
-				<td>2015 / 16 = 125 R <b>15</b></td>
-			</tr>
-			<tr>
-				<td></td>
-				<td>125 / 16 = 7 R <b>13</b></td>
-			<tr>
-			<tr>
-				<td></td>
-				<td>7 / 16 = 0 R <b>7</b></td>
-			<tr>
-		</table>
+		ex.<br>
+
+		2015 / 16 = 125 R <b>15</b><br>
+	
+		125 / 16 = 7 R <b>13</b><br>
+		
+		7 / 16 = 0 R <b>7</b>	
 
 	</li><br>
 
@@ -240,83 +181,69 @@
 
 	<li>Convert any values between 10-15 to their corresponding letters.
 
-		<table>
-			<tr>
-				<td>ex. </td>
-				<td>13 &#8594; D</td>
-			</tr>
-			<tr>
-				<td></td>
-				<td>15 &#8594; F</td>
-			</tr>
-		</table>
+		ex.<br>
+			
+			13 &#8594; D<br>
+			
+			15 &#8594; F
+			
 		</li><br>
 
 	<li>Append the remainders, with the remainder from the last division as the leftmost bit and the remainder from the first division as the rightmost bit. This is your hexadecimal value.<br>
 
 		ex. 7DF</li>
 
-</ol>
+</ol><br>
 
 <h3>Hexadecimal to Decimal</h3>
 
 <ol>
 	<li>Convert any letters to their corresponding decimal values.<br>
 
-		ex. FE22
+		ex. FE22<br>
 
-		<table>
-			<tr>
-				<td>F &#8594; 15</td>
-			</tr>
-			<tr>
-				<td>E &#8594; 14</td>
-			</tr>
-		</table>
+		F &#8594; 15<br>
+
+		E &#8594; 14	
+		
 	</li><br>
 
 	<li>Number the digits starting from 0 and going to the right. The leftmost digit should end up as (number of digits) - 1<br>
 
-		ex.
+		ex.<br>
 
-		<table>
-			<tr>
-				<td></td>
-				<td>15</td>
-				<td>14</td>
-				<td>2</td>
-				<td>2</td>
-			</tr>
-			<tr>
-				<td>digit number</td>
-				<td>3</td>
-				<td>2</td>
-				<td>1</td>
-				<td>0</td>
-			</tr>
-		</table>
+			<div id="digitnumber">
+    			<span>&nbsp;</span>
+			</div>
+
+			<div class="example">
+			    <span>15 14 2 2</span>
+			</div>
+
+			<br>
+
+			<div id="digitnumber">
+    			<span>digit number</span>
+			</div>
+
+			<div class="example">
+			    <span>3 &nbsp; 2 &nbsp; 1 0</span>
+			</div>
+		
 	</li> <br>
 
 	<li>Multiply each bit by 16^(its digit number) <br>
 
-		<table>
-			<tr>
-				<td>ex. </td>
-				<td>(15 x 16^3) = 61440</td>
-			</tr>
-			<tr>
-				<td></td>
-				<td>(14 x 16^2) = 3584</td>
-			<tr>
-			<tr>
-				<td></td>
-				<td>(2 x 16^1) = 32</td>
-			<tr>
-			<tr>
-				<td></td>
-				<td>(2 x 16^0) = 2</td>
-			<tr>
-		</table>
+		ex.<br>
+
+		(15 x 16^3) = 61440<br>
+	
+		(14 x 16^2) = 3584<br>
+	
+		(2 x 16^1) = 32<br>
+	
+		(2 x 16^0) = 2
+			
 	</li> <br>
 
 	<li>Sum the results from the last step. This is the your decimal number.<br>

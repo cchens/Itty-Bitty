@@ -405,6 +405,27 @@ footer {
   padding-bottom: 1em;
 }
 
+// Reference Sheets
+// ========================================================
+
+#digitnumber {
+  float: center;
+  width: 110px;
+  text-align: center;
+  display: inline-block;
+}
+
+#operator {
+  float: center;
+  width: 20px;
+  text-align: center;
+  display: inline-block;
+}
+
+.example {
+  display: inline-block;
+}
+
 
 // Profile
 // ========================================================
