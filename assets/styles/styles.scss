@@ -408,14 +408,13 @@ footer {
 // Reference Sheets
 // ========================================================
 
-#digitnumber {
-  float: center;
+.digitnumber {
   width: 110px;
   text-align: center;
   display: inline-block;
 }
 
-#operator {
+.operator {
   float: center;
   width: 20px;
   text-align: center;
