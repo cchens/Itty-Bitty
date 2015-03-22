@@ -42,6 +42,15 @@ module.exports = {
     } else {
       res.notFound();
     }
+  },
+
+  callback: function (req, res) {
+    todo: 'Not implemented yet!'
   }
 
+
 };
+
+
+
+
