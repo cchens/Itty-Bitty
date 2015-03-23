@@ -35,7 +35,7 @@ module.exports.routes = {
   'GET /auth/:provider/callback': 'AuthController.callback',
   'GET /auth/:provider/:action': 'AuthController.callback',
  
-  'POST /tutorials/:type/:level_num': 'QuestionsController.callback',
+  'POST /tutorials/:type/:level_num': 'QuestionsController.validateAnswer',
 
   'GET /tutorials': 'LevelsController.index',
   'GET /tutorials/:type': 'LevelsController.levels',
