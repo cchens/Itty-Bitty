@@ -44,8 +44,36 @@ module.exports = {
     }
   },
 
-  callback: function (req, res) {
-    todo: 'Not implemented yet!'
+  validateAnswer: function (req, res) {
+    var user_sol = req.param("user_solution"),
+        questionID = req.param("questionID");
+
+    if(user_sol && questionID){
+
+      Questions
+      .find()
+      .where({ question_id:questionID })
+      .exec(function (err, questions) {
+        if (questions === undefined) return res.notFound();
+        if (err) return res.negotiate(err);
+        /*
+        sails.log.info(questions.answer)
+        sails.log.info(user_sol)
+        sails.log.info(questions)
+        sails.log.info(questions[0].answer)
+        */
+        if(questions[0].answer === user_sol){
+          //sails.log.info("questions!!!!!!??")
+          res.send('true');
+        }
+        else{
+          res.send('false');
+
+        }
+
+      });
+    }
+    //return false;
   }
 
 
