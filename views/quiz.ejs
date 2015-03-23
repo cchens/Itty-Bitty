@@ -47,11 +47,9 @@
     <% } %>
 
     <a class='ref-link' target='_blank' href="/ref/<%= type %>">Reference sheet</a>
-    <a class='ref-link' target='_blank' href="https://www.youtube.com/watch?v=KxGRhd_iWuE">This is too hard!</a>
+    <a class='ref-link' target='_blank' href="#" id='btn-toohard'>This is too hard!</a>
   <% } %>
 </div>
-
-
 
   <!-- temporarily placed here for solution validation check -->
   <!--
@@ -64,12 +62,30 @@
   </form>
   -->
 
+<aside id='dialog-toohard'>
+  <iframe width="420" height="315" src="https://www.youtube.com/embed/KxGRhd_iWuE?rel=0" frameborder="0" allowfullscreen></iframe>
+</aside>
 
+
+<script src='/js/jquery.easyModal.js' type='text/javascript'></script>
 <script>
   $(document).ready(function () {
     // Linebreaks
     $('#tutorial-material p').each(function () {
       this.innerHTML = this.innerHTML.replace(/(?:\r\n|\r|\n)/g, '<br>');
+    });
+
+
+    // Too hard button
+    $('#dialog-toohard').easyModal({
+      overlayOpacity: 0.3,
+      overlayColor: "#333"
+    });
+
+    $('#btn-toohard').click(function (e) {
+      e.preventDefault();
+
+      $('#dialog-toohard').trigger('openModal');
     });
 
 
