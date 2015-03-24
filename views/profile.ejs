@@ -4,9 +4,31 @@
 <p>Email address: <%= user.email %></p>
 <p>Joined: <%= user.createdAt %></p>
 
+
 <h2>Progress (+ scores)</h2>
+
 <% for (var i = 0; i < scores.length; i++) { %>
   <h3><%= scores[i].score %> points in level <%= scores[i].level_id %></h3>
 <% } %>
 
+
 <h2>Achievements</h2>
+
+<table id="achievements_table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Unlocked</th>
+    </tr>
+  </thead>
+  <tbody>
+    <%for (var i = 0; i < achievements.length; i++) { %>
+      <tr>
+        <td><%= achievements[i].name %></td>
+        <td><%= achievements[i].description %></td>
+        <td>Time or not unlocked?</td>
+      </tr>
+    <%}%>
+  </tbody>
+</table>
