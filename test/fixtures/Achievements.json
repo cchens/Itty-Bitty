@@ -7,16 +7,41 @@
   {
     "achievement_id": 2,
     "name": "The Flash",
-    "description": "Finished an exercise in less than 30 seconds"
+    "description": "Finish an exercise in less than 30 seconds"
   },
   {
     "achievement_id": 3,
     "name": "Bit master",
-    "description": "Completed all the bitwise exercises"
+    "description": "Complete all the bitwise exercises"
   },
   {
     "achievement_id": 4,
     "name": "Base master",
-    "description": "Completed all the numerical bases exercises"
-  }
+    "description": "Complete all the numerical bases exercises"
+  },
+  {
+    "achievement_id": 5,
+    "name": "Master of masters",
+    "description": "Complete everything"
+  },
+  {
+    "achievement_id": 6,
+    "name": "Tweeter",
+    "description": "Log in using Twitter"
+  },
+  {
+    "achievement_id": 7,
+    "name": "Winner",
+    "description": "Get to the top of the leaderboard for any level"
+  },
+  {
+    "achievement_id": 8,
+    "name": "Try again?",
+    "description": "Fail a level"
+  },
+  {
+    "achievement_id": 9,
+    "name": "Night owl",
+    "description": "Register sometime between 00:00 to 05:00"
+  },
 ]
