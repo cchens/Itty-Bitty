@@ -12,7 +12,8 @@ CREATE TABLE users (
 	email varchar(50) NOT NULL,
 	photo text DEFAULT NULL,
 	achievements json,
-	password text NOT NULL
+	password text NOT NULL,
+	status text[]
 );
 
 CREATE TABLE achievements (

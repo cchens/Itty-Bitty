@@ -7,8 +7,22 @@
     "displayName": "arkon",
     "email": "arkon@email.ca",
     "photo": "url",
-    "achievements": [],
-    "password": "password1"
+    "achievements": [
+        {
+            "achievement_id": 1,
+            "unlocked": "2015-03-24 14:00"
+        },
+        {
+            "achievement_id": 2,
+            "unlocked": "2015-03-24 15:00"
+        },
+        {
+            "achievement_id": 3,
+            "unlocked": "2015-03-24 16:00"
+        }
+    ],
+    "password": "password1",
+    "status": [1, 2, 3]
   },
   {
     "user_id": 2,
@@ -18,8 +32,22 @@
     "displayName": "eric",
     "email": "eric@email.ca",
     "photo": "url",
-    "achievements": [],
-    "password": "password2"
+    "achievements": [
+        {
+            "achievement_id": 4,
+            "unlocked": "2015-03-24 14:00"
+        },
+        {
+            "achievement_id": 5,
+            "unlocked": "2015-03-24 15:00"
+        },
+        {
+            "achievement_id": 6,
+            "unlocked": "2015-03-24 16:00"
+        }
+    ],
+    "password": "password2",
+    "status": [1, 2, 3]
   },
   {
     "user_id": 3,
@@ -29,7 +57,21 @@
     "displayName": "sharon",
     "email": "sharon@email.ca",
     "photo": "url",
-    "achievements": [],
-    "password": "password3"
+    "achievements": [
+        {
+            "achievement_id": 7,
+            "unlocked": "2015-03-24 14:00"
+        },
+        {
+            "achievement_id": 8,
+            "unlocked": "2015-03-24 15:00"
+        },
+        {
+            "achievement_id": 9,
+            "unlocked": "2015-03-24 16:00"
+        }
+    ],
+    "password": "password3",
+    "status": [1, 2, 3]
   }
 ]

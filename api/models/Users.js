@@ -52,6 +52,11 @@ module.exports = {
     password: {
       type: 'string',
       notNull: true
+    },
+
+    status: {
+      type: 'array',
+      defaultsTo: []
     }
 
   }
