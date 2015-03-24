@@ -2,11 +2,21 @@
   {
     "achievement_id": 1,
     "name": "Quitter",
-    "description": "Wow"
+    "description": "Winners don't give up!"
   },
   {
     "achievement_id": 2,
-    "name": "Ace",
-    "description": "Much wow"
+    "name": "The Flash",
+    "description": "Finished an exercise in less than 30 seconds"
+  },
+  {
+    "achievement_id": 3,
+    "name": "Bit master",
+    "description": "Completed all the bitwise exercises"
+  },
+  {
+    "achievement_id": 4,
+    "name": "Base master",
+    "description": "Completed all the numerical bases exercises"
   }
 ]

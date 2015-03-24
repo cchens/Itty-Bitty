@@ -28,7 +28,7 @@ module.exports.passport = {
       consumerSecret: 'L3SRN8Xt39386LaXsn3ZNQI1XgpR8niMq3fz72iLKMPN5jXt49'
     }
   },
-
+/*
   github: {
     name: 'GitHub',
     protocol: 'oauth2',
@@ -59,4 +59,5 @@ module.exports.passport = {
       scope: ['profile', 'email']
     }
   }
+*/
 };
