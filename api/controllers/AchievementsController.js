@@ -13,7 +13,6 @@ module.exports = {
       	.exec(function (err, achievements) {
         	if (achievements === undefined) return res.notFound();
         	if (err) return res.negotiate(err);
-        	sails.log.info(achievements[0].name)
     		res.view('achievements', {
     			'achievements': achievements
     		});
