@@ -47,6 +47,9 @@ module.exports = {
   validateAnswer: function (req, res) {
     var user_sol = req.param("user_solution"),
         questionID = req.param("questionID");
+        //questionID = "1";
+    sails.log.info(user_sol)
+    sails.log.info(questionID)
 
     if(user_sol && questionID){
 
@@ -60,20 +63,23 @@ module.exports = {
         sails.log.info(questions.answer)
         sails.log.info(user_sol)
         sails.log.info(questions)
-        sails.log.info(questions[0].answer)
         */
+        sails.log.info(questions[0].answer)
+        
         if(questions[0].answer === user_sol){
-          //sails.log.info("questions!!!!!!??")
+          sails.log.info("true!!!!!!")
           res.send('true');
         }
         else{
+          sails.log.info("false!!!!!!")
+
           res.send('false');
+          //return false;
 
         }
 
       });
     }
-    //return false;
   }
 
 
