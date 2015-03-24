@@ -43,33 +43,78 @@
         <% } %>
 
         <button class='quiz-submit' id="submit-<%= i %>">Submit</button>
+        <button class='quiz-show-answer' id="show-answer-<%= i %>">Show answer</button>
       </div>
     <% } %>
 
     <a class='ref-link' target='_blank' href="/ref/<%= type %>">Reference sheet</a>
-    <a class='ref-link' target='_blank' href="https://www.youtube.com/watch?v=KxGRhd_iWuE">This is too hard!</a>
+    <a class='ref-link' target='_blank' href="#" id='btn-toohard'>This is too hard!</a>
   <% } %>
 </div>
 
-
-
   <!-- temporarily placed here for solution validation check -->
   <!--
-  <form role='form' action='/tutorials/:type/:level_num' method='post'>
+  <form role='form' action='/tutorials/<%= type %>/<%= tutorial.level_num %>' method='post' id="userSol">
     <label>Answer:</label>
     <input type='text' name='user_solution' placeholder='put your solution' required>
     <input type='text' name='questionID' placeholder='question id'>
 
     <input type='submit' value='submit'>
   </form>
+  </div>
+  <div id="result"></div>
+
+  
+  <script>
+
+  // Attach a submit handler to the form
+  $( "#userSol" ).submit(function( event ) {
+   
+    // Stop form from submitting normally
+    event.preventDefault();
+   
+    // Get some values from elements on the page:
+    var $form = $( this ),
+      question_id = "1",
+      solution = $form.find( "input[name='user_solution']" ).val(),
+      url = $form.attr( "action" );
+   
+    // Send the data using post, so far only user_solution
+    var posting = $.post( url, {user_solution: solution, questionID:question_id} );
+   
+    // Put the results in a div
+    posting.done(function( data ) {
+      var content = $( data ).find( "#content" );
+      $( "#resuilt" ).empty().append( content );
+    });
+  });
+  </script>
   -->
 
+<aside id='dialog-toohard'>
+  <iframe width="420" height="315" src="https://www.youtube.com/embed/KxGRhd_iWuE?rel=0" frameborder="0" allowfullscreen></iframe>
+</aside>
 
+
+<script src='/js/jquery.easyModal.js' type='text/javascript'></script>
 <script>
   $(document).ready(function () {
     // Linebreaks
     $('#tutorial-material p').each(function () {
       this.innerHTML = this.innerHTML.replace(/(?:\r\n|\r|\n)/g, '<br>');
+    });
+
+
+    // Too hard button
+    $('#dialog-toohard').easyModal({
+      overlayOpacity: 0.3,
+      overlayColor: "#333"
+    });
+
+    $('#btn-toohard').click(function (e) {
+      e.preventDefault();
+
+      $('#dialog-toohard').trigger('openModal');
     });
 
 
