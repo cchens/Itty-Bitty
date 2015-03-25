@@ -81,12 +81,16 @@
    
     // Send the data using post, so far only user_solution
     var posting = $.post( url, {user_solution: solution, questionID:question_id} );
-   
+    
+    
     // Put the results in a div
     posting.done(function( data ) {
+      alert(data);
+
       var content = $( data ).find( "#content" );
       $( "#resuilt" ).empty().append( content );
     });
+
   });
   </script>
   -->

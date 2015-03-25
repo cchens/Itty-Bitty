@@ -74,8 +74,6 @@ module.exports = {
           sails.log.info("false!!!!!!")
 
           res.send('false');
-          //return false;
-
         }
 
       });
