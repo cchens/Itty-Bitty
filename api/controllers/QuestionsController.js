@@ -65,7 +65,7 @@ module.exports = {
         sails.log.info(questions)
         */
         sails.log.info(questions[0].answer)
-        
+
         if(questions[0].answer === user_sol){
           sails.log.info("true!!!!!!")
           res.send('true');
@@ -74,8 +74,6 @@ module.exports = {
           sails.log.info("false!!!!!!")
 
           res.send('false');
-          //return false;
-
         }
 
       });
