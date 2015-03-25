@@ -6,30 +6,12 @@
 
 module.exports = {
 
-  /**
-   * CommentController.create()
-   */
-  create: function (req, res) {
-    return res.json({
-      todo: 'Not implemented yet!'
-    });
-  },
-
-  /**
-   * CommentController.destroy()
-   */
-  destroy: function (req, res) {
-    return res.json({
-      todo: 'Not implemented yet!'
-    });
-  },
-
   profile: function (req, res) {
-    var user_id = req.user.id;
+    var username = req.user.username;
 
     Scores
     .find()
-    .where({ user_id: user_id })
+    .where({ username: username })
     .sort('level_id ASC')
     .exec(function (err, scores) {
       if (scores === undefined) return res.notFound();

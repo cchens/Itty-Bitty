@@ -9,8 +9,8 @@ module.exports = {
 
   attributes: {
 
-    user_id: {
-      model: 'Users'
+    username: {
+      model: 'User'
     },
 
     level_id: {
