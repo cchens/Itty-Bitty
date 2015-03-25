@@ -19,10 +19,25 @@ module.exports.bootstrap = function(done) {
   // Load fixtures (from test/fixtures/) into database
   var barrels = new Barrels();
   var fixtures = barrels.data;
+
   barrels.populate(function(err) {
     if (err)
       return done(err);
 
+    // Users will already be populated here, so the required association should work
+    // barrels.populate(['Passport'], function(err) {
+    //   if (err)
+    //     return done(err);
+
+    //   // Everything else
+    //   barrels.populate(function(err) {
+    //     if (err)
+    //       return done(err);
+
+    //     done();
+    //   });
+    // });
     done();
   });
+
 };

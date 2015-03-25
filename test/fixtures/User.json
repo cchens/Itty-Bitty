@@ -1,0 +1,20 @@
+[
+    {
+        "username": "echeung",
+        "email": null,
+        "name": null,
+        "photo": null,
+        "achievements": null,
+        "status": [],
+        "id": 1
+    },
+    {
+        "username": "sharon",
+        "email": "sharon@email.com",
+        "name": null,
+        "photo": null,
+        "achievements": null,
+        "status": [],
+        "id": 2
+    }
+]
