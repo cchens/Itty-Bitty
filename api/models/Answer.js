@@ -23,7 +23,6 @@ var Answer = {
   },
 
   validateAnswer: function (answer, next) {
-
     if (answer.mcAnswer) {
       Questions
       .find()

@@ -5,9 +5,7 @@ SET search_path TO ittybitty_dev;
 
 CREATE TABLE users (
 	user_id serial PRIMARY KEY,
-	provider varchar(20),
-	id text UNIQUE,
-	displayName text NOT NULL,
+	username text NOT NULL,
 	name json,
 	email varchar(50) NOT NULL,
 	photo text DEFAULT NULL,

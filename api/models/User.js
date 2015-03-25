@@ -3,9 +3,41 @@ var User = {
   schema: true,
 
   attributes: {
-    username  : { type: 'string', unique: true },
-    email     : { type: 'email',  unique: true },
-    passports : { collection: 'Passport', via: 'user' }
+
+    username: {
+      type: 'string',
+      unique: true
+    },
+
+    email: {
+      type: 'email',
+      unique: true
+    },
+
+    passports: {
+      collection: 'Passport',
+      via: 'user'
+    },
+
+    name: {
+      type: 'json',
+      defaultsTo: null
+    },
+
+    photo: {
+      type: 'text',
+      defaultTo: null
+    },
+
+    achievements: {
+      type: 'json',
+      defaultsTo: null
+    },
+
+    status: {
+      type: 'array',
+      defaultsTo: []
+    }
   }
 };
 
