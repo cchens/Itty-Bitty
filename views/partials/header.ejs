@@ -26,3 +26,24 @@
     </nav>
   </div>
 </header>
+
+<div id='achievement_alert'>
+  <h1>Achievement unlocked!</h1>
+  <p id='achievement_text'>Check it out!</p>
+</div>
+
+<script>
+  function achievementGet(id) {
+    $.post('/achievement/' + id, function (data) {
+      if (data) {
+        $('#achievement_alert').show();
+        $('#achievement_text').html(data);
+
+        setTimeout(function() {
+          $('#achievement_alert').hide();
+        }, 3000);
+      }
+    });
+
+  }
+</script>

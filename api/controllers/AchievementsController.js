@@ -32,7 +32,14 @@ module.exports = {
           if (err) {
             res.status(500).end();
           } else {
-            res.status(200).end();
+            Achievements
+            .findOne()
+            .where({ achievement_id: achievement })
+            .exec(function (err, ach) {
+              if (ach === undefined || err) res.status(500).end();
+
+              res.status(200).send(ach.name);
+            });
           }
         });
       });
