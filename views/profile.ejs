@@ -40,7 +40,11 @@
       <tr>
         <td><%= achievements[i].name %></td>
         <td><%= achievements[i].description %></td>
-        <td>Time or not unlocked?</td>
+    <%if (user.achievements.length == 0) { %>
+      <td>Not Yet Unlocked</td>
+    <%} else { %>
+      <td><%= user.achievements[0]%></td>
+    <%}%>
       </tr>
     <%}%>
   </tbody>
