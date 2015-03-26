@@ -48,5 +48,10 @@
     "achievement_id": 10,
     "name": "Don't hate, appreciate",
     "description": "Check yourself out"
+  },
+  {
+    "achievement_id": 11,
+    "name": "1337 G4M3R",
+    "description": "You're pretty legit, I guess"
   }
 ]
