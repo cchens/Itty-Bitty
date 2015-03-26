@@ -19,6 +19,12 @@ module.exports = {
         if (user === undefined) return res.notFound();
         if (err) return res.negotiate(err);
 
+        for (var i = 0; i < user.achievements.length; i++) {
+          if (user.achievements[i].achievement_id = achievement) {
+            res.status(200).end();
+          }
+        }
+
         user.achievements.push({ achievement_id: achievement, unlocked: new Date() });
 
         user.save(function (err) {
