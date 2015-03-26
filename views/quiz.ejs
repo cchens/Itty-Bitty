@@ -170,7 +170,7 @@
         if (score <= 0) { score = 0; }
 
         // Convert score to integer
-        score = parseInt(a, 10);
+        score = parseInt(score, 10);
 
         if (score >= threshold) {
           alert("You passed! Score: " + score);
@@ -190,7 +190,7 @@
 
         // Record score for question
         $.post('/level/<%= questions[i].question_id %>/' + score, function (data) {
-          console.log(data);
+          // console.log(data);
         });
       };
     <% } %>
