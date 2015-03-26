@@ -167,6 +167,9 @@
 
         if (score <= 0) { score = 0; }
 
+        // Convert score to integer
+        score = parseInt(a, 10);
+
         if (score > threshold) {
           alert("You passed! Score: " + score);
         }
