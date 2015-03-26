@@ -4,8 +4,13 @@
         "email": null,
         "name": null,
         "photo": null,
-        "achievements": [],
-        "status": [],
+        "achievements": [
+            {
+                "achievement_id": "1",
+                "unlocked": "2015-03-26T02:09:09.833Z"
+            }
+        ],
+        "status": [1, 2],
         "id": 1
     },
     {

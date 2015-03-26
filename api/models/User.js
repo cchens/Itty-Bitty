@@ -1,12 +1,19 @@
-var User = {
-  // Enforce model schema in the case of schemaless databases
-  schema: true,
+/**
+* User.js
+*
+* @description :: A User (with Passport)
+* @docs        :: http://sailsjs.org/#!/documentation/concepts/ORM
+*/
+
+module.exports = {
 
   attributes: {
 
     username: {
       type: 'string',
-      unique: true
+      unique: true,
+      required: true,
+      primaryKey: true
     },
 
     email: {
@@ -41,5 +48,3 @@ var User = {
   }
 
 };
-
-module.exports = User;
