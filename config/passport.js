@@ -29,6 +29,7 @@ module.exports.passport = {
       scope: ['email', 'profile']
     }
   },
+
 /*
   github: {
     name: 'GitHub',
@@ -39,6 +40,7 @@ module.exports.passport = {
       clientSecret: '4a64f45f2a010eefcc121222d84a83a62d419264'
     }
   },
+
   facebook: {
     name: 'Facebook',
     protocol: 'oauth2',
@@ -49,6 +51,7 @@ module.exports.passport = {
       scope: ['profile', 'email']
     }
   },
+
   google: {
     name: 'Google',
     protocol: 'oauth2',

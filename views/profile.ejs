@@ -2,6 +2,8 @@
 
 <% if (user.photo) {  %>
   <img src= <%=user.photo %> >
+<% } else { %>
+  <img src="http://i.imgur.com/xhuCh4T.jpg">
 <% } %>
 
 <p>User #<%= user.id %>: <%= user.username %></p>
@@ -22,7 +24,6 @@
 <% } %>
 
 <br>
-
 
 <h2>Achievements</h2>
 
