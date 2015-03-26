@@ -1,5 +1,5 @@
 {
-  "Error.Passport.Password.Invalid": "The provided password is invalid!",
+  "Error.Passport.Password.Invalid": "The provided password is invalid! (Minimum 8 characters)",
   "Error.Passport.Password.Wrong": "Hmm, that password doesn't seem right",
   "Error.Passport.Password.NotSet": "Oh no, you haven't set a password yet!",
   "Error.Passport.Username.NotFound": "Can't seem to find you, try again?",

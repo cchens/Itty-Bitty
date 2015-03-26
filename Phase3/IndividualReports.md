@@ -8,17 +8,63 @@
 Please keep it short.
 
 ## Ben Shaft (BShaft)
+- My most signification contribution was
+- While working on
+- A
+- A
+
+---
 
 ## Catherine Wang (nishikiw)
+- My most signification contribution was
+- While working on
+- A
+- A
+
+---
 
 ## Christina Chen (cchens)
+- My most signification contribution was
+- While working on
+- A
+- A
+
+---
 
 ## Cindy Wu (xinrwu)
+- My most signification contribution was
+- While working on
+- A
+- A
+
+---
 
 ## Eric Snyder (radical)
+- My most signification contribution was
+- While working on
+- A
+- A
+
+---
 
 ## Eugene Cheung (arkon)
+- My most signification contribution was
+- While working on
+- 
+- 
+
+---
 
 ## Inks Lee (leebang)
+- My most signification contribution was
+- While working on
+- A
+- A
+
+---
 
 ## Sharon Hogan (hogansh)
+- My most signification contribution was
+- While working on
+- A
+- A

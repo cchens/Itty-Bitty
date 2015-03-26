@@ -9,6 +9,9 @@ module.exports = {
   profile: function (req, res) {
     var user_id = req.user.id;
 
+    console.log(req.user);
+    console.log(req.user.achievements);
+
     if (user_id) {
       Scores
       .find()
