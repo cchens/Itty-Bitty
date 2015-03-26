@@ -34,7 +34,7 @@ module.exports.routes = {
   'GET /auth/:provider': 'AuthController.provider',
   'GET /auth/:provider/callback': 'AuthController.callback',
   'GET /auth/:provider/:action': 'AuthController.callback',
- 
+
   'POST /tutorials/:type/:level_num': 'QuestionsController.validateAnswer',
 
   'GET /tutorials': 'LevelsController.index',
@@ -44,8 +44,11 @@ module.exports.routes = {
   'GET /ref/bitwise': { view: 'ref_bitwise' },
   'GET /ref/bases': { view: 'ref_bases' },
 
-  'GET /profile': 'UsersController.profile',
+  'GET /profile': 'UserController.profile',
   'GET /leaderboards': 'ScoresController.leaderboards',
+
+  'POST /achievement/:id': 'AchievementsController.unlock',
+  'POST /level/:id': 'UserController.completeLevel',
 
   /*************************************************************************
   *                                                                        *

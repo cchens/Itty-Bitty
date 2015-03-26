@@ -7,4 +7,31 @@
 
 module.exports = {
 
+  unlock: function (req, res) {
+    var username = req.user.username,
+        achievement = req.params.id;
+
+    if (username && achievement) {
+      User
+      .findOne()
+      .where({ username: username })
+      .exec(function (err, user) {
+        if (user === undefined) return res.notFound();
+        if (err) return res.negotiate(err);
+
+        user.achievements.push({ achievement_id: achievement, unlocked: new Date() });
+
+        user.save(function (err) {
+          if (err) {
+            res.status(500).end();
+          } else {
+            res.status(200).end();
+          }
+        });
+      });
+    } else {
+      res.status(500).end();
+    }
+  },
+
 };

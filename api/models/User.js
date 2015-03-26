@@ -20,7 +20,7 @@ var User = {
     },
 
     name: {
-      type: 'json',
+      type: 'string',
       defaultsTo: null
     },
 
@@ -31,7 +31,7 @@ var User = {
 
     achievements: {
       type: 'json',
-      defaultsTo: null
+      defaultsTo: []
     },
 
     status: {
@@ -39,6 +39,7 @@ var User = {
       defaultsTo: []
     }
   }
+
 };
 
 module.exports = User;

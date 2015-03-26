@@ -32,4 +32,31 @@ module.exports = {
     });
   },
 
+  completeLevel: function (req, res) {
+    var username = req.user.username,
+        level = parseInt(req.params.id, 10);
+
+    if (username && level) {
+      User
+      .findOne()
+      .where({ username: username })
+      .exec(function (err, user) {
+        if (user === undefined) return res.notFound();
+        if (err) return res.negotiate(err);
+
+        user.status.push(level);
+
+        user.save(function (err) {
+          if (err) {
+            res.status(500).end();
+          } else {
+            res.status(200).end();
+          }
+        });
+      });
+    } else {
+      res.status(500).end();
+    }
+  },
+
 };
