@@ -8,7 +8,7 @@ module.exports = {
 
   profile: function (req, res) {
     var user_id = req.user.id;
-      user_achievements = req.user.achievements;
+    var user_achievements = req.user.achievements;
 
     console.log(req.user);
     console.log(req.user.achievements);

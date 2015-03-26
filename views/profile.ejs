@@ -40,11 +40,17 @@
       <tr>
         <td><%= achievements[i].name %></td>
         <td><%= achievements[i].description %></td>
-    <%if (user.achievements.length == 0) { %>
-      <td>Not Yet Unlocked</td>
-    <%} else { %>
-      <td><%= user.achievements[0]%></td>
-    <%}%>
+        <%if (user.achievements.length == 0) { %>
+          <td>Not Yet Unlocked</td>
+        <%} else { %>
+          <% var j = 0%>
+          <% for (; j < user.achievements.length; j++) {%>
+            <% if (user.achievements[j].achievement_id == i+1) {%>
+              <td><%= user.achievements[j].unlocked%></td>
+            <%}}%>
+          <% if (j == user.achievement.length){%>
+            <td>Locked</td>
+          <%}}%>
       </tr>
     <%}%>
   </tbody>
