@@ -65,6 +65,7 @@ exports.register = function (req, res, next) {
     }, function (err, passport) {
       if (err) {
         if (err.code === 'E_VALIDATION') {
+          console.log(err);
           req.flash('error', 'Error.Passport.Password.Invalid');
         }
 

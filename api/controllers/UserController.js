@@ -7,13 +7,13 @@
 module.exports = {
 
   profile: function (req, res) {
-    var username = req.user.username;
+    var user_id = req.user.id;
 
-    if (username) {
+    if (user_id) {
       Scores
       .find()
-      .where({ username: username })
-      .sort('level_id ASC')
+      .where({ user: user_id })
+      .sort('level ASC')
       .exec(function (err, scores) {
         if (scores === undefined) return res.notFound();
         if (err) return res.negotiate(err);
