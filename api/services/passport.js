@@ -79,7 +79,7 @@ passport.connect = function (req, query, profile, next) {
     return next(new Error('No authentication provider was identified.'));
   }
 
-  user.provider = provider
+  user.provider = provider;
 
   // If the profile object contains a list of emails, grab the first one and
   // add it to the user.
