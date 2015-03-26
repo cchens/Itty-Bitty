@@ -11,7 +11,8 @@ CREATE TABLE users (
 	photo text DEFAULT NULL,
 	achievements json,
 	password text NOT NULL,
-	status text[]
+	status text[],
+	provider text DEFAULT NULL
 );
 
 CREATE TABLE achievements (
