@@ -20,8 +20,9 @@ module.exports = {
         if (err) return res.negotiate(err);
 
         for (var i = 0; i < user.achievements.length; i++) {
-          if (user.achievements[i].achievement_id = achievement) {
+          if (user.achievements[i].achievement_id == achievement) {
             res.status(200).end();
+            return;
           }
         }
 
