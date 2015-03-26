@@ -7,6 +7,11 @@ body {
   @include hidpi {
     background-image: url('../images/grey@2x.png');
   }
+
+  &.bigfonts {
+    font-size: 24px;
+    line-height: 30px;
+  }
 }
 
 // Centred contents
@@ -146,6 +151,12 @@ footer {
   @include hidpi {
     background-image: url('../images/logo_light@2x.png');
   }
+}
+
+#big-fonts {
+  color: #777;
+  display: inline-block;
+  padding: 1em 0;
 }
 
 
