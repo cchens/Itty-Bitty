@@ -119,6 +119,8 @@
       e.preventDefault();
 
       $('#dialog-toohard').trigger('openModal');
+
+      achievementGet(1);
     });
 
 
@@ -170,11 +172,20 @@
         // Convert score to integer
         score = parseInt(a, 10);
 
-        if (score > threshold) {
+        if (score >= threshold) {
           alert("You passed! Score: " + score);
         }
         else {
           alert("You failed! You got: " + score + " but needed: " + threshold);
+        }
+
+        // Achievements?
+        if (score < threshold) {
+          achievementGet(8);
+        }
+
+        if (end - start <= 30000) {
+          achievementGet(2);
         }
 
         // Record score for question
