@@ -46,16 +46,15 @@
         <td><%= achievements[i].name %></td>
         <td><%= achievements[i].description %></td>
         <td>
-          <% if (user.achievements.length == 0) { %>
-            Locked
-          <% } else { %>
+          <% var ach_status = 'Locked' %>
+          <% if (user.achievements.length != 0) { %>
             <% for (var j = 0; j < user.achievements.length; j++) {%>
               <% if (user.achievements[j].achievement_id == i + 1) {%>
-                <%= user.achievements[j].unlocked %>
-              <% }} %>
-            <% if (j == user.achievement.length) { %>
-              Locked
-            <% }} %>
+                <% ach_status = user.achievements[j].unlocked %>
+              <% } %>
+            <% } %>
+          <% } %>
+          <%= ach_status %>
         </td>
       </tr>
     <% } %>
