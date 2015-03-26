@@ -79,6 +79,8 @@ passport.connect = function (req, query, profile, next) {
     return next(new Error('No authentication provider was identified.'));
   }
 
+  user.provider = provider
+
   // If the profile object contains a list of emails, grab the first one and
   // add it to the user.
   if (profile.hasOwnProperty('emails')) {
@@ -87,6 +89,10 @@ passport.connect = function (req, query, profile, next) {
   // If the profile object contains a username, add it to the user.
   if (profile.hasOwnProperty('username')) {
     user.username = profile.username;
+  }
+
+  if (profile.hasOwnProperty('photos')) {
+    user.photo = profile.photos[0].value;
   }
 
   // If neither an email or a username was available in the profile, we don't

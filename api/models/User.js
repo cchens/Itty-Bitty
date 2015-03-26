@@ -42,6 +42,11 @@ module.exports = {
     status: {
       type: 'array',
       defaultsTo: []
+    },
+
+    provider : {
+      type: 'string',
+      defaultsTo: null
     }
   }
 

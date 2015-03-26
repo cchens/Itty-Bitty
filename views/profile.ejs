@@ -1,7 +1,17 @@
 <h1>Profile</h1>
 
+<% if (user.photo) {  %>
+  <img src= <%=user.photo %> >
+<% } %>
+
 <p>User #<%= user.id %>: <%= user.username %></p>
-<p>Email address: <%= user.email %></p>
+
+<% if (user.email) {  %>
+  <p>Email address: <%=user.email %></p>
+<% } else { %>
+  <p>Signed in using <%=user.provider %></p>
+<% } %>
+
 <p>Joined: <%= user.createdAt %></p>
 
 
@@ -10,6 +20,8 @@
 <% for (var i = 0; i < scores.length; i++) { %>
   <h3><%= scores[i].score %> points in level <%= scores[i].level_id %></h3>
 <% } %>
+
+<br>
 
 
 <h2>Achievements</h2>

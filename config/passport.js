@@ -25,7 +25,8 @@ module.exports.passport = {
     strategy: require('passport-twitter').Strategy,
     options: {
       consumerKey: 'GYrfzWxVlL2nVZkNptyEYz7jY',
-      consumerSecret: 'L3SRN8Xt39386LaXsn3ZNQI1XgpR8niMq3fz72iLKMPN5jXt49'
+      consumerSecret: 'L3SRN8Xt39386LaXsn3ZNQI1XgpR8niMq3fz72iLKMPN5jXt49',
+      scope: ['email', 'profile']
     }
   },
 /*
@@ -38,17 +39,16 @@ module.exports.passport = {
       clientSecret: '4a64f45f2a010eefcc121222d84a83a62d419264'
     }
   },
-
   facebook: {
     name: 'Facebook',
     protocol: 'oauth2',
     strategy: require('passport-facebook').Strategy,
     options: {
       clientID: '1377242345932332',
-      clientSecret: '8df9fcf772867cbe3c749e526d28f115'
+      clientSecret: '8df9fcf772867cbe3c749e526d28f115',
+      scope: ['profile', 'email']
     }
   },
-
   google: {
     name: 'Google',
     protocol: 'oauth2',
