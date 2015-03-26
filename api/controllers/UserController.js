@@ -50,7 +50,8 @@ module.exports = {
         if (err) return res.negotiate(err);
 
         // Record question_id
-        user.status.push(question_id);
+        if (user.status.indexOf(question_id) < 0)
+          user.status.push(question_id);
 
         user.save(function (err) {
           if (err) {
@@ -59,7 +60,7 @@ module.exports = {
             // Record score
             Scores.create({
               user: user.id,
-              question_id: question_id,
+              question_id: question_id.toString(),
               score: score
             }, function (err, score) {
               if (err) res.status(500).end();
