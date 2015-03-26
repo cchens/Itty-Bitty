@@ -43,5 +43,10 @@
     "achievement_id": 9,
     "name": "Night owl",
     "description": "Register sometime between 00:00 to 05:00"
+  },
+  {
+    "achievement_id": 10,
+    "name": "Don't hate, appreciate",
+    "description": "Check yourself out"
   }
 ]

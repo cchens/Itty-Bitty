@@ -10,7 +10,7 @@ module.exports = {
   leaderboards: function (req, res) {
     Scores
     .find()
-    .sort({ user: 1, level: 1 })
+    .sort({ user: 1 })
     .exec(function (err, scores) {
       if (scores === undefined) return res.notFound();
       if (err) return res.negotiate(err);

@@ -48,6 +48,7 @@
         <td>
           <% var ach_status = 'Locked' %>
           <% if (user.achievements.length != 0) { %>
+            <% user.achievements.sort(function(a, b) { return a.achievement_id - b.achievement_id }); %>
             <% for (var j = 0; j < user.achievements.length; j++) {%>
               <% if (user.achievements[j].achievement_id == i + 1) {%>
                 <% ach_status = user.achievements[j].unlocked %>
@@ -60,3 +61,9 @@
     <% } %>
   </tbody>
 </table>
+
+<script>
+  $.post('/achievement/10', function (data) {
+    alert(data);
+  });
+</script>

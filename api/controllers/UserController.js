@@ -20,7 +20,7 @@ module.exports = {
 
         Achievements
         .find()
-        .sort('name ASC')
+        .sort('achievement_id ASC')
         .exec(function (err, achievements) {
           if (achievements === undefined) return res.notFound();
           if (err) return res.negotiate(err);
