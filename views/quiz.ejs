@@ -134,8 +134,15 @@
       document.getElementById("submit-<%= i %>").onclick = function (event) {
         event.stopPropagation();
 
+        // Check answer
+        // TODO: POST call to check answer
+
+        // Score
         end = Date.now();
         score -= (end - start) / 1000;
+
+        // Record score
+        // TODO: POST score
 
         if (document.getElementById("open_answer-<%= i %>")) {
           if (document.getElementById("open_answer-<%= i %>").value === "<%= questions[i].answer %>") {

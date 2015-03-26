@@ -22,5 +22,10 @@ module.exports = {
       notNull: true
     }
 
+  },
+
+  beforeCreate: function(values, next) {
+    next();
   }
+
 };

@@ -38,7 +38,8 @@ module.exports = {
 
   completeLevel: function (req, res) {
     var username = req.user.username,
-        level = parseInt(req.params.id, 10);
+        level = parseInt(req.params.id, 10),
+        score = parseInt(req.params.score, 10);
 
     if (username && level) {
       User
@@ -48,13 +49,23 @@ module.exports = {
         if (user === undefined) return res.notFound();
         if (err) return res.negotiate(err);
 
+        // Record level
         user.status.push(level);
 
         user.save(function (err) {
           if (err) {
             res.status(500).end();
           } else {
-            res.status(200).end();
+            // Record score
+            Scores.create({
+              user: user.id,
+              level: level,
+              score: score
+            }, function (err, score) {
+              if (err) res.status(500).end();
+
+              res.status(200).end();
+            });
           }
         });
       });
