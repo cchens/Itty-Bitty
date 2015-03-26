@@ -1,7 +1,7 @@
 <h1>Profile</h1>
 
 <% if (user.photo) {  %>
-  <img src= <%=user.photo %> >
+  <img src="<%= user.photo %>">
 <% } else { %>
   <img src="http://i.imgur.com/xhuCh4T.jpg">
 <% } %>
@@ -9,9 +9,9 @@
 <p>User #<%= user.id %>: <%= user.username %></p>
 
 <% if (user.email) {  %>
-  <p>Email address: <%=user.email %></p>
+  <p>Email address: <%= user.email %></p>
 <% } else { %>
-  <p>Signed in using <%=user.provider %></p>
+  <p>Signed in using <%= user.provider %></p>
 <% } %>
 
 <p>Joined: <%= user.createdAt %></p>
@@ -19,10 +19,15 @@
 
 <h2>Progress (+ scores)</h2>
 
+<% if (scores.length == 0) { %>
+  No scores yet!
+<% } %>
+
 <% for (var i = 0; i < scores.length; i++) { %>
   <h3><%= scores[i].score %> points in level <%= scores[i].level_id %></h3>
 <% } %>
 
+<br>
 <br>
 
 <h2>Achievements</h2>
@@ -36,22 +41,23 @@
     </tr>
   </thead>
   <tbody>
-    <%for (var i = 0; i < achievements.length; i++) { %>
+    <% for (var i = 0; i < achievements.length; i++) { %>
       <tr>
         <td><%= achievements[i].name %></td>
         <td><%= achievements[i].description %></td>
-        <%if (user.achievements.length == 0) { %>
-          <td>Not Yet Unlocked</td>
-        <%} else { %>
-          <% var j = 0%>
-          <% for (; j < user.achievements.length; j++) {%>
-            <% if (user.achievements[j].achievement_id == i+1) {%>
-              <td><%= user.achievements[j].unlocked%></td>
-            <%}}%>
-          <% if (j == user.achievement.length){%>
-            <td>Locked</td>
-          <%}}%>
+        <td>
+          <% if (user.achievements.length == 0) { %>
+            Locked
+          <% } else { %>
+            <% for (var j = 0; j < user.achievements.length; j++) {%>
+              <% if (user.achievements[j].achievement_id == i + 1) {%>
+                <%= user.achievements[j].unlocked %>
+              <% }} %>
+            <% if (j == user.achievement.length) { %>
+              Locked
+            <% }} %>
+        </td>
       </tr>
-    <%}%>
+    <% } %>
   </tbody>
 </table>
