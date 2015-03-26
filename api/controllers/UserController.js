@@ -36,12 +36,12 @@ module.exports = {
     }
   },
 
-  completeLevel: function (req, res) {
+  completeQuestion: function (req, res) {
     var username = req.user.username,
-        level = parseInt(req.params.id, 10),
+        question_id = parseInt(req.params.id, 10),
         score = parseInt(req.params.score, 10);
 
-    if (username && level) {
+    if (username && question_id) {
       User
       .findOne()
       .where({ username: username })
@@ -49,8 +49,8 @@ module.exports = {
         if (user === undefined) return res.notFound();
         if (err) return res.negotiate(err);
 
-        // Record level
-        user.status.push(level);
+        // Record question_id
+        user.status.push(question_id);
 
         user.save(function (err) {
           if (err) {
@@ -59,7 +59,7 @@ module.exports = {
             // Record score
             Scores.create({
               user: user.id,
-              level: level,
+              question_id: question_id,
               score: score
             }, function (err, score) {
               if (err) res.status(500).end();

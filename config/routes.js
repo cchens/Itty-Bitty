@@ -48,7 +48,7 @@ module.exports.routes = {
   'GET /leaderboards': 'ScoresController.leaderboards',
 
   'POST /achievement/:id': 'AchievementsController.unlock',
-  'POST /level/:id/:score': 'UserController.completeLevel',
+  'POST /level/:id/:score': 'UserController.completeQuestion'
 
   /*************************************************************************
   *                                                                        *
