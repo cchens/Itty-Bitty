@@ -32,9 +32,9 @@ CREATE TABLE levels (
 
 CREATE TABLE scores (
 	user_id integer REFERENCES users(user_id) NOT NULL,
-	level_id integer REFERENCES levels(level_id) NOT NULL,
+	question_id integer REFERENCES questions(question_id) NOT NULL,
 	score integer NOT NULL,
-	PRIMARY KEY (user_id, level_id)
+	PRIMARY KEY (user_id, question_id)
 );
 
 CREATE TABLE questions (

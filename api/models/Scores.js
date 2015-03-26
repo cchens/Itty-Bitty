@@ -13,8 +13,8 @@ module.exports = {
       model: 'User'
     },
 
-    level: {
-      model: 'Levels'
+    question_id: {
+      model: 'Questions'
     },
 
     score: {
@@ -22,10 +22,6 @@ module.exports = {
       notNull: true
     }
 
-  },
-
-  beforeCreate: function(values, next) {
-    next();
   }
 
 };

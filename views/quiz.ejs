@@ -141,9 +141,8 @@
         end = Date.now();
         score -= (end - start) / 1000;
 
-        // Record score
-        // TODO: POST score
-
+        // Ben's old answer validation
+        // TODO: replace this with POST call (above)
         if (document.getElementById("open_answer-<%= i %>")) {
           if (document.getElementById("open_answer-<%= i %>").value === "<%= questions[i].answer %>") {
             alert("Question <%= i%>: Correct!");
@@ -174,6 +173,11 @@
         else {
           alert("You failed! You got: " + score + " but needed: " + threshold);
         }
+
+        // Record score for question
+        $.post('/level/<%= questions[i].question_id %>/' + score, function (data) {
+          console.log(data);
+        });
       };
     <% } %>
   });

@@ -34,6 +34,7 @@ module.exports = {
           res.view('quiz', {
             'title': title,
             'tutorial': level,
+            'level_num': level_num,
             'type': type,
             'questions': questions
           });
