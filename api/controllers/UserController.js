@@ -57,16 +57,39 @@ module.exports = {
           if (err) {
             res.status(500).end();
           } else {
-            // Record score
-            Scores.create({
-              user: user.id,
-              question_id: question_id.toString(),
-              score: score
-            }, function (err, score) {
+            Scores
+            .findOne()
+            .where({ user: user.id, question_id: question_id.toString() })
+            .exec(function (err, old_score) {
               if (err) res.status(500).end();
 
-              res.status(200).end();
+              if (old_score) {
+                // Update existing score
+                if (old_score.score < score) {
+                  old_score.score = score;
+
+                  old_score.save(function (err) {
+                    if (err) res.status(500).end();
+
+                    res.status(200).end();
+                  });
+                } else {
+                  res.status(200).end();
+                }
+              } else {
+                // Record score
+                Scores.create({
+                  user: user.id,
+                  question_id: question_id.toString(),
+                  score: score
+                }, function (err, score) {
+                  if (err) res.status(500).end();
+
+                  res.status(200).end();
+                });
+              }
             });
+
           }
         });
       });
