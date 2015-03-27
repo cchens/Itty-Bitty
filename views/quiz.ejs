@@ -43,12 +43,21 @@
         <% } %>
 
         <button class='quiz-submit' id="submit-<%= i %>">Submit</button>
-        <button class='quiz-show-answer' id="show-answer-<%= i %>">Show answer</button>
+        <button onclick="showAnswer()" class='quiz-show-answer' id="show-answer-<%= i %>">Show answer</button>
+         <script>
+        function showAnswer() {
+        alert("<%= questions[i].explanation %>, it's <%= questions[i].answer %>");
+
+        }
+        </script>
+      
       </div>
+
     <% } %>
 
     <a class='ref-link' target='_blank' href="/ref/<%= type %>">Reference sheet</a>
     <a class='ref-link' target='_blank' href="#" id='btn-toohard'>This is too hard!</a>
+
   <% } %>
 </div>
 
