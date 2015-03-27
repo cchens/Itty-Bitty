@@ -134,7 +134,7 @@
       },
       {
         "type": "image",
-        "data": "http://s5.postimg.org/j8icomovr/NOR_example.jpg"
+        "data": "/images/tutorials/NOR_example.jpg"
       }
     ]
   },
@@ -156,7 +156,7 @@
       },
       {
         "type": "image",
-        "data": "http://s5.postimg.org/65mq5cynr/left_Shift_example.jpg"
+        "data": "/images/tutorials/left_Shift_example.jpg"
       }
     ]
   },
@@ -178,7 +178,7 @@
       },
       {
         "type": "image",
-        "data": "http://s5.postimg.org/wj1m4eq2f/right_Shift_example.jpg"
+        "data": "/images/tutorials/right_Shift_example.jpg"
       }
     ]
   },
@@ -196,7 +196,7 @@
       },
       {
         "type": "image",
-        "data": "http://s5.postimg.org/izpdcg1h3/Base2_10.jpg"
+        "data": "/images/tutorials/Base2_10.jpg"
       },
       {
         "type": "text",
@@ -222,7 +222,7 @@
       },
       {
         "type": "image",
-        "data": "http://s5.postimg.org/4o19tstx3/Base10_2.jpg"
+        "data": "/images/tutorials/Base10_2.jpg"
       },
       {
         "type": "text",
