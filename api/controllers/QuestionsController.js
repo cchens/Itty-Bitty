@@ -49,8 +49,8 @@ module.exports = {
     var user_sol = req.param("user_solution"),
         questionID = req.param("questionID");
         //questionID = "1";
-    sails.log.info(user_sol)
-    sails.log.info(questionID)
+    //sails.log.info(user_sol)
+    //sails.log.info(questionID)
 
     if(user_sol && questionID){
 
@@ -64,23 +64,48 @@ module.exports = {
         sails.log.info(questions.answer)
         sails.log.info(user_sol)
         sails.log.info(questions)
-        */
+        
         sails.log.info(questions[0].answer)
-
+        */
         if(questions[0].answer === user_sol){
-          sails.log.info("true!!!!!!")
+          //sails.log.info("true!!!!!!")
           res.send('true');
         }
         else{
-          sails.log.info("false!!!!!!")
+          //sails.log.info("false!!!!!!")
 
           res.send('false');
         }
 
       });
     }
-  }
+  },
+  showAnswer: function (req, res) {
+    var questionID = req.param("questionID");
 
+    if(questionID){
+
+      Questions
+      .find()
+      .where({ question_id:questionID })
+      .exec(function (err, questions) {
+        if (questions === undefined) return res.notFound();
+        if (err) return res.negotiate(err);
+
+        //sails.log.info(questions[0].answer)
+
+        if(questions[0].answer){
+          var explanation= "Explanation: " + questions[0].explanation + "\nAnswer: " + questions[0].answer;
+          res.send(explanation);
+        }
+        else{
+          res.send('false');
+        }
+
+      });
+    }
+
+  }
 
 };
 

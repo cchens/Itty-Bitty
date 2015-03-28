@@ -43,12 +43,38 @@
         <% } %>
 
         <button class='quiz-submit' id="submit-<%= i %>">Submit</button>
-        <button onclick="showAnswer()" class='quiz-show-answer' id="show-answer-<%= i %>">Show answer</button>
-         <script>
-        function showAnswer() {
-        alert("<%= questions[i].explanation %>, it's <%= questions[i].answer %>");
 
-        }
+        <!-- this section is for showing answer using post -->
+        <form role='form' action='/tutorials/<%= type %>/<%= tutorial.level_num %>' method='post' id="showAns">
+          <input type='submit' value='Show Answer'>
+        </form>
+
+        <script>
+
+          // Attach a submit handler to the form
+          $( "#showAns" ).submit(function( event ) {
+
+            // Stop form from submitting normally
+            event.preventDefault();
+
+            // Get some values from elements on the page:
+            var $form = $( this ),
+              question_id = <%= questions[i].question_id %>,
+              url = $form.attr( "action" );
+
+            // Send the data using post, so far only user_solution
+            var posting = $.post( url, {questionID:question_id} );
+
+
+            // Put the results in a div
+            posting.done(function( data ) {
+              alert(data);
+
+              //var content = $( data ).find( "#content" );
+              //$( "#resuilt" ).empty().append( content );
+            });
+
+          });
         </script>
       
       </div>
