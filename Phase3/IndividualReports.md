@@ -64,7 +64,7 @@ Please keep it short.
 ---
 
 ## Sharon Hogan (hogansh)
-- My most signification contribution was
-- While working on
-- A
-- A
+- My most signigicant individaul contribution would be setting up the view for displaying the quizes by pulling information from the fixture [issue #5](https://github.com/UoT-CSC30x-W15/301W15-Prj-Team1-repo/issues/5#event-237769527), as well as answer validation with post[issue #28](https://github.com/UoT-CSC30x-W15/301W15-Prj-Team1-repo/issues/28).
+- While working on the Itty Bitty, I learned how to use the framework sails.js, and the implementation of the MVC architectural pattern.
+- My main strength as a team member is I always complete my assingmed task on time. My section of code often can be used in other parts of the project for other memebers as reference/template.
+- My weeknesses would surely be my lack of expirences in web development, so it takes me a very long time to figure out how to complete my assigned task, which leads me to have less time to help with the rest of the project.
