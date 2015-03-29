@@ -42,7 +42,7 @@
           <label><input type="radio" name="answer-mc-<%= i %>" value="4"> <%= questions[i].choice4 %></label>
         <% } %>
 
-        <button class='quiz-submit' 
+        <button class='quiz-submit'
           id="submit-<%= i %>"
           data-url='/tutorials/<%= type %>/<%= tutorial.level_num %>'
           data-questionid='<%= questions[i].question_id %>'>Submit</button>
@@ -53,8 +53,7 @@
       </div>
     <% } %>
 
-    <p id='score-tag'>Score:</p>
-    <p id='score'>0</p>
+    <p id='score-tag'>Score: <span id='score'>0</span></p>
 
     <a class='ref-link' target='_blank' href="/ref/<%= type %>">Reference sheet</a>
     <a class='ref-link' target='_blank' href="#" id='btn-toohard'>This is too hard!</a>
@@ -133,13 +132,13 @@
             // Gets the user submitted solution.
             // Ternary Condition. If there's an open-answer question, get that element's value.
             // If there isn't then it's a mult-choice question, and get the value of the checked button.
-            var submitted = ( ($("#open_answer-<%= i %>")) ? 
+            var submitted = ( ($("#open_answer-<%= i %>")) ?
               $("#open_answer-<%= i %>").val() : $("input[name='answer-mc-<%= i %>']:checked").val());
-            
+
             // Uses a POST call to find out if the user was correct or not.
             $.post(this.dataset.url, { user_solution : submitted, question_id : this.dataset.questionid },
               function (data) {
-                
+
                 // If the user was correct (data here is either `true` or `false`)
                 if (data) {
                   alert("Question <%= i %>: Correct!");

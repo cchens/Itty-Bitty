@@ -16,10 +16,9 @@ Please keep it short.
 ---
 
 ## Catherine Wang (nishikiw)
-- My most signification contribution was
-- While working on
-- A
-- A
+- While working on the whole project, I learned Html, JavaScrip, Sails, and the main components of website.
+- I could complete whatever assigned to me on time, and I am willing to learn.
+- I do not have enough knowledge and experience of building a website, I should have learned more before taking this course so I could help more in the project, and would not bother my team-mates for too many questions.
 
 ---
 
@@ -40,10 +39,10 @@ Please keep it short.
 ---
 
 ## Eric Snyder (radical)
-- My most signification contribution was
-- While working on
-- A
-- A
+- My most signification contribution (for phase 3) was adding tutorial content to fixtures and implementing part of the leaderboard page (together with leebang.)
+- While working on our project I learned about the Sails.js framework. Sails is helpful because it uses exclusivly javascript and doesn't require someone to learn multiple languages to work with, making it perfect for a project like this with people of varying degrees of experience in web programming.
+- I am good at teamwork and always encoraged the member of my team to do their best as the scrum master.
+- I could stand to improve my javascript ability as some of the code I wrote had to be corrected by people more experienced.
 
 ---
 
