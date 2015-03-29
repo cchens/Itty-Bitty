@@ -47,7 +47,6 @@
           data-url='/tutorials/validate/<%= questions[i].question_id %>'>Submit</button>
         <button class='show-answer'
           data-url='/tutorials/answer/<%= questions[i].question_id %>'>Show Answer</button>
-
       </div>
     <% } %>
 
@@ -91,31 +90,29 @@
     // Scoring
     var difficulty = <%= tutorial.difficulty %>;
     var score = 100 * difficulty;
-    $("#score").text(score);
+    $('#score').text(score);
     var threshold = Math.ceil(score * 0.75);
     var seconds = 0
     var timer = setInterval(function(){ secTimer() }, 1000);
-    //var start = Date.now();
-    //var end = 0;
     var errors = 0;
 
     function secTimer() {
       ++seconds;
-      if ( score >= 1 ) {
+      if (score >= 1) {
         --score;
-        $("#score").text(score);
+        $('#score').text(score);
       }
     }
 
+    // Fetch the answer with a POST call
     $('.show-answer').click(function (e) {
-      // Fetch the answer with a POST call
       $.post(this.dataset.url, function (data) {
         alert(data);
       });
 
-      // Set score to 0 for seeing the answer.
+      // Set score to 0 for seeing the answer
       score = 0;
-      $("#score").text(score);
+      $('#score').text(score);
 
       e.preventDefault();
     });
@@ -167,7 +164,7 @@
 
               ++errors;
               score -= Math.pow(2, errors);
-              $("#score").text(score);
+              $('#score').text(score);
             }
         });
 
@@ -178,5 +175,4 @@
       });
     <% } %>
   });
-
 </script>

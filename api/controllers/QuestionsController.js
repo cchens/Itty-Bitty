@@ -10,8 +10,7 @@ module.exports = {
     var type      = req.params.type,
         level_num = req.params.level_num;
 
-    // Get appropriate level content from db
-    // e.g. http://localhost:1337/tutorials/bitwise/1
+    // Get appropriate level content from database
     if (type && level_num) {
       // Checks for the tutoral content by checking type and level_num
       Levels
@@ -29,7 +28,7 @@ module.exports = {
           if (questions === undefined) return res.notFound();
           if (err) return res.negotiate(err);
 
-          var title = "Level " + level_num + " (" + type + ")";
+          var title = 'Level ' + level_num + ' (' + type + ')';
 
           res.view('quiz', {
             'title': title,
@@ -41,16 +40,13 @@ module.exports = {
         });
       });
     } else {
-      res.notFound();
+      return res.notFound();
     }
   },
 
   validateAnswer: function (req, res) {
-    var user_sol = req.param("user_solution"),
-        questionID = req.param("question_id");
-
-    console.log(user_sol);
-    console.log(questionID);
+    var user_sol = req.param('user_solution'),
+        questionID = req.param('question_id');
 
     if (user_sol && questionID) {
       Questions
@@ -70,7 +66,7 @@ module.exports = {
   },
 
   showAnswer: function (req, res) {
-    var questionID = req.param("question_id");
+    var questionID = req.param('question_id');
 
     if (questionID) {
       Questions
@@ -81,7 +77,7 @@ module.exports = {
         if (err) return res.negotiate(err);
 
         if (questions[0].answer) {
-          var explanation = "Explanation: " + questions[0].explanation + "\nAnswer: " + questions[0].answer;
+          var explanation = 'Explanation: ' + questions[0].explanation + '\nAnswer: ' + questions[0].answer;
           res.send(explanation);
         }
         else {
