@@ -144,8 +144,8 @@
             // Correct answer
             if (data === 'true') {
               // Adds all the submitted results in an array
-              if ($.inArray(<%= i =>, submitted) === -1) {
-                submitted.push(<%= i =>);
+              if ($.inArray(<%= i %>, submitted) === -1) {
+                submitted.push(<%= i %>);
               }
 
               // Stops this quiz's timer when the user has submitted a correct answer to every question
