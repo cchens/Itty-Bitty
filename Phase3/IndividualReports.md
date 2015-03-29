@@ -16,10 +16,9 @@ Please keep it short.
 ---
 
 ## Catherine Wang (nishikiw)
-- My most signification contribution was
-- While working on
-- A
-- A
+- While working on the whole project, I learned Html, JavaScrip, Sails, and the main components of website.
+- I could complete whatever assigned to me on time, and I am willing to learn.
+- I do not have enough knowledge and experience of building a website, I should have learned more before taking this course so I could help more in the project, and would not bother my team-mates for too many questions.
 
 ---
 
