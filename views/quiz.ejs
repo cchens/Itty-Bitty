@@ -89,7 +89,7 @@
 
     // Scoring
     var difficulty = <%= tutorial.difficulty %>;
-    var score = 100 * difficulty;
+    var score = 100 * difficulty * <%= questions.length %>;
     $('#score').text(score);
     var threshold = Math.ceil(score * 0.75);
     var seconds = 0
@@ -133,8 +133,10 @@
 
             // Correct answer
             if (data === 'true') {
-              // Stop the seconds counter
-              clearInterval(timer);
+              // Stop the seconds counter after getting the final question correct
+              if (<%= i %> === (<%= questions.length %> - 1)) {
+                clearInterval(timer);
+              }
 
               alert("Question <%= i %>: Correct!");
 
