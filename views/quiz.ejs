@@ -123,70 +123,56 @@
     });
 
     <% for (var i = 0; i < questions.length; i++) { %>
-      document.getElementById("submit-<%= i %>").onclick = function (event) {
-        event.stopPropagation();
+      // Check answer
+      $("#submit-<%= i %>").click(function (e) {
 
-        // Check answer
-        $("#submit-<%= i %>").click(function (e) {
+        // Gets the user submitted solution.
+        // Ternary Condition. If there's an open-answer question, get that element's value.
+        // If there isn't then it's a mult-choice question, and get the value of the checked button.
+        var submitted = ( ($("#open_answer-<%= i %>")) ?
+          $("#open_answer-<%= i %>").val() : $("input[name='answer-mc-<%= i %>']:checked").val());
 
-            // Gets the user submitted solution.
-            // Ternary Condition. If there's an open-answer question, get that element's value.
-            // If there isn't then it's a mult-choice question, and get the value of the checked button.
-            var submitted = ( ($("#open_answer-<%= i %>")) ?
-              $("#open_answer-<%= i %>").val() : $("input[name='answer-mc-<%= i %>']:checked").val());
+        // Uses a POST call to find out if the user was correct or not.
+        $.post(this.dataset.url, { user_solution: submitted, question_id: this.dataset.questionid },
+          function (data) {
 
-            // Uses a POST call to find out if the user was correct or not.
-            $.post(this.dataset.url, { user_solution : submitted, question_id : this.dataset.questionid },
-              function (data) {
+            // If the user was correct (data here is either `true` or `false`)
+            if (data === 'true') {
+              // Stop the seconds counter
+              clearInterval(timer);
 
-                // If the user was correct (data here is either `true` or `false`)
-                if (data) {
-                  alert("Question <%= i %>: Correct!");
+              alert("Question <%= i %>: Correct!");
+
+              if (score <= 0) { score = 0; }
+
+              // Convert score to integer
+              score = parseInt(score, 10);
+
+              if (score >= threshold) {
+                alert("You passed! Score: " + score);
+
+                if (seconds <= 30) {
+                  achievementGet(2);
                 }
-                else {
-                  ++errors;
-                  score -= Math.pow(2, errors);
-                  $("#score").text(score);
-                }
+              }
+              else {
+                alert("You failed! You got: " + score + " but needed: " + threshold);
 
-            });
-
-            e.preventDefault();
-          });
-
-        // Stop the seconds counter
-        clearInterval(timer);
-
-        if (score <= 0) { score = 0; }
-
-        // Convert score to integer
-        score = parseInt(score, 10);
-
-        if (score >= threshold) {
-          alert("You passed! Score: " + score);
-        }
-        else {
-          alert("You failed! You got: " + score + " but needed: " + threshold);
-        }
-
-        // Score-based achievements
-
-        // Fail an exercise 'achievement'
-        if (score < threshold) {
-          achievementGet(8);
-        }
-
-        // Finish exercise in 30 seconds!
-        // TODO: Rework using Intervals
-        if (seconds <= 30) {
-          achievementGet(2);
-        }
+                achievementGet(8);
+              }
+            }
+            else {
+              ++errors;
+              score -= Math.pow(2, errors);
+              $("#score").text(score);
+            }
+        });
 
         // Record score for question
-        $.post('/level/<%= questions[i].question_id %>/' + score, function (data) {
-          // console.log(data);
-        });
-      };
+        $.post('/level/<%= questions[i].question_id %>/' + score, function (data) {});
+
+        e.preventDefault();
+      });
     <% } %>
   });
 
