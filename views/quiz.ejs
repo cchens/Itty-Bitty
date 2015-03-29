@@ -28,7 +28,7 @@
         <p><%= questions[i].question %></p>
 
         <% if (questions[i].choice1) { %>
-          <label><input type="radio" id="radio" name="answer-mc-<%= i %>" value="1"> <%= questions[i].choice1 %></label>
+          <label><input type="radio" name="answer-mc-<%= i %>" value="1"> <%= questions[i].choice1 %></label>
         <% } else { %>
           <input type="text" id="open_answer-<%= i %>">
         <% } %>
