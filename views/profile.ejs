@@ -29,7 +29,7 @@
       <th>Question</th>
       <th>Score</th>
     </thead>
-    <tbody>
+    <tbody id="scores">
       <% for (var i = 0; i < scores.length; i++) { %>
         <tr>
           <td><%= scores[i].question_id %></td>
@@ -76,12 +76,19 @@
 </table>
 
 <script>
-  var date = document.getElementById('joined').innerHTML.split(/[ ]+/);
-  var d = date[5].split(/[:]+/)
+  achievementGet(10);
 
-  if (parseInt(d[0], 10) < 5) {
+  // night owl
+  var joinedDate = document.getElementById("joined");
+  var date = joinedDate.innerHTML.split(/[ ]+/);
+  var d = date[5].split(/[:]+/)
+  if (parseInt(d[0]) < 5) {
     achievementGet(9)
   }
-
-  achievementGet(10);
+  
+  // master of masters
+  var scores = document.getElementById("scores").getElementsByTagName('tr');
+  if (scores.length > 16) {
+    achievementGet(5);
+  }
 </script>
