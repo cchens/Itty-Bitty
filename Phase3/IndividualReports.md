@@ -8,7 +8,7 @@
 Please keep it short.
 
 ## Ben Shaft (BShaft)
-- My most signification contribution was the quiz feature of Itty Bitty. This involved displaying a tutorial's questions to the user and checking their answer ([issue #5,](https://github.com/UoT-CSC30x-W15/301W15-Prj-Team1-repo/issues/5) [issue #28](https://github.com/UoT-CSC30x-W15/301W15-Prj-Team1-repo/issues/28)) and the implementation and update to the scoring system [(issue #9)](https://github.com/UoT-CSC30x-W15/301W15-Prj-Team1-repo/issues/9).
+- My most signification contribution was the quiz feature of Itty Bitty. This involved displaying a tutorial's questions to the user and checking their answer ([issue #5,](https://github.com/UoT-CSC30x-W15/301W15-Prj-Team1-repo/issues/5) [issue #28](https://github.com/UoT-CSC30x-W15/301W15-Prj-Team1-repo/issues/28)) as well as the implementation of and update to the scoring system [(issue #9)](https://github.com/UoT-CSC30x-W15/301W15-Prj-Team1-repo/issues/9).
 - Like the other members on the team, this was my first exposure to the [Sails.js](http://sailsjs.org/#!/) framework. Also, in Phase-3 I was tasked with using POST to validate user answers. This was new to me as I would normally do that validation client-side because of its relative simplicity but I now understand the major benefits of using HTTP requests instead.
 - I am able to quickly learn new techniques on my own and adapt to new situations. I would then help my teammates adjust to a pivot made during the planning and/or development stages or by reviewing their code with them.
 - I should begin working on what I am assigned sooner. This would've let my teammates have more time to learn from or review my code and it would have given me more time to suggest and add extra features to Itty Bitty.
