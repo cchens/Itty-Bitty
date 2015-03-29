@@ -43,49 +43,27 @@
         <% } %>
 
         <button class='quiz-submit' id="submit-<%= i %>">Submit</button>
-
-        <!-- this section is for showing answer using post -->
-        <form role='form' action='/tutorials/<%= type %>/<%= tutorial.level_num %>' method='post' id="showAns">
-          <input type='submit' value='Show Answer'>
-        </form>
-
-        <script>
-
-          // Attach a submit handler to the form
-          $( "#showAns" ).submit(function( event ) {
-
-            // Stop form from submitting normally
-            event.preventDefault();
-
-            // Get some values from elements on the page:
-            var $form = $( this ),
-              question_id = <%= questions[i].question_id %>,
-              url = $form.attr( "action" );
-
-            // Send the data using post, so far only user_solution
-            var posting = $.post( url, {questionID:question_id} );
-
-
-            // Put the results in a div
-            posting.done(function( data ) {
-              alert(data);
-
-              //var content = $( data ).find( "#content" );
-              //$( "#resuilt" ).empty().append( content );
-            });
-
-          });
-        </script>
-      
+        <button class='show-answer'
+          data-url='/tutorials/<%= type %>/<%= tutorial.level_num %>'
+          data-questionid="<%= questions[i].question_id %>">Show Answer</button>
       </div>
-
     <% } %>
 
     <a class='ref-link' target='_blank' href="/ref/<%= type %>">Reference sheet</a>
     <a class='ref-link' target='_blank' href="#" id='btn-toohard'>This is too hard!</a>
-
   <% } %>
 </div>
+
+<script>
+  $('.show-answer').click(function (e) {
+    // Fetch the answer with a POST call
+    $.post(this.dataset.url, { questionID: this.dataset.questionid }, function (data) {
+      alert(data);
+    });
+
+    e.preventDefault();
+  });
+</script>
 
   <!-- temporarily placed here for solution validation check -->
   <!--
@@ -147,7 +125,9 @@
     // Too hard button
     $('#dialog-toohard').easyModal({
       overlayOpacity: 0.3,
-      overlayColor: "#333"
+      overlayColor: "#333",
+      zIndex: function() { return 100000; },
+      updateZIndexOnOpen: false
     });
 
     $('#btn-toohard').click(function (e) {
