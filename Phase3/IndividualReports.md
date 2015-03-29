@@ -16,7 +16,7 @@ Please keep it short.
 ---
 
 ## Catherine Wang (nishikiw)
-- While working on the whole project, I learned Html, JavaScrip, Sails, and the main components of website.
+- While working on the whole project, I learned Html, JavaScript, Sails, and the main components of website.
 - I could complete whatever assigned to me on time, and I am willing to learn.
 - I do not have enough knowledge and experience of building a website, I should have learned more before taking this course so I could help more in the project, and would not bother my team-mates for too many questions.
 
@@ -54,7 +54,7 @@ Please keep it short.
 
 ---
 
-## Yining Lin (leebang))
+## Yining Lin (leebang)
 - My most significant contribution was desiging and implementing tutorial contents, as well as implementing leader board page. 
 [commit](https://github.com/UoT-CSC30x-W15/301W15-Prj-Team1-repo/commit/ac8b2a2abd8b58321345d61ece31600da3ad9442); 
 [commit](https://github.com/UoT-CSC30x-W15/301W15-Prj-Team1-repo/commit/4aee179ac185690057152c2af8b9a3a4e158db7f)
