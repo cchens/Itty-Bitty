@@ -23,7 +23,7 @@ Please keep it short.
 ---
 
 ## Christina Chen (cchens)
-- My most signification contribution was setting up the [Passport.js](http://passportjs.org/) authentication to include social network integration, as well as writing and implementing the reference sheets that compliments the tutorial content.
+- My most signification contribution was setting up the [Passport.js](http://passportjs.org/) authentication to include social network integration ([issue #6](https://github.com/UoT-CSC30x-W15/301W15-Prj-Team1-repo/issues/6) and [issue #11](https://github.com/UoT-CSC30x-W15/301W15-Prj-Team1-repo/issues/11)), as well as writing and implementing the reference sheets that compliments the tutorial content ([issue #12](https://github.com/UoT-CSC30x-W15/301W15-Prj-Team1-repo/issues/12)).
 - While working on this project, I learned how to make use of the Sails.js framework. I also learned a lot about backend web development in general, as well as how MVC works.
 - My main strength was that I am proactive and complete assigned issues before the deadline. I can then use the remaining time to help other team members with their work.
 - My main weakness was lack of experience in web development. Where online tutorials and documentation fails to cover an issue I have, I've had to rely on asking other team members for help explaining concepts, which slows work down and takes up time for other team members. 
