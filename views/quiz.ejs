@@ -28,7 +28,7 @@
         <p><%= questions[i].question %></p>
 
         <% if (questions[i].choice1) { %>
-          <label><input type="radio" name="answer-mc-<%= i %>" value="1"> <%= questions[i].choice1 %></label>
+          <label><input type="radio" id="radio" name="answer-mc-<%= i %>" value="1"> <%= questions[i].choice1 %></label>
         <% } else { %>
           <input type="text" id="open_answer-<%= i %>">
         <% } %>
@@ -42,10 +42,14 @@
           <label><input type="radio" name="answer-mc-<%= i %>" value="4"> <%= questions[i].choice4 %></label>
         <% } %>
 
-        <button class='quiz-submit' id="submit-<%= i %>">Submit</button>
+        <button class='quiz-submit' 
+          id="submit-<%= i %>"
+          data-url='/tutorials/<%= type %>/<%= tutorial.level_num %>'
+          data-questionid='<%= questions[i].question_id %>'>Submit</button>
         <button class='show-answer'
           data-url='/tutorials/<%= type %>/<%= tutorial.level_num %>'
           data-questionid="<%= questions[i].question_id %>">Show Answer</button>
+
       </div>
     <% } %>
 
@@ -53,60 +57,6 @@
     <a class='ref-link' target='_blank' href="#" id='btn-toohard'>This is too hard!</a>
   <% } %>
 </div>
-
-<script>
-  $('.show-answer').click(function (e) {
-    // Fetch the answer with a POST call
-    $.post(this.dataset.url, { questionID: this.dataset.questionid }, function (data) {
-      alert(data);
-    });
-
-    e.preventDefault();
-  });
-</script>
-
-  <!-- temporarily placed here for solution validation check -->
-  <!--
-  <form role='form' action='/tutorials/<%= type %>/<%= tutorial.level_num %>' method='post' id="userSol">
-    <label>Answer:</label>
-    <input type='text' name='user_solution' placeholder='put your solution' required>
-    <input type='text' name='questionID' placeholder='question id'>
-
-    <input type='submit' value='submit'>
-  </form>
-  </div>
-  <div id="result"></div>
-
-
-  <script>
-
-  // Attach a submit handler to the form
-  $( "#userSol" ).submit(function( event ) {
-
-    // Stop form from submitting normally
-    event.preventDefault();
-
-    // Get some values from elements on the page:
-    var $form = $( this ),
-      question_id = "1",
-      solution = $form.find( "input[name='user_solution']" ).val(),
-      url = $form.attr( "action" );
-
-    // Send the data using post, so far only user_solution
-    var posting = $.post( url, {user_solution: solution, questionID:question_id} );
-
-
-    // Put the results in a div
-    posting.done(function( data ) {
-      alert(data);
-
-      var content = $( data ).find( "#content" );
-      $( "#resuilt" ).empty().append( content );
-    });
-
-  });
-  </script>
-  -->
 
 <aside id='dialog-toohard'>
   <iframe width="420" height="315" src="https://www.youtube.com/embed/KxGRhd_iWuE?rel=0" frameborder="0" allowfullscreen></iframe>
@@ -120,7 +70,6 @@
     $('#tutorial-material p').each(function () {
       this.innerHTML = this.innerHTML.replace(/(?:\r\n|\r|\n)/g, '<br>');
     });
-
 
     // Too hard button
     $('#dialog-toohard').easyModal({
@@ -138,6 +87,15 @@
       achievementGet(1);
     });
 
+    $('.show-answer').click(function (e) {
+      // Fetch the answer with a POST call
+      $.post(this.dataset.url, { questionID: this.dataset.questionid }, function (data) {
+        alert(data);
+      });
+
+      e.preventDefault();
+    });
+
 
     // Scoring
     var difficulty = <%= tutorial.difficulty %>;
@@ -153,6 +111,22 @@
 
         // Check answer
         // TODO: POST call to check answer
+        $("#submit-<%= i %>").click(function (e) {
+
+            // Gets the user submitted solution.
+            // Ternary Condition. If there's an open-answer question, get that element's value.
+            // If there isn't then it's a mult-choice question, and get the value of the checked button.
+            var submitted = ( ($("#open_answer-<%= i %>")) ? 
+              $("#open_answer-<%= i %>").val() : $("input[name='answer-mc-<%= i %>']:checked").val());
+            
+            // Uses a POST call to find out if the user was correct or not.
+            $.post(this.dataset.url, { user_solution : submitted, question_id : this.dataset.questionid },
+              function (data) {
+                alert(data);
+            });
+
+            e.preventDefault();
+          });
 
         // Score
         end = Date.now();
