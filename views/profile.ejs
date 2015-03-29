@@ -15,7 +15,7 @@
   <p>Signed in using <%= user.provider %></p>
 <% } %>
 
-<p>Joined: <%= user.createdAt %></p>
+<p id="joined">Joined: <%= user.createdAt %></p>
 
 <br>
 
@@ -65,5 +65,11 @@
 </table>
 
 <script>
+  var joinedDate = document.getElementById("joined");
+  var date = joinedDate.innerHTML.split(/[ ]+/);
+  var d = date[5].split(/[:]+/)
+  if (parseInt(d[0]) < 5) {
+    achievementGet(9)
+  }
   achievementGet(10);
 </script>
