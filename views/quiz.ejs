@@ -47,22 +47,17 @@
           data-url='/tutorials/<%= type %>/<%= tutorial.level_num %>'
           data-questionid="<%= questions[i].question_id %>">Show Answer</button>
       </div>
-
-
-
-
     <% } %>
 
     <a class='ref-link' target='_blank' href="/ref/<%= type %>">Reference sheet</a>
     <a class='ref-link' target='_blank' href="#" id='btn-toohard'>This is too hard!</a>
-
   <% } %>
 </div>
 
 <script>
   $('.show-answer').click(function (e) {
     // Fetch the answer with a POST call
-    var posting = $.post(this.dataset.url, { questionID: this.dataset.questionid }, function (data) {
+    $.post(this.dataset.url, { questionID: this.dataset.questionid }, function (data) {
       alert(data);
     });
 
