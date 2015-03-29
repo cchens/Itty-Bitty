@@ -18,13 +18,13 @@ module.exports = {
       User
       .find()
       .sort('id ASC')
-      .exec(function (err, user) {
-        if (user === undefined) return res.notFound();
+      .exec(function (err, users) {
+        if (users === undefined) return res.notFound();
         if (err) return res.negotiate(err);
 
         res.view('leaderboards', {
           'scores': scores,
-          'user' : user
+          'users' : users
         });
       });
     });

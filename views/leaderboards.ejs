@@ -2,21 +2,21 @@
 
 <% var ranks = [] %>
 
-<% for (var i = 0; i < user.length; i++) { %>
-  <% var theScore= 0 %>
-  <% var theName = user[i].username %>
+<% for (var i = 0; i < users.length; i++) { %>
+  <% var theScore = 0 %>
+  <% var theName = users[i].username %>
 
   <% for (var j = 0; j < scores.length; j++) { %>
-    <% if (user[i].id == scores[j].user) { %>
+    <% if (users[i].id == scores[j].user) { %>
       <% theScore = theScore + scores[j].score %>
     <% } %>
   <% } %>
 
-  <% var info = {name: theName, score: theScore} %>
+  <% var info = { name: theName, score: theScore } %>
   <% ranks[i] = info %>
 <% } %>
 
-<% ranks.sort(function(a, b) {return b.score - a.score}) %>
+<% ranks.sort(function(a, b) { return b.score - a.score }) %>
 
 <table>
   <thead>
