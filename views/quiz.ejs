@@ -127,25 +127,24 @@
         // Gets the user submitted solution.
         // Ternary Condition. If there's an open-answer question, get that element's value.
         // If there isn't then it's a mult-choice question, and get the value of the checked button.
-        var submitted = ( ($("#open_answer-<%= i %>")) ?
-          $("#open_answer-<%= i %>").val() : $("input[name='answer-mc-<%= i %>']:checked").val());
+        var submitted = $("#open_answer-<%= i %>") ?
+                          $("#open_answer-<%= i %>").val() :
+                          $("input[name='answer-mc-<%= i %>']:checked").val();
 
-        // Uses a POST call to find out if the user was correct or not.
-        $.post(this.dataset.url, { user_solution: submitted },
-          function (data) {
+        // Uses a POST call to find out if the user was correct or not
+        $.post(this.dataset.url, { user_solution: submitted }, function (data) {
 
-            // If the user was correct (data here is either `true` or `false`)
+            // Correct answer
             if (data === 'true') {
               // Stop the seconds counter
               clearInterval(timer);
 
               alert("Question <%= i %>: Correct!");
 
-              if (score <= 0) { score = 0; }
-
               // Convert score to integer
               score = parseInt(score, 10);
 
+              // Passed
               if (score >= threshold) {
                 alert("You passed! Score: " + score);
 
@@ -153,19 +152,22 @@
                   achievementGet(2);
                 }
               }
+
+              // Failed
               else {
                 alert("You failed! You got: " + score + " but needed: " + threshold);
 
                 achievementGet(8);
               }
             }
+
+            // Wrong answer
             else {
               alert("Question <%= i %>: Incorrect!");
 
               ++errors;
               score -= Math.pow(2, errors);
               $("#score").text(score);
-
             }
         });
 
