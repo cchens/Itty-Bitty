@@ -43,14 +43,9 @@
         <% } %>
 
         <button class='quiz-submit' id="submit-<%= i %>">Submit</button>
-
-        <!-- this section is for showing answer using post -->
-          <form role='form' action='/tutorials/<%= type %>/<%= tutorial.level_num %>' method='post' class="showAns">
-            <input type="hidden" value=<%= questions[i].question_id %> name='questionID' readonly>
-
-            <input type='submit' value='Show Answer'>
-
-          </form>
+        <button class='show-answer'
+          data-url='/tutorials/<%= type %>/<%= tutorial.level_num %>'
+          data-questionid="<%= questions[i].question_id %>">Show Answer</button>
       </div>
 
 
@@ -65,26 +60,13 @@
 </div>
 
 <script>
-
-  // Attach a submit handler to the form
-  $(".showAns").submit(function (e) {
-
-    // Stop form from submitting normally
-    e.preventDefault();
-
-    // Get some values from elements on the page:
-    var $form = $(this),
-      question_id = $form.find("input[name='questionID']").val(),
-      url = $form.attr("action");
-
-    // Send the data using post, so far only user_solution
-    var posting = $.post(url, { questionID: question_id });
-
-    // Put the results in a div
-    posting.done(function (data) {
+  $('.show-answer').click(function (e) {
+    // Fetch the answer with a POST call
+    var posting = $.post(this.dataset.url, { questionID: this.dataset.questionid }, function (data) {
       alert(data);
     });
 
+    e.preventDefault();
   });
 </script>
 
