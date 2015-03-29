@@ -55,11 +55,16 @@ Please keep it short.
 
 ---
 
-## Inks Lee (leebang)
-- My most signification contribution was
-- While working on
-- A
-- A
+## Yining Lin (leebang))
+- My most significant contribution was desiging and implementing tutorial contents, as well as implementing leader board page. 
+[commit](https://github.com/UoT-CSC30x-W15/301W15-Prj-Team1-repo/commit/ac8b2a2abd8b58321345d61ece31600da3ad9442); 
+[commit](https://github.com/UoT-CSC30x-W15/301W15-Prj-Team1-repo/commit/4aee179ac185690057152c2af8b9a3a4e158db7f)
+
+- We were using a framework call Sails to build up our site. It allows us to write back end and front end using javascript, so everything is simple than ever. We use PSQL to manage data. From this project, I reviewd some part of MVC stuff, as well as javascript and JSON.
+
+- Half of my job was deciding tutorial contents, and rest of them are implementing front end stuff, since my back-end knowledge was not strong enough.
+
+- I am still not familiar with javascript syntax, as well as back-end construction. So most of my works were front-end related. 
 
 ---
 
