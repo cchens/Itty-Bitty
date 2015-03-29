@@ -1,7 +1,5 @@
 <h1>Leaderboards</h1>
 
-
-
 <% var ranks = [] %>
 
 <% for (var i = 0; i < user.length; i++) { %>
@@ -20,7 +18,19 @@
 
 <% ranks.sort(function(a, b) {return b.score - a.score}) %>
 
-<% for (var i = 0; i < ranks.length; i++) { %>
-	<h3> <%= i + 1 %>. <%= ranks[i].name %> has <%= ranks[i].score %> points<h3>
-<% } %>
-
+<table>
+  <thead>
+    <th>Rank</th>
+    <th>User</th>
+    <th>Points</th>
+  </thead>
+  <tbody>
+    <% for (var i = 0; i < ranks.length; i++) { %>
+      <tr>
+      	<td><%= i + 1 %></td>
+        <td><%= ranks[i].name %></td>
+        <td><%= ranks[i].score %> points</td>
+      </tr>
+    <% } %>
+  </tbody>
+</table>

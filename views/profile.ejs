@@ -23,10 +23,21 @@
 
 <% if (scores.length == 0) { %>
   No scores yet!
-<% } %>
-
-<% for (var i = 0; i < scores.length; i++) { %>
-  <p><%= scores[i].score %> points in question <%= scores[i].question_id %></p>
+<% } else { %>
+  <table>
+    <thead>
+      <th>Question</th>
+      <th>Score</th>
+    </thead>
+    <tbody>
+      <% for (var i = 0; i < scores.length; i++) { %>
+        <tr>
+          <td><%= scores[i].question_id %></td>
+          <td><%= scores[i].score %></td>
+        </tr>
+      <% } %>
+    </tbody>
+  </table>
 <% } %>
 
 <br>
