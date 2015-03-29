@@ -134,6 +134,10 @@
         if ($("#open_answer-<%= i %>") && $("#open_answer-<%= i %>").val() === '')
           return;
 
+        // Don't do anything if it's an unchecked set of radio buttons
+        if ($("name=answer-mc-<%= i %>") && $("input[name='answer-mc-<%= i %>']:checked").val() === '')
+          return;
+
         // Uses a POST call to find out if the user was correct or not
         $.post(this.dataset.url, { user_solution: submitted }, function (data) {
 
