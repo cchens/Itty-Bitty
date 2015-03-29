@@ -6,6 +6,7 @@
   <img src="/images/profile.jpg">
 <% } %>
 
+
 <p>User #<%= user.id %>: <%= user.username %></p>
 
 <% if (user.email) {  %>
@@ -25,9 +26,10 @@
 <% } %>
 
 <% for (var i = 0; i < scores.length; i++) { %>
-  <p><%= scores[i].score %> points in level <%= scores[i].question_id %></p>
+  <p><%= scores[i].score %> points in question <%= scores[i].question_id %></p>
 <% } %>
 
+<br>
 <br>
 
 <h2>Achievements</h2>
