@@ -128,6 +128,10 @@
                           $("#open_answer-<%= i %>").val() :
                           $("input[name='answer-mc-<%= i %>']:checked").val();
 
+        // Don't do anything if it's an empty textbox
+        if ($("#open_answer-<%= i %>") && $("#open_answer-<%= i %>").val() === '')
+          return;
+
         // Uses a POST call to find out if the user was correct or not
         $.post(this.dataset.url, { user_solution: submitted }, function (data) {
 
