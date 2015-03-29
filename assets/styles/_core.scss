@@ -52,8 +52,12 @@ h4 {
 
 /** Paragraphs */
 
-p + p {
-  margin-bottom: 1.125em;
+p {
+  word-break: break-word;
+
+  & + p {
+    margin-bottom: 1.125em;
+  }
 }
 
 
