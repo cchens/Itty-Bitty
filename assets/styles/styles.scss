@@ -423,14 +423,10 @@ footer {
 }
 
 .question input,
-.quiz-submit {
+.quiz-submit,
+.show-answer {
   display: inline-block;
   width: auto;
-}
-
-.quiz-submit {
-  min-width: 0;
-  width: 100px !important;
 }
 
 .question {
