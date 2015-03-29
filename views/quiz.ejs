@@ -89,12 +89,14 @@
 
     // Scoring
     var difficulty = <%= tutorial.difficulty %>;
-    var score = 100 * difficulty * <%= questions.length %>;
+    var length = <%= questions.length %>;
+    var score = 100 * difficulty * length;
     $('#score').text(score);
     var threshold = Math.ceil(score * 0.75);
     var seconds = 0
     var timer = setInterval(function(){ secTimer() }, 1000);
     var errors = 0;
+    var submitted = [];
 
     function secTimer() {
       ++seconds;
@@ -137,8 +139,13 @@
 
             // Correct answer
             if (data === 'true') {
-              // Stop the seconds counter after getting the final question correct
-              if (<%= i %> === (<%= questions.length %> - 1)) {
+              // Adds all the submitted results in an array
+              if ($.inArray(<%= i =>, submitted) === -1) {
+                submitted.push(<%= i =>);
+              }
+
+              // Stops this quiz's timer when the user has submitted a correct answer to every question
+              if (submitted.length === length) {
                 clearInterval(timer);
               }
 
