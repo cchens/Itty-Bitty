@@ -44,11 +44,9 @@
 
         <button class='quiz-submit'
           id="submit-<%= i %>"
-          data-url='/tutorials/<%= type %>/<%= tutorial.level_num %>'
-          data-questionid='<%= questions[i].question_id %>'>Submit</button>
+          data-url='/tutorials/validate/<%= questions[i].question_id %>'>Submit</button>
         <button class='show-answer'
-          data-url='/tutorials/<%= type %>/<%= tutorial.level_num %>'
-          data-questionid="<%= questions[i].question_id %>">Show Answer</button>
+          data-url='/tutorials/answer/<%= questions[i].question_id %>'>Show Answer</button>
 
       </div>
     <% } %>
@@ -111,7 +109,7 @@
 
     $('.show-answer').click(function (e) {
       // Fetch the answer with a POST call
-      $.post(this.dataset.url, { questionID: this.dataset.questionid }, function (data) {
+      $.post(this.dataset.url, function (data) {
         alert(data);
       });
 
@@ -133,7 +131,7 @@
           $("#open_answer-<%= i %>").val() : $("input[name='answer-mc-<%= i %>']:checked").val());
 
         // Uses a POST call to find out if the user was correct or not.
-        $.post(this.dataset.url, { user_solution: submitted, question_id: this.dataset.questionid },
+        $.post(this.dataset.url, { user_solution: submitted },
           function (data) {
 
             // If the user was correct (data here is either `true` or `false`)
@@ -162,9 +160,12 @@
               }
             }
             else {
+              alert("Question <%= i %>: Incorrect!");
+
               ++errors;
               score -= Math.pow(2, errors);
               $("#score").text(score);
+
             }
         });
 

@@ -49,6 +49,9 @@ module.exports = {
     var user_sol = req.param("user_solution"),
         questionID = req.param("question_id");
 
+    console.log(user_sol);
+    console.log(questionID);
+
     if (user_sol && questionID) {
       Questions
       .find()
@@ -67,12 +70,12 @@ module.exports = {
   },
 
   showAnswer: function (req, res) {
-    var questionID = req.param("questionID");
+    var questionID = req.param("question_id");
 
     if (questionID) {
       Questions
       .find()
-      .where({ question_id:questionID })
+      .where({ question_id: questionID })
       .exec(function (err, questions) {
         if (questions === undefined) return res.notFound();
         if (err) return res.negotiate(err);
