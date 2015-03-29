@@ -92,7 +92,7 @@ module.exports = {
         if (questions === undefined) return res.notFound();
         if (err) return res.negotiate(err);
 
-        //sails.log.info(questions[0].answer)
+        sails.log.info(questions[0].answer)
 
         if(questions[0].answer){
           var explanation= "Explanation: " + questions[0].explanation + "\nAnswer: " + questions[0].answer;

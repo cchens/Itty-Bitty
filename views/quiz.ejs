@@ -46,38 +46,15 @@
 
         <!-- this section is for showing answer using post -->
         <form role='form' action='/tutorials/<%= type %>/<%= tutorial.level_num %>' method='post' id="showAns">
+          <input type="hidden" value=<%= questions[i].question_id %> name='questionID' readonly>
+
           <input type='submit' value='Show Answer'>
+
         </form>
-
-        <script>
-
-          // Attach a submit handler to the form
-          $( "#showAns" ).submit(function( event ) {
-
-            // Stop form from submitting normally
-            event.preventDefault();
-
-            // Get some values from elements on the page:
-            var $form = $( this ),
-              question_id = <%= questions[i].question_id %>,
-              url = $form.attr( "action" );
-
-            // Send the data using post, so far only user_solution
-            var posting = $.post( url, {questionID:question_id} );
-
-
-            // Put the results in a div
-            posting.done(function( data ) {
-              alert(data);
-
-              //var content = $( data ).find( "#content" );
-              //$( "#resuilt" ).empty().append( content );
-            });
-
-          });
-        </script>
-      
       </div>
+
+      
+      
 
     <% } %>
 
@@ -86,6 +63,33 @@
 
   <% } %>
 </div>
+
+<script>
+
+        // Attach a submit handler to the form
+        $( "#showAns" ).submit(function( event ) {
+
+          // Stop form from submitting normally
+          event.preventDefault();
+
+          // Get some values from elements on the page:
+          var $form = $( this ),
+            question_id = $form.find( "input[name='questionID']" ).val(),
+
+            url = $form.attr( "action" );
+
+          // Send the data using post, so far only user_solution
+          var posting = $.post( url, {questionID:question_id} );
+
+
+          // Put the results in a div
+          posting.done(function( data ) {
+            alert(data);
+
+          });
+
+        });
+</script>
 
   <!-- temporarily placed here for solution validation check -->
   <!--
