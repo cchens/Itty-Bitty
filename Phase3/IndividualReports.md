@@ -16,6 +16,7 @@ Please keep it short.
 ---
 
 ## Catherine Wang (nishikiw)
+- My most signification contribution was making some tutorial and exercise content, displaying view of selecting page and achievements. [Commit1](https://github.com/UoT-CSC30x-W15/301W15-Prj-Team1-repo/commit/ed8b3bd02f24a9821d5c81091c733c822252272b).[Commit2](https://github.com/UoT-CSC30x-W15/301W15-Prj-Team1-repo/commit/84beea30853fc3af702222aa9eb305e16484164a) - Christina helped me to commit my work due to something wrong with my laptop.
 - While working on the whole project, I learned Html, JavaScrip, Sails, and the main components of website.
 - I could complete whatever assigned to me on time, and I am willing to learn.
 - I do not have enough knowledge and experience of building a website, I should have learned more before taking this course so I could help more in the project, and would not bother my team-mates for too many questions.
