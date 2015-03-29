@@ -76,7 +76,7 @@
 
           });
         </script>
-      
+
       </div>
 
     <% } %>
@@ -147,7 +147,9 @@
     // Too hard button
     $('#dialog-toohard').easyModal({
       overlayOpacity: 0.3,
-      overlayColor: "#333"
+      overlayColor: "#333",
+      zIndex: function() { return 100000; },
+      updateZIndexOnOpen: false
     });
 
     $('#btn-toohard').click(function (e) {

@@ -117,19 +117,24 @@ header {
   background: #fff;
   border-radius: 10px;
   box-shadow: 0 3px 10px #777;
-  display: none;
   left: 50%;
   margin-left: -125px;
   padding: 1em 1em 0;
   position: fixed;
   text-align: center;
-  top: 1em;
+  top: -8em;
+  transition: top 0.3s;
   width: 250px;
+  z-index: 1000000;
 
   h1 {
     font-size: 18px;
   }
 }
+
+  .achievement_show {
+    top: 1em !important;
+  }
 
 
 // Main content block
