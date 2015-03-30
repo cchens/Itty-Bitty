@@ -166,8 +166,8 @@
               // Passed
               if (score >= threshold) {
 
-                $('<audio id="achievementAudio"><source src="/music/victory_fanfare.mp3" type="audio/mpeg"></audio>').appendTo('body');
-                document.getElementById('achievementAudio').play();
+                $('<audio id="correctAudio"><source src="/music/victory_fanfare.mp3" type="audio/mpeg"></audio>').appendTo('body');
+                document.getElementById('correctAudio').play();
 
                 alert("You passed! Score: " + score);
 
@@ -179,8 +179,8 @@
               // Failed
               else {
 
-                $('<audio id="achievementAudio"><source src="/music/mario_death.mp3" type="audio/mpeg"></audio>').appendTo('body');
-                document.getElementById('achievementAudio').play();
+                $('<audio id="failAudio"><source src="/music/mario_death.mp3" type="audio/mpeg"></audio>').appendTo('body');
+                document.getElementById('failAudio').play();
 
                 alert("You failed! You got: " + score + " but needed: " + threshold);
 
