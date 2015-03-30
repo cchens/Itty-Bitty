@@ -157,6 +157,9 @@
 
               alert("Question <%= i %>: Correct!");
 
+              // Record score for question
+              $.post('/level/<%= questions[i].question_id %>/' + score, function (data) {});
+              
               // Convert score to integer
               score = parseInt(score, 10);
 
@@ -186,9 +189,6 @@
               $('#score').text(score);
             }
         });
-
-        // Record score for question
-        $.post('/level/<%= questions[i].question_id %>/' + score, function (data) {});
 
         e.preventDefault();
       });
