@@ -32,10 +32,13 @@ Please keep it short.
 ---
 
 ## Cindy Wu (xinrwu)
-- My most signification contribution was
-- While working on
-- A
-- A
+- My most significant contribution this phase was working on getting achievements and playing sound when you get an achievement. ([issue #5] (https://github.com/UoT-CSC30x-W15/301W15-Prj-Team1-repo/issues/10) [issue #31] (https://github.com/UoT-CSC30x-W15/301W15-Prj-Team1-repo/issues/31)). Designing the database schema is the overall most important contribution.
+
+- While working on this project, I learned a lot about backend web development especially since it's my first time using sails.js. Although, the most important thing I learned is how to work as a team. Creating issues for everything, assigning tasks, and doing sprints.
+
+- My main strength is pinpointing where the problem is when a bug shows up and have a good overall vision of what pieces are required to put the final product together.
+
+- Not enough communication. Eugene and I were working on the same thing separately. If I mentioned earlier what I was working on at the time these things should never happen.
 
 ---
 
