@@ -135,7 +135,8 @@
           return;
 
         // Don't do anything if it's an unchecked set of radio buttons
-        if ($("[name='answer-mc-<%= i %>']") && $("input[name='answer-mc-<%= i %>']:checked").length === 0)
+        if ($("input[name='answer-mc-<%= i %>']").length !== 0 &&
+            $("input[name='answer-mc-<%= i %>']:checked").length === 0)
           return;
 
         // Uses a POST call to find out if the user was correct or not
