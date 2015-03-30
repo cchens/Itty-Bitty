@@ -47,19 +47,3 @@
     });
   }
 </script>
-
-<script>
-  function questionRight(id) {
-    $.post('/achievement/' + id, function (data) {
-      if (data) {
-        $('#achievement_alert').addClass('achievement_show');
-        $('#achievement_text').html(data);
-        $('<audio id="rightAudio"><source src="/music/victory_fanfare.mp3" type="audio/mpeg"></audio>').appendTo('body');
-        document.getElementById('rightAudio').play();
-        setTimeout(function() {
-          $('#achievement_alert').removeClass('achievement_show');
-        }, 6500);
-      }
-    });
-  }
-</script>
