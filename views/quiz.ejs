@@ -126,12 +126,13 @@
         // Gets the user submitted solution.
         // Ternary Condition. If there's an open-answer question, get that element's value.
         // If there isn't then it's a mult-choice question, and get the value of the checked button.
-        var submitted = $("#open_answer-<%= i %>") ?
+        var submitted = $("#open_answer-<%= i %>").length !== 0 ?
                           $("#open_answer-<%= i %>").val() :
                           $("input[name='answer-mc-<%= i %>']:checked").val();
 
         // Don't do anything if it's an empty textbox
-        if ($("#open_answer-<%= i %>") && $("#open_answer-<%= i %>").val() === '')
+        if ($("#open_answer-<%= i %>").length !== 0 &&
+            $("#open_answer-<%= i %>").val() === '')
           return;
 
         // Don't do anything if it's an unchecked set of radio buttons
