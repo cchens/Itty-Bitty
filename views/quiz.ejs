@@ -96,7 +96,7 @@
     var seconds = 0
     var timer = setInterval(function(){ secTimer() }, 1000);
     var errors = 0;
-    var submitted = [];
+    var answered = [];
 
     function secTimer() {
       ++seconds;
@@ -147,11 +147,11 @@
             if (data === 'true') {
               // Adds all the submitted results in an array
               if ($.inArray(<%= i %>, submitted) === -1) {
-                submitted.push(<%= i %>);
+                answered.push(<%= i %>);
               }
 
               // Stops this quiz's timer when the user has submitted a correct answer to every question
-              if (submitted.length === length) {
+              if (answered.length === length) {
                 clearInterval(timer);
               }
 
