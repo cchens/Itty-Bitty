@@ -13,3 +13,8 @@ See [DEVELOPMENT.md](DEVELOPMENT.md).
 ### Deploying
 
 See [DEPLOYING.md](DEPLOYING.md).
+
+
+### Demo
+
+[Link to YouTube video](http://youtu.be/qDawKCTeUmM)
