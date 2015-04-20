@@ -1,4 +1,4 @@
-# Team 1: Itty Bitty
+# Itty Bitty
 
 ### Overview
 
